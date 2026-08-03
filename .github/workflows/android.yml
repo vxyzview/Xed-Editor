@@ -112,19 +112,3 @@ jobs:
             exit 1
           fi
 
-      - name: Generate Plugin Sdk
-        run: |
-          bash plugin-sdk/build-auto.sh
-
-      - name: Update Release
-        if: ${{ hashFiles('plugin-sdk/output/sdk.jar') != '' }}
-        uses: ncipollo/release-action@v1
-        with:
-          artifacts: "plugin-sdk/output/sdk.jar"
-          tag: "sdk-latest"
-          allowUpdates: true
-          replacesArtifacts: true
-          makeLatest: false
-          name: "Latest Plugin SDK Build"
-          body: "This release is automatically updated with the latest sdk.jar."
-          token: ${{ secrets.GITHUB_TOKEN }}
