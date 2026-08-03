@@ -45,7 +45,7 @@
     <string name="ask_deletion_one">Biztosan törlöd?</string>
     <string name="clone_repo">Repo klónozása</string>
     <string name="manage_storage">Tárhely kezelése</string>
-    <string name="manage_storage_reason">A Xed-Editor -nak hozzáférésre van szüksége, hogy a tárhelyeden lévő fájlokat írni tudja. Kérlek engedélyezd ezt a következő felugró rendszerbeállítás-ablakban.</string>
+    <string name="manage_storage_reason">A xyzterm -nak hozzáférésre van szüksége, hogy a tárhelyeden lévő fájlokat írni tudja. Kérlek engedélyezd ezt a következő felugró rendszerbeállítás-ablakban.</string>
     <string name="open_in_terminal">Megnyitás terminálban</string>
     <string name="add">Új fájl</string>
     <string name="oled_desc">Teljesen fekete téma használata AMOLED eszközökhöz</string>

@@ -145,7 +145,7 @@ fun Support(modifier: Modifier = Modifier) {
                                 .buildUpon()
                                 .appendQueryParameter("pa", "rohitkushwaha01x@axl")
                                 .appendQueryParameter("pn", "Rohit Kushwaha")
-                                .appendQueryParameter("tn", "Xed-Editor")
+                                .appendQueryParameter("tn", "xyzterm")
                                 .appendQueryParameter("cu", "INR")
                                 .build()
                         val intent = Intent(Intent.ACTION_VIEW).apply { data = uri }

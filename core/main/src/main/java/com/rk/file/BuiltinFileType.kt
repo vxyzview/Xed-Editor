@@ -53,7 +53,7 @@ private val cmake = drawables.cmake
 private val powershell = drawables.powershell
 private val r = drawables.r
 private val nix = drawables.nix
-private val xed = drawables.xed_editor
+private val xed = drawables.xyzterm
 
 // TODO: Add icon for FileType.EXECUTABLE
 // TODO: Add icon for FileType.PASCAL
@@ -167,7 +167,7 @@ object FileTypeManager {
     }
 }
 
-/** Enum representing all built-in [FileType]s in Xed-Editor. */
+/** Enum representing all built-in [FileType]s in xyzterm. */
 enum class BuiltinFileType(
     override val extensions: List<String>,
     override val names: List<String>? = null,

@@ -57,7 +57,7 @@ fun WelcomeScreen(
                 contentAlignment = Alignment.Center,
             ) {
                 Icon(
-                    painter = painterResource(drawables.xed_editor),
+                    painter = painterResource(drawables.xyzterm),
                     contentDescription = null,
                     tint = MaterialTheme.colorScheme.primary,
                     modifier = Modifier.size(42.dp),

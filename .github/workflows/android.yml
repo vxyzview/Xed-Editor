@@ -64,7 +64,7 @@ jobs:
         run: yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses || true
 
       - name: Build with Gradle
-        run: ./gradlew assembleRelease --no-daemon && mv app/build/outputs/apk/release/*.apk app/xed-editor-${{ env.COMMIT_HASH }}.apk
+        run: ./gradlew assembleRelease --no-daemon && mv app/build/outputs/apk/release/*.apk app/xyzterm-${{ env.COMMIT_HASH }}.apk
         env:
           KEYSTORE_FILE: /tmp/xyzterm.keystore
           SIGNING_PROPERTIES_FILE: /tmp/signing.properties
@@ -73,8 +73,8 @@ jobs:
       - name: Archive APK
         uses: actions/upload-artifact@v7
         with:
-          name: Xed-Editor-Release
-          path: app/xed-editor-${{ env.COMMIT_HASH }}.apk
+          name: xyzterm-Release
+          path: app/xyzterm-${{ env.COMMIT_HASH }}.apk
 
       - name: Upload APK to PixelDrain
         if: ${{ success() && github.event.head_commit.message != '' }}
@@ -83,9 +83,9 @@ jobs:
           PIXELDRAIN_API_KEY: ${{ secrets.PIXELDRAIN_API_KEY }}
           COMMIT_MSG: ${{ github.event.head_commit.message }}
         run: |
-          RESP=$(curl -s -T "app/xed-editor-${{ env.COMMIT_HASH }}.apk" \
+          RESP=$(curl -s -T "app/xyzterm-${{ env.COMMIT_HASH }}.apk" \
             -u ":$PIXELDRAIN_API_KEY" \
-            "https://pixeldrain.com/api/file/xed-editor-${{ env.COMMIT_HASH }}.apk")
+            "https://pixeldrain.com/api/file/xyzterm-${{ env.COMMIT_HASH }}.apk")
           echo "PixelDrain response: $RESP"
           ID=$(echo "$RESP" | jq -r '.id // empty')
           if [ -n "$ID" ]; then

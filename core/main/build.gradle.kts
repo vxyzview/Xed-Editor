@@ -53,7 +53,7 @@ val gitCommitDate: Provider<String> =
     }
 
 android {
-    namespace = "com.rk.xededitor"
+    namespace = "com.xyzterm"
     compileSdk = 37
 
     defaultConfig {

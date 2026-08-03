@@ -54,8 +54,8 @@
     <string name="ok">OK</string>
     <string name="clone_repo">Repository klonen</string>
     <string name="open_in_terminal">Im Terminal öffnen</string>
-    <string name="private_files_desc">Private Dateien von Xed-Editor</string>
-    <string name="manage_storage_reason">Xed-Editor benötigt Zugriff, um Dateien in deinem Speicher zu bearbeiten. Erlaube bitte den Zugriff in der nächsten Systemeinstellung.</string>
+    <string name="private_files_desc">Private Dateien von xyzterm</string>
+    <string name="manage_storage_reason">xyzterm benötigt Zugriff, um Dateien in deinem Speicher zu bearbeiten. Erlaube bitte den Zugriff in der nächsten Systemeinstellung.</string>
     <string name="close_this">Schließen</string>
     <string name="cant_handle">Keine App zum Verarbeiten der Datei gefunden</string>
     <string name="ask_deletion_one">Bist du sicher, dass du \'%s\' endgültig löschen möchtest?</string>
@@ -103,7 +103,7 @@
     <string name="dark_mode">Dunkel</string>
     <string name="auto_mode">Automatisch</string>
     <string name="about">Über</string>
-    <string name="about_desc">Über Xed-Editor</string>
+    <string name="about_desc">Über xyzterm</string>
     <string name="version">Version</string>
     <string name="version_code">Versionscode</string>
     <string name="git_commit">Git-Commit-Hash</string>
@@ -174,17 +174,17 @@
     <string name="txt_word_wrap_desc">TXT-Dateien automatisch umbrechen</string>
     <string name="ask_unsaved">Bist du sicher, dass du dieses nicht gespeicherte Dokument verwerfen möchtest?</string>
     <string name="encoding_warning">Von einer Änderung der Standardcodierung wird dringend abgeraten, da dies zu einer Beschädigung der Dateien führen kann. Es wird dringend empfohlen, UTF-8 zu verwenden, es sei denn, du bist dir der Auswirkungen voll bewusst und hast entsprechende Sicherungskopien erstellt.</string>
-    <string name="info_ext">Erweiterungen können verwendet werden, um das Verhalten und die Funktionen des Xed-Editors zu verändern. Um zu erfahren, wie man eine Erweiterung erstellt, klicke hier.</string>
+    <string name="info_ext">Erweiterungen können verwendet werden, um das Verhalten und die Funktionen des xyzterm zu verändern. Um zu erfahren, wie man eine Erweiterung erstellt, klicke hier.</string>
     <string name="network_err">Netzwerkfehler. Bitte überprüfe, ob deine Internetverbindung ordnungsgemäß funktioniert.</string>
     <string name="disable_virtual_kbd_desc">Virtuelle Tastatur deaktivieren, wenn eine Hardware-Tastatur verfügbar ist</string>
     <string name="toggle_word_wrap">Zeilenumbruch umschalten</string>
-    <string name="warning_private_dir">Der Inhalt dieses Verzeichnisses wird gelöscht, wenn du die Daten löscht oder Xed-Editor deinstallierst</string>
+    <string name="warning_private_dir">Der Inhalt dieses Verzeichnisses wird gelöscht, wenn du die Daten löscht oder xyzterm deinstallierst</string>
     <string name="runner_regex">Regex-Ausdruck</string>
     <string name="invalid_runner_name">Nur Buchstaben, Zahlen, Unterstriche und Bindestriche erlaubt</string>
     <string name="invalid_regex">Ungültiger Regex-Ausdruck</string>
     <string name="timeout">Download wegen Zeitüberschreitung abgebrochen. Bitte stelle sicher, dass deine Internetverbindung stabil ist</string>
     <string name="unsupported_feature">Diese Funktion wird auf deinem Gerät nicht unterstützt</string>
-    <string name="tab_memory_warning">Zum Öffnen dieses Tabs ist nicht genügend Arbeitsspeicher verfügbar. Das Öffnen kann zum Absturz des Xed-Editors führen. Möchtest du trotzdem fortfahren?</string>
+    <string name="tab_memory_warning">Zum Öffnen dieses Tabs ist nicht genügend Arbeitsspeicher verfügbar. Das Öffnen kann zum Absturz des xyzterm führen. Möchtest du trotzdem fortfahren?</string>
     <string name="theme_mode">Thema-Modus</string>
     <string name="expose_saf">Home-Verzeichnis freigeben</string>
     <string name="expose_saf_desc">Home-Verzeichnis über die System-Dateiauswahl (SAF) für externe Apps zugänglich machen</string>
@@ -227,7 +227,7 @@
     <string name="strict_mode">Strikter Modus</string>
     <string name="strict_mode_desc">Festplatten- oder Netzwerkzugriff im Hauptthread erkennen</string>
     <string name="anr_watchdog">ANR-Überwachung</string>
-    <string name="anr_watchdog_desc">Xed-Editor beenden, wenn er länger als 5 Sekunden nicht reagiert</string>
+    <string name="anr_watchdog_desc">xyzterm beenden, wenn er länger als 5 Sekunden nicht reagiert</string>
     <string name="verbose_errors">Detaillierte Fehlermeldungen</string>
     <string name="verbose_errors_desc">Stacktrace in Fehlermeldungen anzeigen</string>
     <string name="unsupported_file_ext">Nicht unterstützte Dateierweiterung</string>
@@ -337,7 +337,7 @@
     <string name="line_number">Zeilennummer</string>
     <string name="search_file_folder">Dateien im Projekt suchen</string>
     <string name="search_code">Code im Projekt suchen</string>
-    <string name="incompatible_theme_warning">Dieses Thema ist nicht mit deiner aktuellen Version von Xed-Editor kompatibel. Möchtest du trotzdem fortfahren?</string>
+    <string name="incompatible_theme_warning">Dieses Thema ist nicht mit deiner aktuellen Version von xyzterm kompatibel. Möchtest du trotzdem fortfahren?</string>
     <string name="theme_install_failed">Installation des Themas fehlgeschlagen</string>
     <string name="theme_id_missing">Die JSON-Datei enthält keine gültige Thema-ID. Bitte füge eine hinzu und versuche es erneut.</string>
     <string name="theme_name_missing">Die JSON-Datei enthält keinen gültigen Thema-Namen. Bitte füge einen hinzu und versuche es erneut.</string>
@@ -376,7 +376,7 @@
     <string name="ctrl">Strg</string>
     <string name="alt">Alt</string>
     <string name="shift">Shift</string>
-    <string name="keybinds_info">Xed-Editor unterstützt Hardware-Tastaturkürzel, damit du schneller und effizienter arbeiten kannst. Eine Vielzahl von Standard-Tastenkombinationen ist bereits verfügbar und du kannst sie unten nach deinen Wünschen konfigurieren.</string>
+    <string name="keybinds_info">xyzterm unterstützt Hardware-Tastaturkürzel, damit du schneller und effizienter arbeiten kannst. Eine Vielzahl von Standard-Tastenkombinationen ist bereits verfügbar und du kannst sie unten nach deinen Wünschen konfigurieren.</string>
     <string name="reset_all">Alle zurücksetzen</string>
     <string name="transform_lowercase">In Kleinbuchstaben umwandeln</string>
     <string name="transform_uppercase">In Großbuchstaben umwandeln</string>
@@ -389,8 +389,8 @@
     <string name="extra_key_bg">Zusatztasten-Hintergrund</string>
     <string name="extra_key_bg_desc">Hintergrund für Zusatztasten anzeigen</string>
     <string name="actions">Aktionen</string>
-    <string name="enjoying_xed">Gefällt dir Xed-Editor?</string>
-    <string name="support_message">Du hast %s Dateien gespeichert und %s Mal Code mit Xed ausgeführt.\n\nXed ist eine Open-Source-App mit Fokus auf Datenschutz, die mithilfe von Mitwirkenden aus der Community entwickelt wurde. Wenn Xed dir das Programmieren erleichtert hat, würdest du die Entwicklung unterstützen?\n\nDeine Unterstützung hilft mir:\n• Neue Funktionen schneller zu entwickeln\n• Xed dauerhaft werbefrei zu halten\n• Fehler schnell zu beheben</string>
+    <string name="enjoying_xed">Gefällt dir xyzterm?</string>
+    <string name="support_message">Du hast %s Dateien gespeichert und %s Mal Code mit xyzterm ausgeführt.\n\nxyzterm ist eine Open-Source-App mit Fokus auf Datenschutz, die mithilfe von Mitwirkenden aus der Community entwickelt wurde. Wenn xyzterm dir das Programmieren erleichtert hat, würdest du die Entwicklung unterstützen?\n\nDeine Unterstützung hilft mir:\n• Neue Funktionen schneller zu entwickeln\n• xyzterm dauerhaft werbefrei zu halten\n• Fehler schnell zu beheben</string>
     <string name="yes_support">Ja, ich werde es unterstützen! ❤️</string>
     <string name="not_for_me">Nein danke</string>
     <string name="sponsor_desc">Werde ein Sponsor und hilf mit, die Zukunft dieses Projekts zu gestalten</string>
@@ -456,8 +456,8 @@
     <string name="icon_pack_install_failed">Installation des Icon-Pakets fehlgeschlagen</string>
     <string name="icon_pack_missing_fields">Die Datei manifest.json enthält fehlende oder ungültige Eigenschaften:\n%s\n\nBitte überprüfe die Datei und versuche es erneut.</string>
     <string name="manifest_missing">Die Datei manifest.json fehlt. Bitte füge sie hinzu und versuche es erneut.</string>
-    <string name="outdated_extension">Diese Erweiterung wurde für eine ältere Version des Xed-Editors entwickelt. Bitte wende dich an den Entwickler, um ein Update zu erhalten.</string>
-    <string name="outdated_client">Dein Xed-Editor ist veraltet. Bitte aktualisiere ihn auf die neueste Version, um diese Erweiterung nutzen zu können.</string>
+    <string name="outdated_extension">Diese Erweiterung wurde für eine ältere Version des xyzterm entwickelt. Bitte wende dich an den Entwickler, um ein Update zu erhalten.</string>
+    <string name="outdated_client">Dein xyzterm ist veraltet. Bitte aktualisiere ihn auf die neueste Version, um diese Erweiterung nutzen zu können.</string>
     <string name="extension_validation_failed">Validierung der Erweiterung fehlgeschlagen</string>
     <string name="general">Allgemein</string>
     <string name="advanced">Erweitert</string>
@@ -722,7 +722,7 @@
     <string name="searching_in">Suche in: %s</string>
     <string name="welcome_to">Willkommen bei %s</string>
     <string name="no_project_selected">Kein Projekt ausgewählt</string>
-    <string name="incompatible_icon_pack_warning">Dieses Icon-Paket ist nicht mit deiner aktuellen Version von Xed-Editor kompatibel. Möchtest du trotzdem fortfahren?</string>
+    <string name="incompatible_icon_pack_warning">Dieses Icon-Paket ist nicht mit deiner aktuellen Version von xyzterm kompatibel. Möchtest du trotzdem fortfahren?</string>
     <string name="template_cleaning_up_git">Git wird bereinigt…</string>
     <string name="template_create_success">Projekt \'%s\' erfolgreich erstellt</string>
     <string name="template_create_failed">Projekt konnte nicht erstellt werden: %s</string>
@@ -755,6 +755,6 @@
     <string name="uninstall_icon_pack_dialog">Icon-Paket deinstallieren?</string>
     <string name="uninstall_icon_pack_dialog_desc">Bist du sicher, dass du \'%s\' deinstallieren möchtest?</string>
     <string name="preview">Vorschau</string>
-    <string name="xed_package">Xed-Paket</string>
+    <string name="xed_package">xyzterm-Paket</string>
     <string name="migrating_themes">Themen werden migriert…</string>
 </resources>

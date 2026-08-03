@@ -7,7 +7,7 @@ import com.rk.activities.main.MainActivity
 import com.rk.resources.getString
 import com.rk.resources.strings
 import com.rk.settings.Settings
-import com.rk.xededitor.BuildConfig
+import com.xyzterm.BuildConfig
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
 import kotlinx.coroutines.DelicateCoroutinesApi

@@ -53,7 +53,7 @@
     <string name="open">Avaa</string>
     <string name="permission_denied">Lupaa ei myönnetty</string>
     <string name="manage_storage">Hallitse tallennustilaa</string>
-    <string name="manage_storage_reason">Xed-Editor tarvitsee oikeuden muokata tiedostoja. Annathan luvan järjestelmäasetuksissa.</string>
+    <string name="manage_storage_reason">xyzterm tarvitsee oikeuden muokata tiedostoja. Annathan luvan järjestelmäasetuksissa.</string>
     <string name="ok">OK</string>
     <string name="clone_repo">Kloonaa arkisto</string>
     <string name="clone_repo_desc">Kloonaa etävarasto</string>

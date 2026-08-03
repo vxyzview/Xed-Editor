@@ -40,7 +40,7 @@ import com.rk.utils.SourceCodeProvider
 import com.rk.utils.copyToClipboard
 import com.rk.utils.openUrl
 import com.rk.utils.origin
-import com.rk.xededitor.BuildConfig
+import com.xyzterm.BuildConfig
 import java.io.PrintWriter
 import java.io.StringWriter
 import java.net.URLEncoder

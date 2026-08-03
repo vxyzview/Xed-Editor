@@ -73,7 +73,7 @@
     <string name="add_file">Přidat externí soubor</string>
     <string name="replace_all">Nahradit vše</string>
     <string name="private_files">Soukromé soubory</string>
-    <string name="private_files_desc">Soukromé soubory Xed-Editoru</string>
+    <string name="private_files_desc">Soukromé soubory xyzterm</string>
     <string name="open_dir_desc">Otevřít složku pomocí systémového správce souborů</string>
     <string name="auto_save">Automatické ukládání</string>
     <string name="monet">Dynamické barvy</string>
@@ -81,7 +81,7 @@
     <string name="dark_mode">Tmavé</string>
     <string name="theme_mode">Režim téma</string>
     <string name="theme_mode_desc">Změnit barvy aplikace</string>
-    <string name="about_desc">O Xed-Editor</string>
+    <string name="about_desc">O xyzterm</string>
     <string name="version_code">Kód verze</string>
     <string name="version">Verze</string>
     <string name="github">GitHub</string>
@@ -93,7 +93,7 @@
     <string name="file_unsaved">Soubor neuložen</string>
     <string name="update">Aktualizovat</string>
     <string name="ignore">Ignorovat</string>
-    <string name="manage_storage_reason">Xed-Editor potřebuje přístup ke souborům v uložišti. Prosím udělte oprávnění ve náschedujícím nastavením systému.</string>
+    <string name="manage_storage_reason">xyzterm potřebuje přístup ke souborům v uložišti. Prosím udělte oprávnění ve náschedujícím nastavením systému.</string>
     <string name="ok">OK</string>
     <string name="cursor_anim">Animace kurzoru</string>
     <string name="file_name">Jméno souboru</string>
@@ -133,7 +133,7 @@
     <string name="restore_sessions_desc">Obnovit minule otevřené karty</string>
     <string name="terminal_home">Domovská složka Terminálu</string>
     <string name="cursor_anim_desc">Zapnout hladké animace kurzoru</string>
-    <string name="warning_private_dir">Obsah této složky bude odstraněn jestli vyčistíte data nebo odstraníte Xed-Editor</string>
+    <string name="warning_private_dir">Obsah této složky bude odstraněn jestli vyčistíte data nebo odstraníte xyzterm</string>
     <string name="github_desc">Dejte hvězdičku na GitHubu 🤩</string>
     <string name="telegram_desc">Nahlásit problémy, žádosti o nové funkce atd.</string>
     <string name="ask_unsaved">Opravdu chcete tento neuložený soubor zahodit?</string>
@@ -187,9 +187,9 @@
     <string name="add_theme">Přidat téma</string>
     <string name="unsupported_feature">Táto funkce není podporována na vašem zařízení</string>
     <string name="confirm_exit">Chcete opravdu ukončit aplikaci?</string>
-    <string name="tab_memory_warning">Není dostatek prostředků pro otevření této karty. Otevření této karty může způsobit havarii Xed-Editoru. Chcete i tak pokračkovat?</string>
+    <string name="tab_memory_warning">Není dostatek prostředků pro otevření této karty. Otevření této karty může způsobit havarii xyzterm. Chcete i tak pokračkovat?</string>
     <string name="read_mode_desc">Výchoze zapnout čtecí režim</string>
-    <string name="info_ext">Doplňky mohou být použity pro změnění chování a funkce Xed-Editoru. K naučení jak se sestavuje doplňek, klepněte zde.</string>
+    <string name="info_ext">Doplňky mohou být použity pro změnění chování a funkce xyzterm. K naučení jak se sestavuje doplňek, klepněte zde.</string>
     <string name="ask_lsp_install">Chtěli byste nainstalovat \'%s\' jazykový server?</string>
     <string name="install">Instalovat</string>
     <string name="uninstall_terminal_warning">Nenávratně odinstalovat Ubuntu? Táto akce nemůže být vrácena zpět.</string>
@@ -225,7 +225,7 @@
     <string name="use_tabs">Vložit znak tabulátora</string>
     <string name="use_tabs_desc">Používat znak tabulátora (\\t) namísto mezer pro odsazení</string>
     <string name="terminal_virus_notice">Na některých zařízení, zejména zařízení z Číny, můžete vidět systémové upozornění bezpečnosti když jsou spuštěny několik procesů ve Terminálu (např. během \'apt update\' nebo \'apt upgrade\'). Je to omyl a to neznamená, že to je realný vir.</string>
-    <string name="anr_watchdog_desc">Ukončí Xed-Editor jestli neodpovídá více než 5 sekund</string>
+    <string name="anr_watchdog_desc">Ukončí xyzterm jestli neodpovídá více než 5 sekund</string>
     <string name="github_stars">Hvězdiček na GitHubu</string>
     <string name="api_error">API Chyba</string>
     <string name="unknown">Neznámé</string>
@@ -315,7 +315,7 @@
     <string name="line_number">Číslo řádku</string>
     <string name="search_file_folder">Hledat soubory v projektu</string>
     <string name="search_code">Hledat zdrojový kód v projektu</string>
-    <string name="incompatible_theme_warning">Toto téma není kompatibilní s vaší verzí Xed-Editoru. Chcete i tak pokračovat?</string>
+    <string name="incompatible_theme_warning">Toto téma není kompatibilní s vaší verzí xyzterm. Chcete i tak pokračovat?</string>
     <string name="theme_install_failed">Instalace tématu selhalo</string>
     <string name="theme_id_missing">Soubor JSON neudává platnou ID téma. Prosím přidejte platné ID a zkuste to znovu.</string>
     <string name="theme_name_missing">Soubor JSON neudává platné jméno téma. Prosím přidejte platné jméno a zkuste to znovu.</string>
@@ -351,7 +351,7 @@
     <string name="ctrl">Ctrl</string>
     <string name="alt">Alt</string>
     <string name="shift">Shift</string>
-    <string name="keybinds_info">Xed-Editor podporuje klávesové zkratky fyzické klávesnice, abyste pracovali rychleji a více efektivně. Velká škála výchozích klávesových zkratek je už dostupná a můžete je konfigurovat přesně jak chcete.</string>
+    <string name="keybinds_info">xyzterm podporuje klávesové zkratky fyzické klávesnice, abyste pracovali rychleji a více efektivně. Velká škála výchozích klávesových zkratek je už dostupná a můžete je konfigurovat přesně jak chcete.</string>
     <string name="reset_all">Resetovat vše</string>
     <string name="search_keybinds">Hledat příkazy nebo klávesové zkratky</string>
     <string name="transform_lowercase">Přeměnit na malá písmena</string>
@@ -364,7 +364,7 @@
     <string name="extra_key_bg">Pozadí extra kláves</string>
     <string name="extra_key_bg_desc">Zobrazit pozadí pro extra klávesy</string>
     <string name="actions">Akce</string>
-    <string name="support_message">Uložili jste %s souborů/y a spustili kód %s krát s Xed.\n\nXed je aplikace s otevřeným zdrojovým kódem a zaměřena na soukromí postavena pomocí přispěvatelů z komunity. Jestli vám Xed ulehčil programování, chtěli byste podpořit jeho vývoj?\n\nVaše podpora pomůže mi:\n• Sestavit funkce rychleji\n• Nechat Xed vždy bez reklam\n• Urychleně odpovítat na chyby</string>
+    <string name="support_message">Uložili jste %s souborů/y a spustili kód %s krát s xyzterm.\n\nxyzterm je aplikace s otevřeným zdrojovým kódem a zaměřena na soukromí postavena pomocí přispěvatelů z komunity. Jestli vám xyzterm ulehčil programování, chtěli byste podpořit jeho vývoj?\n\nVaše podpora pomůže mi:\n• Sestavit funkce rychleji\n• Nechat xyzterm vždy bez reklam\n• Urychleně odpovítat na chyby</string>
     <string name="yes_support">Ano, půjdu podpořit tě! ❤️</string>
     <string name="not_for_me">Ne, děkují</string>
     <string name="sponsor_desc">Staňte se sponzorem a pomožte utvářet budoucnost projektu</string>
@@ -394,7 +394,7 @@
     <string name="change_lang_warn">Změnění jazyka obnoví tuto obrazovku, aby se použil nový jazyk ihned. Toto může chvíli zobrazit prázdnou obrazovku, což může vyvolat nepohodlí pro lid s fotosenzitivní epilepsií.</string>
     <string name="commands">Příkazy</string>
     <string name="invalid_intent">Získán neplatný intent:\n%s</string>
-    <string name="enjoying_xed">Užíváte si Xed-Editor?</string>
+    <string name="enjoying_xed">Užíváte si xyzterm?</string>
     <string name="export_successful">Export úspěšný</string>
     <string name="export_failed">Export selhal</string>
     <string name="import_successful">Import úspěšný</string>
@@ -428,8 +428,8 @@
     <string name="show_hidden_files">Zobrazit skryté soubory</string>
     <string name="icon_pack_missing_fields">Soubor manifest.json má chybějící nebo neplatné vlastnosti:\n%s\n\nProsím zkontrolujte soubor a zkuste to znuvu.</string>
     <string name="manifest_missing">Soubor manifest.json chybí. Prosím přidejte ho a zkuste to znovu.</string>
-    <string name="outdated_extension">Tento doplňek byl vytvořen pro starší verzi Xed-Editoru. Prosím požádejte vývojáře o novou verzi.</string>
-    <string name="outdated_client">Váš Xed-Editor není aktuální. Prosím udělejte aktualizaci na nejnovější verzi pro využití tohoto doplňku.</string>
+    <string name="outdated_extension">Tento doplňek byl vytvořen pro starší verzi xyzterm. Prosím požádejte vývojáře o novou verzi.</string>
+    <string name="outdated_client">Váš xyzterm není aktuální. Prosím udělejte aktualizaci na nejnovější verzi pro využití tohoto doplňku.</string>
     <string name="extension_validation_failed">Ověření doplňku selhalo</string>
     <string name="general">Obecné</string>
     <string name="advanced">Pokročilé</string>
@@ -730,7 +730,7 @@
     <string name="discard_changes">Zahodit změny</string>
     <string name="discard_changes_msg">Opravdu chcete zahodit vaše lokální změny pro \'%s\' Tato akce nemůže být vrácena zpět.</string>
     <string name="discard_failed">Zahození selhalo: %s</string>
-    <string name="incompatible_icon_pack_warning">Tato sada ikon není kompatibilní s vaší aktuální verzí Xed-Editoru. Chcete i tak pokračovat?</string>
+    <string name="incompatible_icon_pack_warning">Tato sada ikon není kompatibilní s vaší aktuální verzí xyzterm. Chcete i tak pokračovat?</string>
     <string name="comment">Komentář</string>
     <string name="compression_method">Metoda komprese</string>
     <string name="compression_ratio">Poměr komprese</string>

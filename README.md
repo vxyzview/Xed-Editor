@@ -6,7 +6,7 @@ or extensions system.
 
 This project is a stripped-down fork of [Xed-Editor](https://github.com/Xed-Editor/Xed-Editor),
 keeping only its terminal feature and the shared app infrastructure it depends on (settings,
-theming, crash handling). All other Xed-Editor features were removed.
+theming, crash handling). All other upstream features were removed.
 
 ---
 
@@ -49,5 +49,5 @@ this project into your own git repository, you may want to re-add it as a proper
 
 ## License
 
-Distributed under the GNU General Public License v3.0, inherited from the upstream Xed-Editor
-project. See [`LICENSE`](/LICENSE) for details.
+Distributed under the GNU General Public License v3.0, inherited from the upstream
+Xed-Editor project. See [`LICENSE`](/LICENSE) for details.

@@ -71,7 +71,7 @@
     <string name="theme_mode_desc">Zmień kolor motywu aplikacji</string>
     <string name="show_suggestions">Pokaż sugestie podczas pisania</string>
     <string name="about">O aplikacji</string>
-    <string name="about_desc">O Xed-Editor</string>
+    <string name="about_desc">O xyzterm</string>
     <string name="version">Wersja</string>
     <string name="version_code">Wersja kodu</string>
     <string name="github">GitHub</string>
@@ -389,8 +389,8 @@
     <string name="extra_key_bg">Tło dodatkowych klawiszy</string>
     <string name="extra_key_bg_desc">Pokaż tło dodatkowych klawiszy</string>
     <string name="actions">Czynności</string>
-    <string name="enjoying_xed">Podoba Ci się Xed-Editor?</string>
-    <string name="support_message">Zapisano pliki: %s oraz Uruchomiono kod: %s razy z Xed.\n\nJestem developerem działającym w pojedynkę, utrzymując aplikację jako bezpłatną oraz szanującą prywatność. Jeśli Xed sprawił że koduje Ci się przyjemniej, czy rozważysz wsparcie rozwoju?\n\nWsparcie pomoże mi w:\n• Szybszym dodawaniu nowych funkcji\n• Utrzymaniu aplikacji jako bezpłatnej na zawsze\n• Sprawniejszej naprawie błędów</string>
+    <string name="enjoying_xed">Podoba Ci się xyzterm?</string>
+    <string name="support_message">Zapisano pliki: %s oraz Uruchomiono kod: %s razy z xyzterm.\n\nJestem developerem działającym w pojedynkę, utrzymując aplikację jako bezpłatną oraz szanującą prywatność. Jeśli xyzterm sprawił że koduje Ci się przyjemniej, czy rozważysz wsparcie rozwoju?\n\nWsparcie pomoże mi w:\n• Szybszym dodawaniu nowych funkcji\n• Utrzymaniu aplikacji jako bezpłatnej na zawsze\n• Sprawniejszej naprawie błędów</string>
     <string name="yes_support">Tak, wesprę! ❤️</string>
     <string name="not_for_me">Nie, dziękuję</string>
     <string name="sponsor_desc">Zostań sponsorem, pomóż kształtować przyszłość projektu! 💰</string>

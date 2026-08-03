@@ -80,10 +80,10 @@
     <string name="paste">چسباندن</string>
     <string name="file_name">نام فایل</string>
     <string name="path">مسیر</string>
-    <string name="manage_storage_reason">Xed-Editor نیاز به دسترسی به ویرایش فایل‌های موجود در فضای ذخیره‌سازی شما دارد. لطفا اجازه دسترسی را در تنظیمات سیستم بدهید.</string>
+    <string name="manage_storage_reason">xyzterm نیاز به دسترسی به ویرایش فایل‌های موجود در فضای ذخیره‌سازی شما دارد. لطفا اجازه دسترسی را در تنظیمات سیستم بدهید.</string>
     <string name="branch">شاخه</string>
     <string name="private_files">فایل های خصوصی</string>
-    <string name="private_files_desc">فایل های خصوصی Xed-Editor</string>
+    <string name="private_files_desc">فایل های خصوصی xyzterm</string>
     <string name="internal_storage">حافظه داخلی</string>
     <string name="open_internal_storage">باز کردن حافظه داخلی</string>
     <string name="installed">نصب شده</string>
@@ -93,7 +93,7 @@
     <string name="app_desc">تنظیمات کلی برنامه</string>
     <string name="editor_desc">تنظیمات عمومی ویرایشگر</string>
     <string name="terminal_desc">تنظیمات عمومی ترمینال</string>
-    <string name="about_desc">درباره Xed-Editor</string>
+    <string name="about_desc">درباره xyzterm</string>
     <string name="check_for_updates">برسی برای به‌روزرسانی ها</string>
     <string name="check_for_updates_desc">برسی دوره ای برای به‌روزرسانی ها</string>
     <string name="click_open">برای باز کردن فایل اینجا کلیک کنید</string>

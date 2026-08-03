@@ -52,11 +52,11 @@
     <string name="open">Отваряне</string>
     <string name="permission_denied">Разрешението е отказано</string>
     <string name="manage_storage">Управление на хранилището</string>
-    <string name="manage_storage_reason">Xed-Editor се нуждае от достъп за редактиране на файлове във вашето хранилище. Моля, разрешете достъпа в предстоящите системни настройки.</string>
+    <string name="manage_storage_reason">xyzterm се нуждае от достъп за редактиране на файлове във вашето хранилище. Моля, разрешете достъпа в предстоящите системни настройки.</string>
     <string name="ok">Добре</string>
     <string name="clone_repo">Клониране на хранилище</string>
     <string name="private_files">Лични файлове</string>
-    <string name="private_files_desc">Лични файлове на Xed-Editor</string>
+    <string name="private_files_desc">Лични файлове на xyzterm</string>
     <string name="cloning">Клониране на хранилище…</string>
     <string name="error">Грешка</string>
     <string name="open_dir_desc">Отваряне на директория чрез инструмента за избор на системни файлове</string>
@@ -101,7 +101,7 @@
     <string name="theme_mode_desc">Промяна на цветовата тема на приложението</string>
     <string name="show_suggestions">Показване на предложения за клавиатура</string>
     <string name="about">Относно</string>
-    <string name="about_desc">Относно Xed-Editor</string>
+    <string name="about_desc">Относно xyzterm</string>
     <string name="version">Версия</string>
     <string name="version_code">Код на версията</string>
     <string name="github">GitHub</string>
@@ -149,14 +149,14 @@
     <string name="install_from_storage">Инсталиране от хранилището</string>
     <string name="no_ext">Не са намерени разширения.</string>
     <string name="loading">Зареждане…</string>
-    <string name="info_ext">Разширенията могат да се използват за промяна на поведението и функциите на Xed-Editor. За да научите как да създадете разширение, щракнете тук.</string>
+    <string name="info_ext">Разширенията могат да се използват за промяна на поведението и функциите на xyzterm. За да научите как да създадете разширение, щракнете тук.</string>
     <string name="downloading">Изтегляне…</string>
     <string name="network_err">Грешка в мрежата. Моля, проверете дали интернет връзката ви работи правилно.</string>
     <string name="disable_virtual_kbd">Деактивиране на виртуалната клавиатура</string>
     <string name="disable_virtual_kbd_desc">Деактивирайте виртуалната клавиатура, ако има хардуерна клавиатура</string>
     <string name="highlighting">Подчертаване на синтаксиса</string>
     <string name="toggle_word_wrap">Превключване на пренасянето на думи</string>
-    <string name="warning_private_dir">Съдържанието на тази директория ще бъде изтрито, ако изчистите данните или изтриете Xed-Editor</string>
+    <string name="warning_private_dir">Съдържанието на тази директория ще бъде изтрито, ако изчистите данните или изтриете xyzterm</string>
     <string name="file">Файл</string>
     <string name="folder">Папка</string>
     <string name="feature_toggles">Функция за превключване</string>
@@ -197,7 +197,7 @@
     <string name="add_theme">Добавяне на тема</string>
     <string name="unsupported_feature">Тази функция не се поддържа на вашето устройство</string>
     <string name="confirm_exit">Сигурни ли сте, че искате да излезете?</string>
-    <string name="tab_memory_warning">Няма достатъчно памет за отваряне на този раздел. Отварянето му може да доведе до срив на Xed-Editor. Искате ли да продължите въпреки това?</string>
+    <string name="tab_memory_warning">Няма достатъчно памет за отваряне на този раздел. Отварянето му може да доведе до срив на xyzterm. Искате ли да продължите въпреки това?</string>
     <string name="read_mode_desc">Активиране на режим на четене по подразбиране</string>
     <string name="acquire_wakelock">Придобиване на заключване след събуждане</string>
     <string name="release_wakelock">Освободете заключването след събуждане</string>
@@ -230,7 +230,7 @@
     <string name="strict_mode">Строг режим</string>
     <string name="strict_mode_desc">Откриване на достъп до диск или мрежа в основната нишка</string>
     <string name="anr_watchdog">ANR Watchdog</string>
-    <string name="anr_watchdog_desc">Прекратете Xed-Editor, ако той спре да реагира за повече от 5 секунди</string>
+    <string name="anr_watchdog_desc">Прекратете xyzterm, ако той спре да реагира за повече от 5 секунди</string>
     <string name="verbose_errors">Многословни грешки</string>
     <string name="verbose_errors_desc">Включване на stacktrace в диалоговите прозорци за грешки</string>
     <string name="unsupported_file_ext">Неподдържано файлово разширение</string>
@@ -364,7 +364,7 @@
     <string name="line_number">Номер на ред</string>
     <string name="search_file_folder">Търсене на файлове в проекта</string>
     <string name="search_code">Търсене на код в проекта</string>
-    <string name="incompatible_theme_warning">Тази тема не е съвместима с текущата ви версия на Xed-Editor. Искате ли да продължите въпреки това?</string>
+    <string name="incompatible_theme_warning">Тази тема не е съвместима с текущата ви версия на xyzterm. Искате ли да продължите въпреки това?</string>
     <string name="theme_install_failed">Инсталирането на темата не бе успешно</string>
     <string name="theme_id_missing">JSON файлът не посочва валиден идентификатор на тема. Моля, добавете такъв и опитайте отново.</string>
     <string name="theme_name_missing">JSON файлът не посочва валидно име на тема. Моля, добавете такова и опитайте отново.</string>
@@ -404,7 +404,7 @@
     <string name="ctrl">Ctrl</string>
     <string name="alt">Alt</string>
     <string name="shift">Shift</string>
-    <string name="keybinds_info">Xed-Editor поддържа хардуерни клавишни комбинации, за да ви помогне да работите по-бързо и по-ефективно. Вече е наличен широк набор от клавишни комбинации по подразбиране и можете да ги конфигурирате по-долу по ваш вкус.</string>
+    <string name="keybinds_info">xyzterm поддържа хардуерни клавишни комбинации, за да ви помогне да работите по-бързо и по-ефективно. Вече е наличен широк набор от клавишни комбинации по подразбиране и можете да ги конфигурирате по-долу по ваш вкус.</string>
     <string name="reset_all">Нулиране на всички</string>
     <string name="search_keybinds">Команди за търсене или клавишни комбинации</string>
     <string name="transform_lowercase">Преобразуване в малки букви</string>

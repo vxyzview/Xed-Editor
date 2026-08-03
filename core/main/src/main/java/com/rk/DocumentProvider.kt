@@ -16,7 +16,7 @@ import android.webkit.MimeTypeMap
 import com.rk.file.sandboxHomeDir
 import com.rk.resources.getString
 import com.rk.resources.strings
-import com.rk.xededitor.R
+import com.xyzterm.R
 import java.io.File
 import java.io.FileNotFoundException
 import java.io.IOException

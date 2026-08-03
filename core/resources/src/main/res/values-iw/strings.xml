@@ -47,7 +47,7 @@
     <string name="ok">בסדר</string>
     <string name="clone_repo">שכפל מאגר</string>
     <string name="private_files">קבצים פרטיים</string>
-    <string name="private_files_desc">קבצים פרטיים של Xed-Editor</string>
+    <string name="private_files_desc">קבצים פרטיים של xyzterm</string>
     <string name="cloning">משכפל מאגר…</string>
     <string name="installed">מותקן</string>
     <string name="app">אפלקציה</string>
@@ -71,7 +71,7 @@
     <string name="light_mode">מואר</string>
     <string name="dark_mode">כהה</string>
     <string name="about">אודות</string>
-    <string name="about_desc">אודות Xed-Editor</string>
+    <string name="about_desc">אודות xyzterm</string>
     <string name="version">גירסא</string>
     <string name="version_code">קוד גירסא</string>
     <string name="github">גיטהאב</string>
@@ -105,7 +105,7 @@
     <string name="themes">עיצוב</string>
     <string name="drawer_lock_desc">שמור את מגירת הצד נעולה בעת פתיחת קובץ</string>
     <string name="auto_mode">אטומטי</string>
-    <string name="manage_storage_reason">עורך Xed זקוק לגישה לעריכת קבצים באחסון שלך. אנא אשר את הגישה בהגדרות המערכת שיופיעו.</string>
+    <string name="manage_storage_reason">עורך xyzterm זקוק לגישה לעריכת קבצים באחסון שלך. אנא אשר את הגישה בהגדרות המערכת שיופיעו.</string>
     <string name="open_internal_storage">פתח אחסון חיצוני</string>
     <string name="install_failed">התקנה נכשלה</string>
     <string name="cursor_anim_desc">הפעל אנימציות עכבר חלקות</string>
@@ -143,7 +143,7 @@
     <string name="install_from_storage">התקנה מהאחסון</string>
     <string name="no_ext">לא הותקנה הרחבה.</string>
     <string name="loading">טוען…</string>
-    <string name="info_ext">ניתן להשתמש בתוספים כדי לשנות את ההתנהגות והתכונות של xed-editor. כדי ללמוד כיצד לבנות תוסף, לחצו כאן.</string>
+    <string name="info_ext">ניתן להשתמש בתוספים כדי לשנות את ההתנהגות והתכונות של xyzterm. כדי ללמוד כיצד לבנות תוסף, לחצו כאן.</string>
     <string name="downloading">מוריד…</string>
     <string name="network_err">שגיאת רשת</string>
     <string name="disable_virtual_kbd">כבה מקלדת וירטואלית</string>
@@ -163,7 +163,7 @@
     <string name="info">מידע</string>
     <string name="copied">הועתק</string>
     <string name="toggle_word_wrap">החלף גלישת מילים</string>
-    <string name="warning_private_dir">תוכן התיקייה הזו יימחק אם תנקה נתונים או תמחק את Xed-Editor</string>
+    <string name="warning_private_dir">תוכן התיקייה הזו יימחק אם תנקה נתונים או תמחק את xyzterm</string>
     <string name="feature_toggles">מתגי תכונות</string>
     <string name="file_unsaved">קובץ לא נשמר</string>
     <string name="ext_desc">ניהול תוספים</string>

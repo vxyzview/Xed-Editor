@@ -51,11 +51,11 @@
     <string name="open">開啟</string>
     <string name="permission_denied">權限被拒</string>
     <string name="manage_storage">管理儲存空間權限</string>
-    <string name="manage_storage_reason">Xed-Editor 需要儲存空間權限才能訪問和讀寫儲存空間中的檔案。請稍後在系統設定中允許存取權限。</string>
+    <string name="manage_storage_reason">xyzterm 需要儲存空間權限才能訪問和讀寫儲存空間中的檔案。請稍後在系統設定中允許存取權限。</string>
     <string name="ok">確認</string>
     <string name="clone_repo">克隆儲存庫</string>
     <string name="private_files">私有檔案</string>
-    <string name="private_files_desc">Xed-Editor 私有檔案</string>
+    <string name="private_files_desc">xyzterm 私有檔案</string>
     <string name="cloning">克隆存儲庫…</string>
     <string name="error">錯誤</string>
     <string name="open_dir_desc">打開資料夾（透過系統檔案選擇器）</string>
@@ -100,7 +100,7 @@
     <string name="theme_mode_desc">將主題更改為自動、淺色或神色</string>
     <string name="show_suggestions">顯示鍵盤選詞建議</string>
     <string name="about">關於</string>
-    <string name="about_desc">關於 Xed-Editor</string>
+    <string name="about_desc">關於 xyzterm</string>
     <string name="version">版本</string>
     <string name="version_code">版本代號</string>
     <string name="github">GitHub</string>
@@ -147,14 +147,14 @@
     <string name="install_from_storage">從儲存空間安裝</string>
     <string name="no_ext">找不到擴充功能。</string>
     <string name="loading">載入中…</string>
-    <string name="info_ext">擴充功能可用來修改 Xed-Editor 的行為與功能。若要了解如何建立擴充功能，請點擊此處。</string>
+    <string name="info_ext">擴充功能可用來修改 xyzterm 的行為與功能。若要了解如何建立擴充功能，請點擊此處。</string>
     <string name="downloading">下載中…</string>
     <string name="network_err">網路錯誤。請檢查你的網際網路連線是否正常。</string>
     <string name="disable_virtual_kbd">停用虛擬鍵盤</string>
     <string name="disable_virtual_kbd_desc">如果硬件鍵盤可用，則停用虛擬鍵盤</string>
     <string name="highlighting">語法高亮</string>
     <string name="toggle_word_wrap">切換自動換行</string>
-    <string name="warning_private_dir">若你清除資料或刪除 Xed-Editor時，此資料夾的內容將被刪除</string>
+    <string name="warning_private_dir">若你清除資料或刪除 xyzterm時，此資料夾的內容將被刪除</string>
     <string name="file">檔案</string>
     <string name="folder">資料夾</string>
     <string name="support_desc">支持開發</string>
@@ -196,7 +196,7 @@
     <string name="unsupported_feature">你的裝置不支援此功能</string>
     <string name="confirm_exit">您確定要退出嗎？</string>
     <string name="read_mode_desc">預設開啟只讀模式</string>
-    <string name="tab_memory_warning">可用記憶體不足，無法開啟此分頁。開啟可能導致 Xed-Editor 當機。你仍要繼續嗎？</string>
+    <string name="tab_memory_warning">可用記憶體不足，無法開啟此分頁。開啟可能導致 xyzterm 當機。你仍要繼續嗎？</string>
     <string name="acquire_wakelock">保持螢幕常亮</string>
     <string name="release_wakelock">停用螢幕常亮</string>
     <string name="native_runner">此執行器僅適用於原生檔案，請考慮將其移動到終端機主目錄</string>
@@ -227,7 +227,7 @@
     <string name="strict_mode">嚴格模式</string>
     <string name="strict_mode_desc">檢測主執行緒的磁碟或網路存取</string>
     <string name="anr_watchdog">ANR Watchdog</string>
-    <string name="anr_watchdog_desc">如果發現 Xed‐Editor 處於未回應狀態且持續超過 5 秒，就終止其執行</string>
+    <string name="anr_watchdog_desc">如果發現 xyzterm‐Editor 處於未回應狀態且持續超過 5 秒，就終止其執行</string>
     <string name="verbose_errors">詳細錯誤訊息</string>
     <string name="verbose_errors_desc">在錯誤對話框中包含詳細堆疊回溯</string>
     <string name="unsupported_file_ext">不支援的檔案類型</string>
@@ -337,7 +337,7 @@
     <string name="line_number">行號</string>
     <string name="search_file_folder">在專案中搜尋檔案</string>
     <string name="search_code">在專案中搜尋程式碼</string>
-    <string name="incompatible_theme_warning">此主題與你目前使用的 Xed-Editor 版本不相容。仍然要繼續嗎？</string>
+    <string name="incompatible_theme_warning">此主題與你目前使用的 xyzterm 版本不相容。仍然要繼續嗎？</string>
     <string name="theme_install_failed">主題安裝失敗</string>
     <string name="theme_id_missing">JSON 檔未指定有效的主題 ID。請新增後再試一次。</string>
     <string name="theme_name_missing">JSON 檔未指定有效的主題名稱。請新增後再試一次。</string>
@@ -376,7 +376,7 @@
     <string name="ctrl">Ctrl</string>
     <string name="alt">Alt</string>
     <string name="shift">Shift</string>
-    <string name="keybinds_info">Xed-Editor 支援硬體鍵盤快捷鍵，協助你更快、更有效率地工作。目前已提供多組預設按鍵綁定，你也可以在下方依喜好進行設定。</string>
+    <string name="keybinds_info">xyzterm 支援硬體鍵盤快捷鍵，協助你更快、更有效率地工作。目前已提供多組預設按鍵綁定，你也可以在下方依喜好進行設定。</string>
     <string name="reset_all">全部重設</string>
     <string name="search_keybinds">搜尋指令或按鍵綁定</string>
     <string name="transform_lowercase">轉換為小寫</string>
@@ -389,8 +389,8 @@
     <string name="extra_key_bg">額外按鍵背景</string>
     <string name="extra_key_bg_desc">顯示額外按鍵的背景</string>
     <string name="actions">動作</string>
-    <string name="enjoying_xed">喜歡 Xed-Editor 嗎？</string>
-    <string name="support_message">你已使用 Xed 儲存 %s 個檔案，並執行程式碼 %s 次。\n\n我是一位獨立開發者，致力讓這個應用程式維持免費且重視隱私。如果 Xed 讓你的寫程式更輕鬆，是否願意支持它的開發呢？\n\n你的支持能幫助我：\n• 更快開發新功能\n• 讓 Xed 永遠不含廣告\n• 更快回應與修復錯誤</string>
+    <string name="enjoying_xed">喜歡 xyzterm 嗎？</string>
+    <string name="support_message">你已使用 xyzterm 儲存 %s 個檔案，並執行程式碼 %s 次。\n\n我是一位獨立開發者，致力讓這個應用程式維持免費且重視隱私。如果 xyzterm 讓你的寫程式更輕鬆，是否願意支持它的開發呢？\n\n你的支持能幫助我：\n• 更快開發新功能\n• 讓 xyzterm 永遠不含廣告\n• 更快回應與修復錯誤</string>
     <string name="yes_support">好，我願意支持！❤️</string>
     <string name="not_for_me">不用了，謝謝</string>
     <string name="sponsor_desc">成為贊助者，一起塑造這個專案的未來</string>
@@ -456,8 +456,8 @@
     <string name="icon_pack_install_failed">圖示套件安裝失敗</string>
     <string name="icon_pack_missing_fields">manifest.json 檔案缺少或包含無效的屬性：\n%s\n\n請檢查檔案後再試一次。</string>
     <string name="manifest_missing">缺少 manifest.json 檔案。請加入後再試一次。</string>
-    <string name="outdated_extension">此擴充功能是為舊版 Xed-Editor 製作的。請向開發者索取更新版本。</string>
-    <string name="outdated_client">你的 Xed-Editor 版本已過期。請更新至最新版本以使用此擴充功能。</string>
+    <string name="outdated_extension">此擴充功能是為舊版 xyzterm 製作的。請向開發者索取更新版本。</string>
+    <string name="outdated_client">你的 xyzterm 版本已過期。請更新至最新版本以使用此擴充功能。</string>
     <string name="extension_validation_failed">擴充功能驗證失敗</string>
     <string name="general">一般</string>
     <string name="advanced">進階</string>

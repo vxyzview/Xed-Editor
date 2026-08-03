@@ -62,11 +62,11 @@
     <string name="open">திற</string>
     <string name="permission_denied">இசைவு மறுக்கப்பட்டது</string>
     <string name="manage_storage">சேமிப்பகத்தை நிர்வகிக்கவும்</string>
-    <string name="manage_storage_reason">உங்கள் சேமிப்பகத்தில் கோப்புகளைத் திருத்த XED-EDITOR க்கு அணுகல் தேவை. வரவிருக்கும் கணினி அமைப்பில் அணுகலை அனுமதிக்கவும்.</string>
+    <string name="manage_storage_reason">உங்கள் சேமிப்பகத்தில் கோப்புகளைத் திருத்த XYZTERM க்கு அணுகல் தேவை. வரவிருக்கும் கணினி அமைப்பில் அணுகலை அனுமதிக்கவும்.</string>
     <string name="ok">சரி</string>
     <string name="clone_repo">நகலி களஞ்சியம்</string>
     <string name="private_files">தனிப்பட்ட கோப்புகள்</string>
-    <string name="private_files_desc">Xed-Editor இன் தனிப்பட்ட கோப்புகள்</string>
+    <string name="private_files_desc">xyzterm இன் தனிப்பட்ட கோப்புகள்</string>
     <string name="cloning">குளோனிங் களஞ்சியம்…</string>
     <string name="error">பிழை</string>
     <string name="open_dir_desc">சிச்டம் பைல் பிக்கர் வழியாக ஒரு கோப்பகத்தைத் திறக்கவும்</string>
@@ -110,7 +110,7 @@
     <string name="show_suggestions">விசைப்பலகை பரிந்துரைகளைக் காட்டு</string>
     <string name="version">பதிப்பு</string>
     <string name="about">பற்றி</string>
-    <string name="about_desc">Xed-editor பற்றி</string>
+    <string name="about_desc">xyzterm பற்றி</string>
     <string name="version_code">பதிப்பு குறியீடு</string>
     <string name="github_desc">GitHub 🤩 இல் நட்சத்திரமிடுங்கள்</string>
     <string name="telegram">தந்தி குழு</string>
@@ -152,11 +152,11 @@
     <string name="install_from_storage">சேமிப்பகத்திலிருந்து நிறுவவும்</string>
     <string name="no_ext">நீட்டிப்பு நிறுவப்படவில்லை.</string>
     <string name="loading">ஏற்றுகிறது…</string>
-    <string name="info_ext">Xed-Editor இன் நடத்தை மற்றும் அம்சங்களை மாற்ற நீட்டிப்புகளைப் பயன்படுத்தலாம். ஒரு செருகுநிரலை எவ்வாறு உருவாக்குவது என்பதை அறிய, இங்கே சொடுக்கு செய்யவும்.</string>
+    <string name="info_ext">xyzterm இன் நடத்தை மற்றும் அம்சங்களை மாற்ற நீட்டிப்புகளைப் பயன்படுத்தலாம். ஒரு செருகுநிரலை எவ்வாறு உருவாக்குவது என்பதை அறிய, இங்கே சொடுக்கு செய்யவும்.</string>
     <string name="downloading">பதிவிறக்கம்…</string>
     <string name="network_err">பிணைய பிழை. உங்கள் இணைய இணைப்பு சரியாக செயல்படுகிறதா என்பதை சரிபார்க்கவும்.</string>
     <string name="toggle_word_wrap">சொல் மடக்கு மாற்று</string>
-    <string name="warning_private_dir">நீங்கள் தரவை அழித்தால் அல்லது xed-editer ஐ நீக்கினால் இந்த கோப்பகத்தின் உள்ளடக்கம் நீக்கப்படும்</string>
+    <string name="warning_private_dir">நீங்கள் தரவை அழித்தால் அல்லது xyzterm ஐ நீக்கினால் இந்த கோப்பகத்தின் உள்ளடக்கம் நீக்கப்படும்</string>
     <string name="file">கோப்பு</string>
     <string name="folder">கோப்புறை</string>
     <string name="support_desc">உதவி மேம்பாடு</string>
@@ -195,7 +195,7 @@
     <string name="add_theme">கருப்பொருள் சேர்க்கவும்</string>
     <string name="unsupported_feature">இந்த நற்பொருத்தம் உங்கள் சாதனத்தில் ஆதரிக்கப்படவில்லை</string>
     <string name="confirm_exit">நீங்கள் வெளியேற விரும்புகிறீர்களா?</string>
-    <string name="tab_memory_warning">இந்த தாவலைத் திறக்க போதுமான நினைவகம் கிடைக்கவில்லை. அதைத் திறப்பது xed-editor விபத்துக்குள்ளாக்கக்கூடும். எப்படியும் தொடர விரும்புகிறீர்களா?</string>
+    <string name="tab_memory_warning">இந்த தாவலைத் திறக்க போதுமான நினைவகம் கிடைக்கவில்லை. அதைத் திறப்பது xyzterm விபத்துக்குள்ளாக்கக்கூடும். எப்படியும் தொடர விரும்புகிறீர்களா?</string>
     <string name="read_mode_desc">இயல்புநிலையாக வாசிப்பு பயன்முறையை இயக்கவும்</string>
     <string name="acquire_wakelock">வேக்கலாக் பெறுங்கள்</string>
     <string name="release_wakelock">வேக்க்லாக் வெளியீடு</string>
@@ -231,7 +231,7 @@
     <string name="strict_mode">கண்டிப்பான முறை</string>
     <string name="strict_mode_desc">முதன்மையான தொடரிழையில் வட்டு அல்லது பிணைய அணுகலைக் கண்டறியவும்</string>
     <string name="anr_watchdog">ANR கண்காணிப்பகம்</string>
-    <string name="anr_watchdog_desc">Xed-Editor 5 வினாடிகளுக்கு மேல் பதிலளிக்கவில்லை என்றால் அதை நிறுத்தவும்</string>
+    <string name="anr_watchdog_desc">xyzterm 5 வினாடிகளுக்கு மேல் பதிலளிக்கவில்லை என்றால் அதை நிறுத்தவும்</string>
     <string name="verbose_errors">வாய்மொழி பிழைகள்</string>
     <string name="verbose_errors_desc">பிழை உரையாடல்களில் ச்டேக்ட்ரேசைச் சேர்க்கவும்</string>
     <string name="unsupported_file_ext">ஆதரிக்கப்படாத கோப்பு நீட்டிப்பு</string>
@@ -337,7 +337,7 @@
     <string name="line_number">வரி எண்</string>
     <string name="search_file_folder">திட்டத்தில் கோப்புகளைத் தேடுங்கள்</string>
     <string name="search_code">திட்டத்தில் தேடல் குறியீடு</string>
-    <string name="incompatible_theme_warning">இந்தத் கருப்பொருள் உங்கள் தற்போதைய Xed-Editor பதிப்போடு இணங்கவில்லை. எப்படியும் தொடர விரும்புகிறீர்களா?</string>
+    <string name="incompatible_theme_warning">இந்தத் கருப்பொருள் உங்கள் தற்போதைய xyzterm பதிப்போடு இணங்கவில்லை. எப்படியும் தொடர விரும்புகிறீர்களா?</string>
     <string name="theme_install_failed">கருப்பொருள் நிறுவல் தோல்வியடைந்தது</string>
     <string name="theme_id_missing">சாதொபொகு கோப்பு சரியான கருப்பொருள் ஐடியைக் குறிப்பிடவில்லை. ஒன்றைச் சேர்த்து மீண்டும் முயற்சிக்கவும்.</string>
     <string name="theme_name_missing">சாதொபொகு கோப்பு சரியான கருப்பொருள் பெயரைக் குறிப்பிடவில்லை. ஒன்றைச் சேர்த்து மீண்டும் முயற்சிக்கவும்.</string>
@@ -376,7 +376,7 @@
     <string name="ctrl">கட்டுப்பாடு</string>
     <string name="alt">மாற்று</string>
     <string name="shift">உயர்த்து</string>
-    <string name="keybinds_info">Xed-Editor வன்பொருள் விசைப்பலகை குறுக்குவழிகளை ஆதரிக்கிறது, இது உங்களுக்கு வேகமாகவும் திறமையாகவும் வேலை செய்ய உதவுகிறது. பலவிதமான இயல்புநிலை விசைப் பிணைப்புகள் ஏற்கனவே உள்ளன, அவற்றை உங்கள் விருப்பப்படி கீழே உள்ளமைக்கலாம்.</string>
+    <string name="keybinds_info">xyzterm வன்பொருள் விசைப்பலகை குறுக்குவழிகளை ஆதரிக்கிறது, இது உங்களுக்கு வேகமாகவும் திறமையாகவும் வேலை செய்ய உதவுகிறது. பலவிதமான இயல்புநிலை விசைப் பிணைப்புகள் ஏற்கனவே உள்ளன, அவற்றை உங்கள் விருப்பப்படி கீழே உள்ளமைக்கலாம்.</string>
     <string name="reset_all">அனைத்தையும் மீட்டமைக்கவும்</string>
     <string name="search_keybinds">தேடல் கட்டளைகள் அல்லது விசை பிணைப்புகள்</string>
     <string name="transform_lowercase">சிறிய எழுத்துக்கு மாற்றவும்</string>
@@ -389,8 +389,8 @@
     <string name="extra_key_bg">கூடுதல் முக்கிய பின்னணி</string>
     <string name="extra_key_bg_desc">கூடுதல் விசைகளுக்கான பின்னணியைக் காட்டு</string>
     <string name="actions">செயல்கள்</string>
-    <string name="enjoying_xed">Xed-எடிட்டரை அனுபவிக்கிறீர்களா?</string>
-    <string name="support_message">நீங்கள் %s கோப்புகளைச் சேமித்து, Xed மூலம் %s முறை குறியீட்டை இயக்கியுள்ளீர்கள். \n\nநான் இந்த ஆப்சை இலவசமாகவும் தனியுரிமையை மையமாகவும் வைத்திருக்கும் ஒரு தனி உருவாக்குபவர். Xed உங்கள் குறியீட்டை எளிதாக்கியிருந்தால், அதன் வளர்ச்சியை ஆதரிப்பதாக கருதுவீர்களா? \n\nஉங்கள் உதவி எனக்கு உதவுகிறது: \n• அம்சங்களை வேகமாக உருவாக்குங்கள் \n• Xedஐ எப்போதும் விளம்பரமில்லாமல் வைத்திருங்கள் \n• பிழைகளுக்கு விரைவாக பதிலளிக்கவும்</string>
+    <string name="enjoying_xed">xyztermஎடிட்டரை அனுபவிக்கிறீர்களா?</string>
+    <string name="support_message">நீங்கள் %s கோப்புகளைச் சேமித்து, xyzterm மூலம் %s முறை குறியீட்டை இயக்கியுள்ளீர்கள். \n\nநான் இந்த ஆப்சை இலவசமாகவும் தனியுரிமையை மையமாகவும் வைத்திருக்கும் ஒரு தனி உருவாக்குபவர். xyzterm உங்கள் குறியீட்டை எளிதாக்கியிருந்தால், அதன் வளர்ச்சியை ஆதரிப்பதாக கருதுவீர்களா? \n\nஉங்கள் உதவி எனக்கு உதவுகிறது: \n• அம்சங்களை வேகமாக உருவாக்குங்கள் \n• xyztermஐ எப்போதும் விளம்பரமில்லாமல் வைத்திருங்கள் \n• பிழைகளுக்கு விரைவாக பதிலளிக்கவும்</string>
     <string name="yes_support">ஆம், நான் ஆதரிப்பேன்! ❤️</string>
     <string name="not_for_me">நன்றி இல்லை</string>
     <string name="sponsor_desc">ச்பான்சராக மாறி, இந்தத் திட்டத்தின் எதிர்காலத்தை வடிவமைக்க உதவுங்கள்</string>

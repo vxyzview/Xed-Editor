@@ -36,8 +36,8 @@ import java.io.File
 /**
  * Workaround helper that fixes the URI path coming from LSP if they point to `/home`.
  *
- * Example: The LSP may return `file:///home/...` but Xed-Editor has to resolve the path to
- * `file:///data/user/0/com.rk.xededitor/local/sandbox/home/...`
+ * Example: The LSP may return `file:///home/...` but xyzterm has to resolve the path to
+ * `file:///data/user/0/com.xyzterm.app/local/sandbox/home/...`
  */
 fun fixHomeLocation(context: Context, uri: String): String {
     val path = uri.toUri().path ?: return uri

@@ -50,11 +50,11 @@
     <string name="open">Abrir</string>
     <string name="permission_denied">Permissão negada</string>
     <string name="manage_storage">Gerenciar armazenamento</string>
-    <string name="manage_storage_reason">Xed-Editor precisa de acesso para editar arquivos no seu armazenamento. Por favor, permita o acesso na próxima configuração do sistema.</string>
+    <string name="manage_storage_reason">xyzterm precisa de acesso para editar arquivos no seu armazenamento. Por favor, permita o acesso na próxima configuração do sistema.</string>
     <string name="ok">OK</string>
     <string name="clone_repo">Clonar repositório</string>
     <string name="private_files">Arquivos privados</string>
-    <string name="private_files_desc">Arquivos privados do Xed-Editor</string>
+    <string name="private_files_desc">Arquivos privados do xyzterm</string>
     <string name="cloning">Clonando repositório…</string>
     <string name="error">Erro</string>
     <string name="open_dir_desc">Abrir pasta usando seletor de arquivos do sistema</string>
@@ -99,7 +99,7 @@
     <string name="theme_mode_desc">Alterar o tema do aplicativo</string>
     <string name="show_suggestions">Exibir sugestões do teclado</string>
     <string name="about">Sobre</string>
-    <string name="about_desc">Sobre o Xed-Editor</string>
+    <string name="about_desc">Sobre o xyzterm</string>
     <string name="version">Versão</string>
     <string name="version_code">Código da versão</string>
     <string name="github">GitHub</string>
@@ -149,7 +149,7 @@
     <string name="name_empty_err">O nome não pode ficar vazio</string>
     <string name="restore_sessions">Restaurar sessões</string>
     <string name="terminal_home">Caminho Inicial do Terminal</string>
-    <string name="info_ext">As extensões podem ser usadas para modificar o comportamento e os recursos do xed-editor. Para saber como criar um plug-in, clique aqui.</string>
+    <string name="info_ext">As extensões podem ser usadas para modificar o comportamento e os recursos do xyzterm. Para saber como criar um plug-in, clique aqui.</string>
     <string name="highlighting">Destaque de Sintaxe</string>
     <string name="support_desc">Apoie o desenvolvimento</string>
     <string name="feature_toggles">Alternadores de recursos</string>
@@ -159,7 +159,7 @@
     <string name="failed">Falha</string>
     <string name="file">Arquivo</string>
     <string name="folder">Pasta</string>
-    <string name="warning_private_dir">O conteúdo deste diretório será excluído se você limpar os dados ou excluir o Xed-Editor</string>
+    <string name="warning_private_dir">O conteúdo deste diretório será excluído se você limpar os dados ou excluir o xyzterm</string>
     <string name="toggle_word_wrap">Alternar quebra de linha</string>
     <string name="unknown_err">Algo deu errado</string>
     <string name="saf_expose_warning">A exposição do diretório inicial pode revelar informações confidenciais a aplicativos mal-intencionados, inclusive tokens Git, senhas, nomes de usuário e outros arquivos armazenados no diretório inicial do terminal. Deseja continuar?</string>
@@ -195,7 +195,7 @@
     <string name="add_theme">Adicionar Tema</string>
     <string name="unsupported_feature">Esse recurso não é suportado em seu dispositivo</string>
     <string name="confirm_exit">Você tem certeza que quer sair?</string>
-    <string name="tab_memory_warning">Sem memória suficiente para abrir essa aba, Abri-la pode causar o travamento do Xed-Editor. Você quer continuar mesmo assim?</string>
+    <string name="tab_memory_warning">Sem memória suficiente para abrir essa aba, Abri-la pode causar o travamento do xyzterm. Você quer continuar mesmo assim?</string>
     <string name="read_mode_desc">Ativar modo de leitira por padrão</string>
     <string name="acquire_wakelock">Obter wakelock</string>
     <string name="release_wakelock">Liberar wakelock</string>
@@ -234,7 +234,7 @@
     <string name="size">Tamanho</string>
     <string name="wrapper_type">Tipo de contêiner</string>
     <string name="anr_watchdog">Vigia ANR</string>
-    <string name="anr_watchdog_desc">Encerrar o Xed-Editor se ele ficar sem resposta por mais de 5 segundos</string>
+    <string name="anr_watchdog_desc">Encerrar o xyzterm se ele ficar sem resposta por mais de 5 segundos</string>
     <string name="verbose_errors">Erros detalhados</string>
     <string name="verbose_errors_desc">Incluir rastreamento de pilha nas caixas de diálogo de erro</string>
     <string name="restore_terminal">Restaurar backup do terminal</string>
@@ -368,7 +368,7 @@
     <string name="show_tab_icons">Mostrar ícones de guia</string>
     <string name="show_tab_icons_desc">Exibir ícones de arquivos ao lado dos títulos das guias</string>
     <string name="invalid_intent">Intenção inválida recebida:\n%s</string>
-    <string name="incompatible_theme_warning">Este tema não é compatível com a sua versão atual do Xed-Editor. Deseja prosseguir mesmo assim?</string>
+    <string name="incompatible_theme_warning">Este tema não é compatível com a sua versão atual do xyzterm. Deseja prosseguir mesmo assim?</string>
     <string name="theme_install_failed">A instalação do tema falhou</string>
     <string name="theme_id_missing">O arquivo JSON não especifica um ID de tema válido. Adicione um e tente novamente.</string>
     <string name="theme_name_missing">O arquivo JSON não especifica um nome de tema válido. Adicione um e tente novamente.</string>
@@ -400,7 +400,7 @@
     <string name="ctrl">Ctrl</string>
     <string name="alt">Alt</string>
     <string name="shift">Shift</string>
-    <string name="keybinds_info">O Xed-Editor oferece suporte a atalhos de teclado físicos para ajudar você a trabalhar com mais rapidez e eficiência. Uma ampla gama de atalhos de teclado padrão já está disponível e você pode configurá-los abaixo de acordo com sua preferência.</string>
+    <string name="keybinds_info">O xyzterm oferece suporte a atalhos de teclado físicos para ajudar você a trabalhar com mais rapidez e eficiência. Uma ampla gama de atalhos de teclado padrão já está disponível e você pode configurá-los abaixo de acordo com sua preferência.</string>
     <string name="reset_all">Redefinir tudo</string>
     <string name="search_keybinds">Pesquisar comandos ou atalhos de teclado</string>
     <string name="transform_lowercase">Converter para minúsculas</string>

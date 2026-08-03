@@ -83,11 +83,11 @@
     <string name="app_desc">应用通用设置</string>
     <string name="editor_desc">编辑器通用设置</string>
     <string name="terminal_desc">终端通用设置</string>
-    <string name="private_files_desc">Xed-Editor 私有文件</string>
+    <string name="private_files_desc">xyzterm 私有文件</string>
     <string name="file_open_denied">无法通过其他应用打开此文件</string>
     <string name="cloning">克隆存储库…</string>
     <string name="error">错误</string>
-    <string name="manage_storage_reason">Xed-Editor 需要存储空间权限以访问和读写文件。请稍后在系统设置中允许访问此权限。</string>
+    <string name="manage_storage_reason">xyzterm 需要存储空间权限以访问和读写文件。请稍后在系统设置中允许访问此权限。</string>
     <string name="private_files">私有文件</string>
     <string name="text_size">字体大小</string>
     <string name="monet_desc">跟随系统主题</string>
@@ -100,7 +100,7 @@
     <string name="theme_mode_desc">修改应用主题颜色</string>
     <string name="show_suggestions">显示键盘选词建议</string>
     <string name="about">关于</string>
-    <string name="about_desc">关于 Xed-Editor</string>
+    <string name="about_desc">关于 xyzterm</string>
     <string name="version">版本</string>
     <string name="version_code">版本代号</string>
     <string name="github">GitHub</string>
@@ -150,7 +150,7 @@
     <string name="name_empty_err">名称不能为空</string>
     <string name="ext_desc">管理扩展</string>
     <string name="highlighting">语法高亮</string>
-    <string name="info_ext">扩展可用来自定义 Xed-Editor 的行为和功能。要了解如何构建扩展，请单击此处。</string>
+    <string name="info_ext">扩展可用来自定义 xyzterm 的行为和功能。要了解如何构建扩展，请单击此处。</string>
     <string name="ext">扩展</string>
     <string name="support_desc">支持开发</string>
     <string name="feature_toggles">特色功能</string>
@@ -159,7 +159,7 @@
     <string name="failed">失败</string>
     <string name="folder">文件夹</string>
     <string name="file">文件</string>
-    <string name="warning_private_dir">当你清除 Xed-Editor 的数据或卸载时，此文件夹的数据将被删除</string>
+    <string name="warning_private_dir">当你清除 xyzterm 的数据或卸载时，此文件夹的数据将被删除</string>
     <string name="toggle_word_wrap">切换自动换行</string>
     <string name="unknown_err">出了点问题</string>
     <string name="expose_saf">显示主目录</string>
@@ -195,7 +195,7 @@
     <string name="add_theme">添加主题</string>
     <string name="unsupported_feature">此功能在您的设备上不可用</string>
     <string name="confirm_exit">您确定要退出吗？</string>
-    <string name="tab_memory_warning">当前没有足够的内存。打开此标签页可能导致 Xed-Editor 崩溃。你要继续吗？</string>
+    <string name="tab_memory_warning">当前没有足够的内存。打开此标签页可能导致 xyzterm 崩溃。你要继续吗？</string>
     <string name="read_mode_desc">默认开启只读模式</string>
     <string name="acquire_wakelock">保持屏幕常亮</string>
     <string name="release_wakelock">关闭屏幕常亮</string>
@@ -226,7 +226,7 @@
     <string name="file_ext_example">文件类型（比如 .py）</string>
     <string name="force_crash_confirm">确定要触发应用崩溃吗？可能会导致应用无响应。</string>
     <string name="memory_usage">获取已用内存</string>
-    <string name="anr_watchdog_desc">如果发现 Xed‐Editor 处在未响应状态并持续 5 秒钟，就终止其运行</string>
+    <string name="anr_watchdog_desc">如果发现 xyzterm‐Editor 处在未响应状态并持续 5 秒钟，就终止其运行</string>
     <string name="anr_watchdog">监听应用是否 ANR</string>
     <string name="discord">Discord 社区</string>
     <string name="use_tabs">使用 Tab 制表符</string>
@@ -330,7 +330,7 @@
     <string name="line_number">行数</string>
     <string name="search_file_folder">在项目中搜索文件</string>
     <string name="search_code">在项目中搜索代码</string>
-    <string name="incompatible_theme_warning">此主题与当前版本的 Xed-Editor 不兼容。是否仍要继续？</string>
+    <string name="incompatible_theme_warning">此主题与当前版本的 xyzterm 不兼容。是否仍要继续？</string>
     <string name="theme_install_failed">主题安装失败</string>
     <string name="theme_id_missing">JSON 文件中未指定有效的主题 ID。请添加主题 ID 并重试。</string>
     <string name="theme_name_missing">JSON 文件中未指定有效的主题名称。请添加主题名称后重试。</string>
@@ -375,7 +375,7 @@
     <string name="press_key">按下组合键（必须包含 Ctrl 或 Alt）</string>
     <string name="ctrl">Ctrl</string>
     <string name="alt">Alt</string>
-    <string name="keybinds_info">Xed-Editor 支持实体键盘快捷键，能帮助您更快更高效地工作。我们已提供丰富的默认快捷键，您也可以在下方根据个人喜好进行配置。</string>
+    <string name="keybinds_info">xyzterm 支持实体键盘快捷键，能帮助您更快更高效地工作。我们已提供丰富的默认快捷键，您也可以在下方根据个人喜好进行配置。</string>
     <string name="reset_all">全部重置</string>
     <string name="search_keybinds">搜索命令或快捷键</string>
     <string name="transform_lowercase">转换为小写</string>
@@ -390,8 +390,8 @@
     <string name="shift">Shift</string>
     <string name="actions">行动</string>
     <string name="sponsor_desc">成为赞助者，共同塑造本项目的未来</string>
-    <string name="enjoying_xed">喜欢 Xed-Editor 吗？</string>
-    <string name="support_message">您已使用 Xed 保存了 %s 个文件并运行了 %s 次代码。\n\nXed 是在社区贡献者帮助下打造的开源、聚焦隐私的应用。如果 Xed 让您的编码工作更加轻松，您是否愿意支持它的开发？\n\n您的支持将帮助我：\n• 更快开发新功能\n• 让 Xed 永远无广告\n• 更快修复 bug</string>
+    <string name="enjoying_xed">喜欢 xyzterm 吗？</string>
+    <string name="support_message">您已使用 xyzterm 保存了 %s 个文件并运行了 %s 次代码。\n\nxyzterm 是在社区贡献者帮助下打造的开源、聚焦隐私的应用。如果 xyzterm 让您的编码工作更加轻松，您是否愿意支持它的开发？\n\n您的支持将帮助我：\n• 更快开发新功能\n• 让 xyzterm 永远无广告\n• 更快修复 bug</string>
     <string name="yes_support">好，我愿意支持！❤️</string>
     <string name="not_for_me">不，谢谢</string>
     <string name="coffee_desc">请我喝杯咖啡表达你的支持——每一杯都意义非凡！☕</string>
@@ -455,8 +455,8 @@
     <string name="icon_pack_install_failed">图标包安装失败</string>
     <string name="icon_pack_missing_fields">文件 manifest.json 缺少或包含无效属性：\n%s\n\n请检查该文件并重试。</string>
     <string name="manifest_missing">缺少 manifest.json 文件。请添加该文件并重试。</string>
-    <string name="outdated_extension">此扩展程序适用于旧版本的 Xed-Editor。请联系开发者获取更新。</string>
-    <string name="outdated_client">您的 Xed-Editor 版本过低。请更新至最新版本以使用此扩展程序。</string>
+    <string name="outdated_extension">此扩展程序适用于旧版本的 xyzterm。请联系开发者获取更新。</string>
+    <string name="outdated_client">您的 xyzterm 版本过低。请更新至最新版本以使用此扩展程序。</string>
     <string name="extension_validation_failed">扩展验证失败</string>
     <string name="content_property">共 %s 项，总计 %s</string>
     <string name="general">通用</string>
@@ -723,7 +723,7 @@
     <string name="description">描述</string>
     <string name="display_name">显示名称</string>
     <string name="github_username">GitHub 用户名</string>
-    <string name="incompatible_icon_pack_warning">图标包与当前 Xed-Editor 版本不兼容。是否继续？</string>
+    <string name="incompatible_icon_pack_warning">图标包与当前 xyzterm 版本不兼容。是否继续？</string>
     <string name="project_runner_desc">如果 /.xed/runner.sh 存在，则使用此脚本运行项目。</string>
     <string name="discard_changes">丢弃变更</string>
     <string name="discard_changes_msg">确认是否真的要丢弃自 \'%s\' 以来的本地变更？该操作无法撤销。</string>

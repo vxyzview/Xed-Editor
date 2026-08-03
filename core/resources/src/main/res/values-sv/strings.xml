@@ -51,11 +51,11 @@
     <string name="open">Öppna</string>
     <string name="permission_denied">Åtkomst nekad</string>
     <string name="manage_storage">Hantera lagring</string>
-    <string name="manage_storage_reason">Xed-Editor behöver åtkomst för att lagra filer. Vänligen bevilja åtkomst i kommande system inställningar.</string>
+    <string name="manage_storage_reason">xyzterm behöver åtkomst för att lagra filer. Vänligen bevilja åtkomst i kommande system inställningar.</string>
     <string name="ok">OK</string>
     <string name="clone_repo">Klona repository</string>
     <string name="private_files">Privata filer</string>
-    <string name="private_files_desc">Privata filer för Xed-Editor</string>
+    <string name="private_files_desc">Privata filer för xyzterm</string>
     <string name="cloning">Klonar repository…</string>
     <string name="error">Fel</string>
     <string name="open_dir_desc">Öppna en katalog via systemets filväljare</string>
@@ -100,7 +100,7 @@
     <string name="theme_mode_desc">Byt färgtema</string>
     <string name="show_suggestions">Visa tangentbordsförslag</string>
     <string name="about">Om</string>
-    <string name="about_desc">Om Xed-Editor</string>
+    <string name="about_desc">Om xyzterm</string>
     <string name="version">Version</string>
     <string name="version_code">Versionskod</string>
     <string name="github">GitHub</string>

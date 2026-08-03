@@ -35,7 +35,7 @@
     <string name="add_file">Thêm tệp khác</string>
     <string name="replace_all">Thay thế tất cả</string>
     <string name="download">Tải xuống</string>
-    <string name="warning_private_dir">Nội dung của thư mục này sẽ bị xóa nếu bạn xóa dữ liệu hoặc xóa Xed-Editor</string>
+    <string name="warning_private_dir">Nội dung của thư mục này sẽ bị xóa nếu bạn xóa dữ liệu hoặc xóa xyzterm</string>
     <string name="toggle_word_wrap">Đóng/mở Word wrap</string>
     <string name="restart_required">Yêu cầu khởi động lại</string>
     <string name="go_next">Tiếp theo</string>
@@ -54,10 +54,10 @@
     <string name="open">Mở</string>
     <string name="permission_denied">Quyền bị từ chối</string>
     <string name="manage_storage">Quản lý bộ nhớ</string>
-    <string name="manage_storage_reason">­Xed-Editor cần quyền truy cập bộ nhớ để chỉnh sửa tệp. Vui lòng cấp quyền truy cập trong cài đặt hệ thống sắp hiện ra.</string>
+    <string name="manage_storage_reason">­xyzterm cần quyền truy cập bộ nhớ để chỉnh sửa tệp. Vui lòng cấp quyền truy cập trong cài đặt hệ thống sắp hiện ra.</string>
     <string name="ok">OK</string>
     <string name="private_files">Tệp riêng tư</string>
-    <string name="private_files_desc">Tệp riêng tư của Xed-Editor</string>
+    <string name="private_files_desc">Tệp riêng tư của xyzterm</string>
     <string name="error">Lỗi</string>
     <string name="open_dir_desc">Mở một thư mục sử dụng trình duyệt tệp của hệ thống</string>
     <string name="internal_storage">Bộ nhớ trong</string>
@@ -93,7 +93,7 @@
     <string name="update_av">Có bản cập nhật mới</string>
     <string name="update">Cập nhật</string>
     <string name="about">Về ứng dụng</string>
-    <string name="about_desc">Về Xed-Editor</string>
+    <string name="about_desc">Về xyzterm</string>
     <string name="text_size">Kích thước văn bản</string>
     <string name="text_size_desc">Chỉnh kích thước văn bản</string>
     <string name="monet">Màu động</string>
@@ -181,7 +181,7 @@
     <string name="add_theme">Thêm chủ đề</string>
     <string name="unsupported_feature">Tính năng này không được hỗ trợ trên thiết bị của bạn</string>
     <string name="confirm_exit">Bạn có chắc chắn muốn thoát không?</string>
-    <string name="tab_memory_warning">Không đủ bộ nhớ để mở tab này. Việc mở tab có thể khiến Xed-Editior bị lỗi. Bạn có muốn tiếp tục không?</string>
+    <string name="tab_memory_warning">Không đủ bộ nhớ để mở tab này. Việc mở tab có thể khiến xyzterm bị lỗi. Bạn có muốn tiếp tục không?</string>
     <string name="read_mode_desc">Mặc định bật chế độ đọc</string>
     <string name="memory_usage">Sử dụng bộ nhớ</string>
     <string name="invalid_port">Cổng không hợp lệ</string>
@@ -259,7 +259,7 @@
     <string name="default_option">Mặc định</string>
     <string name="launch_in_browser">Mở trong trình duyệt</string>
     <string name="actions">Hành động</string>
-    <string name="support_message">Bạn đã lưu %s tệp và chạy code %s lần với Xed. \n\nTôi là nhà phát triển cá nhân giữ ứng dụng này miễn phí và tập trung vào quyền riêng tư. Nếu Xed giúp bạn lập trình dễ dàng hơn, bạn có thể cân nhắc hỗ trợ phát triển nó không?\n\nSự hỗ trợ của bạn giúp tôi:\n• Xây dựng tính năng mới nhanh hơn\n• Giữ Xed không quảng cáo vĩnh viễn\n• Phản hồi với lỗi nhanh chóng</string>
+    <string name="support_message">Bạn đã lưu %s tệp và chạy code %s lần với xyzterm. \n\nTôi là nhà phát triển cá nhân giữ ứng dụng này miễn phí và tập trung vào quyền riêng tư. Nếu xyzterm giúp bạn lập trình dễ dàng hơn, bạn có thể cân nhắc hỗ trợ phát triển nó không?\n\nSự hỗ trợ của bạn giúp tôi:\n• Xây dựng tính năng mới nhanh hơn\n• Giữ xyzterm không quảng cáo vĩnh viễn\n• Phản hồi với lỗi nhanh chóng</string>
     <string name="yes_support">Có, tôi sẽ hỗ trợ! ❤️</string>
     <string name="not_for_me">Không, cảm ơn</string>
     <string name="sponsor_desc">Trở thành nhà tài trợ và giúp định hình tương lai của dự án này</string>
@@ -414,7 +414,7 @@
     <string name="line_spacing_desc">Hệ số nhân chiều cao cho mỗi dòng trong trình soạn thảo</string>
     <string name="terminal_home">Thư mục chính của terminal</string>
     <string name="terminal_home_desc">Thư mục chính mặc định của terminal</string>
-    <string name="info_ext">Tiện ích mở rộng có thể được sử dụng để sửa đổi hành vi và tính năng của Xed-Editor. Để tìm hiểu cách xây dựng tiện ích mở rộng, bấm vào đây.</string>
+    <string name="info_ext">Tiện ích mở rộng có thể được sử dụng để sửa đổi hành vi và tính năng của xyzterm. Để tìm hiểu cách xây dựng tiện ích mở rộng, bấm vào đây.</string>
     <string name="feature_toggles">Chuyển đổi tính năng</string>
     <string name="expose_saf">Hiển thị thư mục chính</string>
     <string name="expose_saf_desc">Cho phép ứng dụng bên ngoài truy cập thư mục chính qua trình chọn tệp hệ thống (SAF)</string>
@@ -440,7 +440,7 @@
     <string name="strict_mode">Chế độ nghiêm ngặt</string>
     <string name="strict_mode_desc">Phát hiện truy cập đĩa hoặc mạng trên luồng chính</string>
     <string name="anr_watchdog">ANR Watchdog (Giám sát ANR)</string>
-    <string name="anr_watchdog_desc">Tự động kết thúc Xed-Editor nếu nó không phản hồi trong hơn 5 giây</string>
+    <string name="anr_watchdog_desc">Tự động kết thúc xyzterm nếu nó không phản hồi trong hơn 5 giây</string>
     <string name="verbose_errors">Hiển thị chi tiết lỗi</string>
     <string name="verbose_errors_desc">Bao gồm stacktrace trong hộp thoại lỗi</string>
     <string name="unsupported_file_ext">Phần mở rộng tệp không được hỗ trợ</string>

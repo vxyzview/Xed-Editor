@@ -25,7 +25,7 @@ import com.rk.resources.getString
 import com.rk.resources.strings
 import com.rk.settings.Settings
 import com.rk.utils.application
-import com.rk.xededitor.BuildConfig
+import com.xyzterm.BuildConfig
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.filter
 import kotlinx.coroutines.withContext

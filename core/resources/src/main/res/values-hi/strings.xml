@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">Xed-Editor</string>
+    <string name="app_name" translatable="false">xyzterm</string>
     <string name="unsupported_content">असमर्थित कंटेंट</string>
     <string name="restart_required">रिस्टार्ट जरूरी</string>
     <string name="save">सेव करें</string>
@@ -52,11 +52,11 @@
     <string name="open">खोलें</string>
     <string name="permission_denied">अनुमति अस्वीकृत</string>
     <string name="manage_storage">स्टोरेज प्रबंधित करें</string>
-    <string name="manage_storage_reason">Xed-Editor को आपके स्टोरेज में फ़ाइलें संपादित करने के लिए एक्सेस की आवश्यकता है। कृपया आने वाली सिस्टम सेटिंग में एक्सेस की अनुमति दें।</string>
+    <string name="manage_storage_reason">xyzterm को आपके स्टोरेज में फ़ाइलें संपादित करने के लिए एक्सेस की आवश्यकता है। कृपया आने वाली सिस्टम सेटिंग में एक्सेस की अनुमति दें।</string>
     <string name="ok">ठीक है</string>
     <string name="clone_repo">रिपॉजिटरी क्लोन करें</string>
     <string name="private_files">निजी फ़ाइलें</string>
-    <string name="private_files_desc">Xed-Editor की निजी फ़ाइलें</string>
+    <string name="private_files_desc">xyzterm की निजी फ़ाइलें</string>
     <string name="cloning">रिपॉजिटरी क्लोन हो रही है…</string>
     <string name="error">त्रुटि</string>
     <string name="open_dir_desc">SAF का उपयोग करके डायरेक्टरी खोलें</string>
@@ -101,7 +101,7 @@
     <string name="theme_mode_desc">ऐप का रंग थीम बदलें</string>
     <string name="show_suggestions">कीबोर्ड सुझाव दिखाएँ</string>
     <string name="about">के बारे में</string>
-    <string name="about_desc">Xed-Editor के बारे में</string>
+    <string name="about_desc">xyzterm के बारे में</string>
     <string name="version">वर्ज़न</string>
     <string name="version_code">वर्ज़न कोड</string>
     <string name="github">GitHub</string>
@@ -148,14 +148,14 @@
     <string name="install_from_storage">स्टोरेज से इंस्टॉल करें</string>
     <string name="no_ext">कोई एक्सटेंशन इंस्टॉल नहीं।</string>
     <string name="loading">लोड हो रहा है…</string>
-    <string name="info_ext">एक्सटेंशन्स का उपयोग xed-editor के व्यवहार और फ़ीचर्स को मॉडिफ़ाई करने के लिए किया जा सकता है। प्लगइन बनाना सीखने के लिए यहाँ क्लिक करें</string>
+    <string name="info_ext">एक्सटेंशन्स का उपयोग xyzterm के व्यवहार और फ़ीचर्स को मॉडिफ़ाई करने के लिए किया जा सकता है। प्लगइन बनाना सीखने के लिए यहाँ क्लिक करें</string>
     <string name="downloading">डाउनलोड हो रहा है…</string>
     <string name="network_err">नेटवर्क त्रुटि। कृपया जाँचें कि आपका इंटरनेट कनेक्शन ठीक से काम कर रहा है।</string>
     <string name="disable_virtual_kbd">वर्चुअल कीबोर्ड अक्षम करें</string>
     <string name="disable_virtual_kbd_desc">हार्डवेयर कीबोर्ड उपलब्ध होने पर वर्चुअल कीबोर्ड अक्षम करें</string>
     <string name="highlighting">सिंटैक्स हाइलाइटिंग</string>
     <string name="toggle_word_wrap">वर्ड रैप टॉगल करें</string>
-    <string name="warning_private_dir">यदि आप डेटा क्लियर करते हैं या Xed-Editor डिलीट करते हैं तो इस डायरेक्टरी का कंटेंट डिलीट हो जाएगा</string>
+    <string name="warning_private_dir">यदि आप डेटा क्लियर करते हैं या xyzterm डिलीट करते हैं तो इस डायरेक्टरी का कंटेंट डिलीट हो जाएगा</string>
     <string name="file">फ़ाइल</string>
     <string name="folder">फ़ोल्डर</string>
     <string name="support_desc">डेवलपमेंट सपोर्ट करें</string>

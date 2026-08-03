@@ -2,7 +2,7 @@ package com.rk.extension.api
 
 import com.rk.file.FileObject
 
-/** Interface for handling intents in Xed-Editor. */
+/** Interface for handling intents in xyzterm. */
 @XedExtensionPoint
 fun interface IntentHandler {
     /**

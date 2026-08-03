@@ -51,11 +51,11 @@
     <string name="open">فتح</string>
     <string name="permission_denied">تم رفض الإذن</string>
     <string name="manage_storage">إدارة التخزين</string>
-    <string name="manage_storage_reason">يحتاج Xed-Editor إلى الوصول لتحرير الملفات الموجودة في مساحة التخزين الخاصة بك. يرجى السماح بالوصول في إعداد النظام القادم.</string>
+    <string name="manage_storage_reason">يحتاج xyzterm إلى الوصول لتحرير الملفات الموجودة في مساحة التخزين الخاصة بك. يرجى السماح بالوصول في إعداد النظام القادم.</string>
     <string name="ok">حسنا</string>
     <string name="clone_repo">نسخ مستودع</string>
     <string name="private_files">ملفات خاصة</string>
-    <string name="private_files_desc">الملفات الخاصة بمحرر Xed</string>
+    <string name="private_files_desc">الملفات الخاصة بمحرر xyzterm</string>
     <string name="cloning">يجري نسخ المستودع …</string>
     <string name="error">خطأ</string>
     <string name="open_dir_desc">فتح دليل عبر منتقي الملفات في النظام</string>
@@ -100,7 +100,7 @@
     <string name="theme_mode_desc">تغيير لون سمة التطبيق</string>
     <string name="show_suggestions">إظهار اقتراحات لوحة المفاتيح</string>
     <string name="about">حول</string>
-    <string name="about_desc">حول Xed-Editor</string>
+    <string name="about_desc">حول xyzterm</string>
     <string name="version">الإصدار</string>
     <string name="version_code">رمز الإصدار</string>
     <string name="github">Github</string>
@@ -133,7 +133,7 @@
     <string name="update_av">تحديثات جديدة متاحة</string>
     <string name="update">تحديث</string>
     <string name="ignore">تجاهل</string>
-    <string name="info_ext">يمكن استخدام الإضافات لتعديل سلوك وميزات محرر Xed-Editor. لمعرفة كيفية بناء إضافة، انقر هنا.</string>
+    <string name="info_ext">يمكن استخدام الإضافات لتعديل سلوك وميزات محرر xyzterm. لمعرفة كيفية بناء إضافة، انقر هنا.</string>
     <string name="restore_sessions">استعادة الجلسات</string>
     <string name="restore_sessions_desc">استعادة علامات تبويب سابقة</string>
     <string name="terminal_home_desc">مسار هوم الافتراضي للمحطة الطرفية</string>
@@ -150,7 +150,7 @@
     <string name="ext_desc">إدارة الإضافات</string>
     <string name="add_session">إضف جلسة</string>
     <string name="ext">إضافات</string>
-    <string name="warning_private_dir">سيتم حذف محتوى هذا الدليل إذا قمت بمسح البيانات أو حذف Xed-Editor</string>
+    <string name="warning_private_dir">سيتم حذف محتوى هذا الدليل إذا قمت بمسح البيانات أو حذف xyzterm</string>
     <string name="highlighting">تمييز الصيغة</string>
     <string name="toggle_word_wrap">تبديل التفاف الكلمات</string>
     <string name="temp_file">ملف مؤقت</string>
@@ -213,7 +213,7 @@
     <string name="add_theme">إضافة مظهر</string>
     <string name="unsupported_feature">هذه الميزة غير مدعومة على جهازك</string>
     <string name="confirm_exit">هل أنت متأكد من رغبتك بالخروج؟</string>
-    <string name="tab_memory_warning">لا تتوفر مساحة كافية بالذاكرة لفتح هذه التبويبة. قد يؤدي فتحها إلى تعطل برنامج Xed-Editor. هل تريد المتابعة على أي حال؟</string>
+    <string name="tab_memory_warning">لا تتوفر مساحة كافية بالذاكرة لفتح هذه التبويبة. قد يؤدي فتحها إلى تعطل برنامج xyzterm. هل تريد المتابعة على أي حال؟</string>
     <string name="read_mode_desc">تفعيل وضع القراءة افتراضيا</string>
     <string name="text_mate_suggestion_desc">اقتراح كلمات مفتاحية محددة مسبقًا</string>
     <string name="install">تثبيت</string>
@@ -269,7 +269,7 @@
     <string name="debug_options_desc">خيارات تصحيح الأخطاء لـ %s</string>
     <string name="force_crash_desc">اظهار خطاء التشغيل</string>
     <string name="force_crash_confirm">هل تريد فرض ايقاف التطبيق؟ قد يتوقف التطبيق عن الاستجابة.</string>
-    <string name="anr_watchdog_desc">اجبار Xed-Editor علي إيقاف التشغيل في حالة عدم استجابتة لمده تزيد عن 5 ثوانٍ</string>
+    <string name="anr_watchdog_desc">اجبار xyzterm علي إيقاف التشغيل في حالة عدم استجابتة لمده تزيد عن 5 ثوانٍ</string>
     <string name="verbose_errors">أخطاء تفصيلية</string>
     <string name="verbose_errors_desc">اظهار نتيجة تتبع الخطاء في مربع حوار الأخطاء</string>
     <string name="file_ext_example">امتداد الملف (كمثال: .py)</string>

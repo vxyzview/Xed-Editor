@@ -51,11 +51,11 @@
     <string name="open">Открыть</string>
     <string name="permission_denied">Доступ запрещён</string>
     <string name="manage_storage">Доступ к хранилищу</string>
-    <string name="manage_storage_reason">Xed-Editor требуется доступ для редактирования файлов в вашем хранилище. Пожалуйста, разрешите доступ в следующем окне настроек.</string>
+    <string name="manage_storage_reason">xyzterm требуется доступ для редактирования файлов в вашем хранилище. Пожалуйста, разрешите доступ в следующем окне настроек.</string>
     <string name="ok">ОК</string>
     <string name="clone_repo">Клонировать репозиторий</string>
     <string name="private_files">Приватные файлы</string>
-    <string name="private_files_desc">Приватные файлы Xed-Editor</string>
+    <string name="private_files_desc">Приватные файлы xyzterm</string>
     <string name="cloning">Клонирование репозитория…</string>
     <string name="error">Ошибка</string>
     <string name="open_dir_desc">Открыть каталог с помощью проводника</string>
@@ -100,7 +100,7 @@
     <string name="theme_mode_desc">Изменить цветовую тему приложения</string>
     <string name="show_suggestions">Включить подсказки при вводе</string>
     <string name="about">О приложении</string>
-    <string name="about_desc">О Xed-Editor</string>
+    <string name="about_desc">О xyzterm</string>
     <string name="version">Версия</string>
     <string name="version_code">Код версии</string>
     <string name="github">GitHub</string>
@@ -142,7 +142,7 @@
     <string name="installing">Установка…</string>
     <string name="install_from_storage">Установить с хранилища</string>
     <string name="network_err">Ошибка сети. Проверьте, что интернет-соединение работает нормально.</string>
-    <string name="info_ext">Расширения могут быть использованы для изменения поведения и функций Xed-Editor. Чтобы узнать, как создать расширение, нажмите здесь.</string>
+    <string name="info_ext">Расширения могут быть использованы для изменения поведения и функций xyzterm. Чтобы узнать, как создать расширение, нажмите здесь.</string>
     <string name="restore_sessions">Восстанавливать сессии</string>
     <string name="restore_sessions_desc">Восстанавливать открытые вкладки</string>
     <string name="name_empty_err">Имя не должно быть пустым</string>
@@ -154,7 +154,7 @@
     <string name="file">Файл</string>
     <string name="folder">Папка</string>
     <string name="toggle_word_wrap">Переключить перенос слов</string>
-    <string name="warning_private_dir">Содержимое этого каталога будет удалено, если вы очистите данные или удалите Xed-Editor</string>
+    <string name="warning_private_dir">Содержимое этого каталога будет удалено, если вы очистите данные или удалите xyzterm</string>
     <string name="support_desc">Поддержать разработку</string>
     <string name="feature_toggles">Переключатель функций</string>
     <string name="restore">Восстановить</string>
@@ -195,7 +195,7 @@
     <string name="add_theme">Добавить тему</string>
     <string name="unsupported_feature">Функция не поддерживается на этом устройстве</string>
     <string name="confirm_exit">Вы уверены, что хотите выйти?</string>
-    <string name="tab_memory_warning">Недостаточно памяти для открытия вкладки. Это может привести к сбою Xed-Editor. Всё равно продолжить?</string>
+    <string name="tab_memory_warning">Недостаточно памяти для открытия вкладки. Это может привести к сбою xyzterm. Всё равно продолжить?</string>
     <string name="read_mode_desc">Включать режим чтения по умолчанию</string>
     <string name="acquire_wakelock">Заблокировать спящий режим</string>
     <string name="release_wakelock">Разблокировать спящий режим</string>
@@ -220,7 +220,7 @@
     <string name="debug_options_desc">Настройки отладки для %s</string>
     <string name="force_crash_confirm">Вызвать принудительный сбой приложения? Приложение может зависнуть.</string>
     <string name="memory_usage">Использование памяти</string>
-    <string name="anr_watchdog_desc">Завершать Xed-Editor, если не отвечает более 5 секунд</string>
+    <string name="anr_watchdog_desc">Завершать xyzterm, если не отвечает более 5 секунд</string>
     <string name="verbose_errors">Подробные ошибки</string>
     <string name="unsupported_file_ext">Неподдерживаемое расширение файла</string>
     <string name="invalid_port">Неверный порт</string>
@@ -337,7 +337,7 @@
     <string name="line_number">Номер строки</string>
     <string name="search_file_folder">Поиск файлов в проекте</string>
     <string name="search_code">Поиск кода в проекте</string>
-    <string name="incompatible_theme_warning">Эта тема несовместима с вашей текущей версией Xed-Editor. Всё равно хотите продолжить?</string>
+    <string name="incompatible_theme_warning">Эта тема несовместима с вашей текущей версией xyzterm. Всё равно хотите продолжить?</string>
     <string name="theme_install_failed">Установка темы не удалась</string>
     <string name="theme_id_missing">В файле JSON не указан действительный идентификатор темы. Пожалуйста, добавьте его и повторите попытку.</string>
     <string name="theme_name_missing">В файле JSON не указано допустимое название темы. Пожалуйста, добавьте её и повторите попытку.</string>
@@ -385,7 +385,7 @@
     <string name="repo_url">Ссылка на репозиторий</string>
     <string name="branch">Ветка</string>
     <string name="value_empty_err">Значение не должно быть пустым</string>
-    <string name="keybinds_info">Xed-Editor поддерживает сочетания клавиш для аппаратной клавиатуры, чтобы вы могли работать быстрее и эффективнее. Уже доступен широкий набор стандартных комбинаций, и вы можете настроить их ниже по своему вкусу.</string>
+    <string name="keybinds_info">xyzterm поддерживает сочетания клавиш для аппаратной клавиатуры, чтобы вы могли работать быстрее и эффективнее. Уже доступен широкий набор стандартных комбинаций, и вы можете настроить их ниже по своему вкусу.</string>
     <string name="search_keybinds">Поиск команд или сочетаний клавиш</string>
     <string name="transform_lowercase">Преобразовать в нижний регистр</string>
     <string name="transform_uppercase">Преобразовать в верхний регистр</string>
@@ -396,8 +396,8 @@
     <string name="reset_consent_desc">Показать условия использования при следующем запуске</string>
     <string name="extra_key_bg">Фон дополнительной клавиши</string>
     <string name="extra_key_bg_desc">Показывать фон для дополнительных клавиш</string>
-    <string name="enjoying_xed">Нравится Xed-Editor?</string>
-    <string name="support_message">Вы сохранили файлы (%s) и запускали код %s раз(-а) с помощью Xed.\n\nЯ — один разработчик, который делает это приложение бесплатным и ориентированным на конфиденциальность. Если Xed облегчает вашу работу с кодом, не хотели бы вы поддержать его развитие?\n\nВаша поддержка помогает мне:\n• Быстрее добавлять новые функции\n• Держать Xed навсегда без рекламы\n• Быстро исправлять ошибки</string>
+    <string name="enjoying_xed">Нравится xyzterm?</string>
+    <string name="support_message">Вы сохранили файлы (%s) и запускали код %s раз(-а) с помощью xyzterm.\n\nЯ — один разработчик, который делает это приложение бесплатным и ориентированным на конфиденциальность. Если xyzterm облегчает вашу работу с кодом, не хотели бы вы поддержать его развитие?\n\nВаша поддержка помогает мне:\n• Быстрее добавлять новые функции\n• Держать xyzterm навсегда без рекламы\n• Быстро исправлять ошибки</string>
     <string name="yes_support">Да, я поддержу! ❤️</string>
     <string name="not_for_me">Нет, спасибо</string>
     <string name="sponsor_desc">Станьте спонсором и помогите формировать будущее этого проекта</string>
@@ -458,8 +458,8 @@
     <string name="icon_pack_install_failed">Не удалось установить набор значков</string>
     <string name="icon_pack_missing_fields">Файл manifest.json содержит отсутствующие или недопустимые свойства:\n%s\n\nПожалуйста, проверьте файл и попробуйте снова.</string>
     <string name="manifest_missing">Файл manifest.json отсутствует. Пожалуйста, добавьте его и попробуйте снова.</string>
-    <string name="outdated_extension">Это расширение было создано для более старой версии Xed-Editor. Пожалуйста, обратитесь к разработчику за обновлением.</string>
-    <string name="outdated_client">Ваша версия Xed-Editor устарела. Пожалуйста, обновите до последней версии, чтобы использовать это расширение.</string>
+    <string name="outdated_extension">Это расширение было создано для более старой версии xyzterm. Пожалуйста, обратитесь к разработчику за обновлением.</string>
+    <string name="outdated_client">Ваша версия xyzterm устарела. Пожалуйста, обновите до последней версии, чтобы использовать это расширение.</string>
     <string name="extension_validation_failed">Проверка расширения не прошла</string>
     <string name="general">Общие</string>
     <string name="advanced">Дополнительно</string>

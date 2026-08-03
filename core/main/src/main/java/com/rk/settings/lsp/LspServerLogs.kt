@@ -37,7 +37,7 @@ import com.rk.resources.strings
 import com.rk.settings.Settings
 import com.rk.settings.debugOptions.LogScreen
 import com.rk.utils.application
-import com.rk.xededitor.BuildConfig
+import com.xyzterm.BuildConfig
 import kotlinx.coroutines.launch
 import org.eclipse.lsp4j.MessageType
 

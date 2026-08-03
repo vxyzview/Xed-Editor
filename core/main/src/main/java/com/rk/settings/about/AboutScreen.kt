@@ -32,7 +32,7 @@ import com.rk.resources.drawables
 import com.rk.resources.getString
 import com.rk.resources.strings
 import com.rk.utils.copyToClipboard
-import com.rk.xededitor.BuildConfig
+import com.xyzterm.BuildConfig
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import com.rk.utils.okHttpClient

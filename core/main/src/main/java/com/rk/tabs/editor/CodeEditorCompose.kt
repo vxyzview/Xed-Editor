@@ -228,7 +228,7 @@ fun Editor.registerXedEvents(
     }
 
     // Intercept the default handling of some keybinds because
-    // they should be handled by Xed-Editor's key binding system instead
+    // they should be handled by xyzterm's key binding system instead
     // (for custom keybinds support)
     subscribeAlways(KeyBindingEvent::class.java) { event ->
         intelligentFeatures.forEach { it.handleKeyBindingEvent(event, this) }

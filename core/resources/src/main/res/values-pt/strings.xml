@@ -36,7 +36,7 @@
     <string name="file_name">Nome do ficheiro</string>
     <string name="path">Caminho</string>
     <string name="open">Abrir</string>
-    <string name="manage_storage_reason">Xed-Editor precisa de acesso para editar ficheiros no seu armazenamento. Por favor, permita o acesso na próxima configuração do sistema.</string>
+    <string name="manage_storage_reason">xyzterm precisa de acesso para editar ficheiros no seu armazenamento. Por favor, permita o acesso na próxima configuração do sistema.</string>
     <string name="ok">OK</string>
     <string name="clone_repo">Clonar repositório</string>
     <string name="cloning">A clonar repositório…</string>
@@ -65,7 +65,7 @@
     <string name="auto_mode">Automático</string>
     <string name="theme_mode_desc">Alterar o tema da app</string>
     <string name="about">Sobre</string>
-    <string name="about_desc">Sobre o Xed-Editor</string>
+    <string name="about_desc">Sobre o xyzterm</string>
     <string name="version">Versão</string>
     <string name="github">GitHub</string>
     <string name="telegram_desc">Reporte problemas, solicite recursos, etc.</string>
@@ -93,7 +93,7 @@
     <string name="network_err">Erro de Rede. Por favor verifique se a sua conexão com a internet funciona scorretamente.</string>
     <string name="disable_virtual_kbd">Desativar o teclado virtual</string>
     <string name="disable_virtual_kbd_desc">Desativar o teclado virtual se o teclado fisico estiver disponível</string>
-    <string name="warning_private_dir">O conteúdo deste diretório será apagado se limpar os dados ou apagar o Xed-Editor</string>
+    <string name="warning_private_dir">O conteúdo deste diretório será apagado se limpar os dados ou apagar o xyzterm</string>
     <string name="file">Ficheiro</string>
     <string name="folder">Pasta</string>
     <string name="backup">Backup</string>
@@ -120,7 +120,7 @@
     <string name="more">Mais</string>
     <string name="unsupported_feature">Este recurso não é suportado no seu dispositivo</string>
     <string name="confirm_exit">Tem certeza que quer sair?</string>
-    <string name="tab_memory_warning">Sem memória suficiente para abrir esta guia, Abri-la pode causar o travamento do Xed-Editor. Quer continuar mesmo assim?</string>
+    <string name="tab_memory_warning">Sem memória suficiente para abrir esta guia, Abri-la pode causar o travamento do xyzterm. Quer continuar mesmo assim?</string>
     <string name="read_mode_desc">Ativar modo de leitira por padrão</string>
     <string name="acquire_wakelock">Obter wakelock</string>
     <string name="release_wakelock">Liberar wakelock</string>
@@ -155,7 +155,7 @@
     <string name="word_wrap">Quebra de linha</string>
     <string name="open_as_project">Abrir como projeto</string>
     <string name="permission_denied">Permissão negada</string>
-    <string name="private_files_desc">Arquivos privados do Xed-Editor</string>
+    <string name="private_files_desc">Arquivos privados do xyzterm</string>
     <string name="open_dir_desc">Abrir uma pasta pelo explorador de arquivos do sistema</string>
     <string name="internal_storage">Armazenamento interno</string>
     <string name="oled_desc">Aplica um tema escuro de alto contraste</string>

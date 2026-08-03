@@ -11,7 +11,7 @@ import com.rk.resources.strings
 import com.rk.settings.Preference
 import com.rk.utils.application
 import com.rk.utils.dialogRes
-import com.rk.xededitor.BuildConfig
+import com.xyzterm.BuildConfig
 
 interface Feature {
     fun init(application: Application)

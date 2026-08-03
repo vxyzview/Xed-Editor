@@ -54,7 +54,7 @@
     <string name="ok">OK</string>
     <string name="clone_repo">Clone repositori</string>
     <string name="private_files">File pribadi</string>
-    <string name="private_files_desc">File pribadi Xed-Editor</string>
+    <string name="private_files_desc">File pribadi xyzterm</string>
     <string name="cloning">Cloning repositori…</string>
     <string name="error">Terjadi kesalahan</string>
     <string name="open_dir_desc">Buka direktori melalui pemilih file sistem</string>
@@ -96,7 +96,7 @@
     <string name="theme_mode_desc">Ubah warna tema aplikasi</string>
     <string name="show_suggestions">Tampilkan saran di keyboard</string>
     <string name="about">Tentang</string>
-    <string name="about_desc">Tentang Xed-Editor</string>
+    <string name="about_desc">Tentang xyzterm</string>
     <string name="version">Versi</string>
     <string name="version_code">Kode versi</string>
     <string name="github_desc">Beri bintang di GitHub🤩</string>
@@ -123,7 +123,7 @@
     <string name="encoding_warning">Mengubah pengkodean bawaan sangat tidak disarankan, karena dapat menyebabkan kerusakan file. Sangat dianjurkan untuk menggunakan UTF-8 kecuali Anda benar-benar memahami konsekuensinya dan telah membuat cadangan yang tepat.</string>
     <string name="line_spacing">Jarak baris</string>
     <string name="drawer_lock_desc">Tetap kunci laci saat membuka file</string>
-    <string name="manage_storage_reason">Xed-Editor memerlukan akses untuk mengedit file di penyimpanan Anda. Silakan izinkan akses di pengaturan sistem yang akan muncul.</string>
+    <string name="manage_storage_reason">xyzterm memerlukan akses untuk mengedit file di penyimpanan Anda. Silakan izinkan akses di pengaturan sistem yang akan muncul.</string>
     <string name="fonts">Font</string>
     <string name="default_encoding">Pengkodean default</string>
     <string name="show_line_number">Tampilkan nomor baris</string>
@@ -149,10 +149,10 @@
     <string name="loading">Memuat…</string>
     <string name="downloading">Mengunduh…</string>
     <string name="network_err">Kesalahan jaringan. Harap periksa apakah koneksi internet Anda berfungsi dengan baik.</string>
-    <string name="info_ext">Ekstensi dapat digunakan untuk memodifikasi perilaku dan fitur Xed-Editor. Untuk mempelajari cara membuat ekstensi, klik di sini.</string>
+    <string name="info_ext">Ekstensi dapat digunakan untuk memodifikasi perilaku dan fitur xyzterm. Untuk mempelajari cara membuat ekstensi, klik di sini.</string>
     <string name="highlighting">Penyorotan sintaks</string>
     <string name="toggle_word_wrap">Tombol bungkus kata</string>
-    <string name="warning_private_dir">Isi direktori ini akan terhapus jika Anda menghapus data atau menghapus Xed-Editor</string>
+    <string name="warning_private_dir">Isi direktori ini akan terhapus jika Anda menghapus data atau menghapus xyzterm</string>
     <string name="folder">Folder</string>
     <string name="support_desc">Dukung pengembang</string>
     <string name="feature_toggles">Tombol fitur</string>
@@ -195,7 +195,7 @@
     <string name="add_theme">Tambah tema</string>
     <string name="unsupported_feature">Fitur ini tidak didukung pada perangkat Anda</string>
     <string name="confirm_exit">Apakah Anda yakin ingin keluar?</string>
-    <string name="tab_memory_warning">Memori tidak cukup untuk membuka tab ini. Membukanya dapat menyebabkan Xed-Editor crash. Apakah Anda tetap ingin melanjutkan?</string>
+    <string name="tab_memory_warning">Memori tidak cukup untuk membuka tab ini. Membukanya dapat menyebabkan xyzterm crash. Apakah Anda tetap ingin melanjutkan?</string>
     <string name="read_mode_desc">Aktifkan mode baca secara default</string>
     <string name="acquire_wakelock">Dapatkan wakelock</string>
     <string name="release_wakelock">Lepaskan wakelock</string>
@@ -230,7 +230,7 @@
     <string name="strict_mode">Mode ketat</string>
     <string name="strict_mode_desc">Deteksi akses disk atau jaringan pada thread utama</string>
     <string name="anr_watchdog">Pengawasan ANR</string>
-    <string name="anr_watchdog_desc">Hentikan Xed-Editor jika menjadi tidak responsif selama lebih dari 5 detik</string>
+    <string name="anr_watchdog_desc">Hentikan xyzterm jika menjadi tidak responsif selama lebih dari 5 detik</string>
     <string name="verbose_errors">Kesalahan verbose</string>
     <string name="verbose_errors_desc">Sertakan stacktrace dalam dialog kesalahan</string>
     <string name="unsupported_file_ext">Ekstensi file tidak didukung</string>
@@ -337,7 +337,7 @@
     <string name="line_number">Nomor baris</string>
     <string name="search_file_folder">Cari file dalam proyek</string>
     <string name="search_code">Cari kode dalam proyek</string>
-    <string name="incompatible_theme_warning">Tema ini tidak kompatibel dengan versi Xed-Editor yang Anda gunakan saat ini. Apakah Anda tetap ingin melanjutkan?</string>
+    <string name="incompatible_theme_warning">Tema ini tidak kompatibel dengan versi xyzterm yang Anda gunakan saat ini. Apakah Anda tetap ingin melanjutkan?</string>
     <string name="theme_install_failed">Gagal memasang tema</string>
     <string name="theme_id_missing">File JSON tidak menyertakan ID tema yang valid. Silakan tambahkan dan coba lagi.</string>
     <string name="theme_name_missing">File JSON tidak menyertakan nama tema yang valid. Silakan tambahkan dan coba lagi.</string>
@@ -376,7 +376,7 @@
     <string name="ctrl">Ctrl</string>
     <string name="alt">Alt</string>
     <string name="shift">Shift</string>
-    <string name="keybinds_info">Xed-Editor mendukung shortcut keyboard hardware untuk membantu Anda bekerja lebih cepat dan efisien. Sekumpulan tombol pintas default sudah tersedia dan Anda dapat mengaturnya di bawah ini sesuai keinginan.</string>
+    <string name="keybinds_info">xyzterm mendukung shortcut keyboard hardware untuk membantu Anda bekerja lebih cepat dan efisien. Sekumpulan tombol pintas default sudah tersedia dan Anda dapat mengaturnya di bawah ini sesuai keinginan.</string>
     <string name="reset_all">Atur ulang semua</string>
     <string name="search_keybinds">Cari perintah atau tombol pintas</string>
     <string name="transform_lowercase">Ubah ke huruf kecil</string>
@@ -389,8 +389,8 @@
     <string name="extra_key_bg">Latar belakang tombol tambahan</string>
     <string name="extra_key_bg_desc">Tampilkan latar belakang tombol tambahan</string>
     <string name="actions">Tindakan</string>
-    <string name="enjoying_xed">Suka menggunakan Xed-Editor?</string>
-    <string name="support_message">Anda telah menyimpan %s file dan menjalankan kode %s kali menggunakan Xed. \n\nXed adalah aplikasi sumber terbuka yang berfokus pada privasi, yang dikembangkan berkat bantuan para kontributor dari komunitas. Jika Xed telah memudahkan Anda dalam menulis kode, maukah Anda mempertimbangkan untuk mendukung pengembangannya?\n\nDukungan Anda membantu saya:\n• Mengembangkan fitur dengan lebih cepat\n• Menjaga Xed tetap bebas iklan selamanya\n• Menanggapi laporan bug dengan cepat</string>
+    <string name="enjoying_xed">Suka menggunakan xyzterm?</string>
+    <string name="support_message">Anda telah menyimpan %s file dan menjalankan kode %s kali menggunakan xyzterm. \n\nxyzterm adalah aplikasi sumber terbuka yang berfokus pada privasi, yang dikembangkan berkat bantuan para kontributor dari komunitas. Jika xyzterm telah memudahkan Anda dalam menulis kode, maukah Anda mempertimbangkan untuk mendukung pengembangannya?\n\nDukungan Anda membantu saya:\n• Mengembangkan fitur dengan lebih cepat\n• Menjaga xyzterm tetap bebas iklan selamanya\n• Menanggapi laporan bug dengan cepat</string>
     <string name="yes_support">Ya, saya akan mendukung! ❤️</string>
     <string name="not_for_me">Tidak, terima kasih</string>
     <string name="sponsor_desc">Jadilah sponsor dan bantu menentukan masa depan proyek ini</string>
@@ -456,8 +456,8 @@
     <string name="icon_pack_install_failed">Gagal menginstal paket ikon</string>
     <string name="icon_pack_missing_fields">File manifest.json memiliki properti yang hilang atau tidak valid:\n%s.\n\nSilakan periksa file dan coba lagi.</string>
     <string name="manifest_missing">File manifest.json tidak ada. Silakan tambahkan lalu coba lagi.</string>
-    <string name="outdated_extension">Ekstensi ini dibuat untuk versi Xed-Editor yang lebih lama. Silakan minta pengembang untuk memperbaruinya.</string>
-    <string name="outdated_client">Xed-Editor Anda sudah usang. Silakan perbarui ke versi terbaru untuk menggunakan ekstensi ini.</string>
+    <string name="outdated_extension">Ekstensi ini dibuat untuk versi xyzterm yang lebih lama. Silakan minta pengembang untuk memperbaruinya.</string>
+    <string name="outdated_client">xyzterm Anda sudah usang. Silakan perbarui ke versi terbaru untuk menggunakan ekstensi ini.</string>
     <string name="extension_validation_failed">Pemeriksaan ekstensi gagal</string>
     <string name="general">Umum</string>
     <string name="advanced">Lanjutan</string>
@@ -726,7 +726,7 @@
     <string name="discard_changes">Buang perubahan</string>
     <string name="discard_changes_msg">Apakah Anda yakin ingin membuang perubahan lokal Anda pada \'%s\'? Tindakan ini tidak dapat dibatalkan.</string>
     <string name="discard_failed">Gagal membuang: %s</string>
-    <string name="incompatible_icon_pack_warning">Paket ikon ini tidak kompatibel dengan versi Xed-Editor yang Anda gunakan saat ini. Apakah Anda tetap ingin melanjutkan?</string>
+    <string name="incompatible_icon_pack_warning">Paket ikon ini tidak kompatibel dengan versi xyzterm yang Anda gunakan saat ini. Apakah Anda tetap ingin melanjutkan?</string>
     <string name="session_name_exists">Nama sesi sudah ada</string>
     <string name="rename_session">Ubah nama sesi</string>
     <string name="searching_in">Mencari di: %s</string>

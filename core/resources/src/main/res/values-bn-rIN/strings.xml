@@ -52,14 +52,14 @@
     <string name="open">খুলুন</string>
     <string name="permission_denied">অনুমতির অধিকার নেই</string>
     <string name="manage_storage">storage নিয়ন্ত্রন করুন</string>
-    <string name="manage_storage_reason">Xed-Editor এর storage এ ফাইল পরিবর্তন কারার অনুমতি প্রয়োযন। আগমান settings এ অনুমদিত করুন</string>
+    <string name="manage_storage_reason">xyzterm এর storage এ ফাইল পরিবর্তন কারার অনুমতি প্রয়োযন। আগমান settings এ অনুমদিত করুন</string>
     <string name="ok">সব ঠিক</string>
     <string name="clone_repo">repository-টিকে পুনপ্রতিষ্ঠা করুন</string>
     <string name="clone_repo_desc">remote repository-টিকে প্রতিষ্ঠা করুন</string>
     <string name="repo_url">Repository URL</string>
     <string name="branch">শাখা</string>
     <string name="private_files">নিজস্ব ফাইল</string>
-    <string name="private_files_desc">Xed-Editor-এর নিজস্ব ফাইল</string>
+    <string name="private_files_desc">xyzterm-এর নিজস্ব ফাইল</string>
     <string name="cloning">repository-টিকে পুন:প্রতিষ্ঠা করা চলছে…</string>
     <string name="error">ত্রুটি</string>
     <string name="open_dir_desc">system file picker-এর মাধ্যমে একটি ফোল্ডার খুলুন</string>

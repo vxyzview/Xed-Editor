@@ -5,12 +5,12 @@
     <string name="close">Chiudi</string>
     <string name="permission_denied">Permesso negato</string>
     <string name="path">Percorso</string>
-    <string name="manage_storage_reason">Xed-Editor ha bisogno di accedere all\'archiviazione per modificare i file. Concedi l\'accesso nella schermata seguente.</string>
+    <string name="manage_storage_reason">xyzterm ha bisogno di accedere all\'archiviazione per modificare i file. Concedi l\'accesso nella schermata seguente.</string>
     <string name="themes">Temi</string>
     <string name="open_directory">Apri una cartella</string>
     <string name="save">Salva</string>
     <string name="copy">Copia</string>
-    <string name="private_files_desc">File privati di Xed-Editor</string>
+    <string name="private_files_desc">File privati di xyzterm</string>
     <string name="restart_required">Riavvio richiesto</string>
     <string name="attention">Attenzione</string>
     <string name="apply">Applica</string>
@@ -98,7 +98,7 @@
     <string name="theme_mode_desc">Cambia il tema colore dell\'app</string>
     <string name="show_suggestions">Mostra suggerimenti tastiera</string>
     <string name="about">Informazioni</string>
-    <string name="about_desc">Informazioni su Xed-Editor</string>
+    <string name="about_desc">Informazioni su xyzterm</string>
     <string name="version">Versione</string>
     <string name="version_code">Codice versione</string>
     <string name="github_desc">Metti una stella su GitHub 🤩</string>
@@ -148,11 +148,11 @@
     <string name="no_ext">Nessuna estensione trovata.</string>
     <string name="downloading">Download in corso…</string>
     <string name="network_err">Errore di rete. Verifica che la tua connessione internet stia funzionando correttamente.</string>
-    <string name="info_ext">Le estensioni possono modificare il comportamento e le caratteristiche di Xed-Editor. Per imparare come costruire un\'estensione, clicca qui.</string>
+    <string name="info_ext">Le estensioni possono modificare il comportamento e le caratteristiche di xyzterm. Per imparare come costruire un\'estensione, clicca qui.</string>
     <string name="loading">Caricamento in corso…</string>
     <string name="highlighting">Evidenziazione sintassi</string>
     <string name="toggle_word_wrap">Attiva/Disattiva a capo automatico</string>
-    <string name="warning_private_dir">Il contenuto di questa directory verrà eliminato se si cancellano i dati o si elimina Xed-Editor</string>
+    <string name="warning_private_dir">Il contenuto di questa directory verrà eliminato se si cancellano i dati o si elimina xyzterm</string>
     <string name="file">File</string>
     <string name="feature_toggles">Gestisci funzioni</string>
     <string name="support_desc">Supporta lo sviluppo</string>
@@ -195,7 +195,7 @@
     <string name="add_theme">Aggiungi tema</string>
     <string name="unsupported_feature">Questa funzionalità non è supportata dal tuo dispositivo</string>
     <string name="confirm_exit">Sei sicuro di voler uscire?</string>
-    <string name="tab_memory_warning">Memoria insufficiente per aprire questa scheda. Aprirla potrebbe causare il crash di Xed-Editor. Vuoi procedere comunque?</string>
+    <string name="tab_memory_warning">Memoria insufficiente per aprire questa scheda. Aprirla potrebbe causare il crash di xyzterm. Vuoi procedere comunque?</string>
     <string name="read_mode_desc">Abilita modalità lettura per impostazione predefinita</string>
     <string name="install">Installa</string>
     <string name="ask_lsp_install">Vuoi installare il language server %s?</string>
@@ -241,7 +241,7 @@
     <string name="strict_mode_desc">Individua dischi o accessi di rete nel thread principale</string>
     <string name="terminal_virus_notice">In alcuni dispositivi, specialmente alcuni modelli dalla Cina, è possibile imbattersi in un avviso di sicurezza di sistema quando molti processi sono in esecuzione nel terminale (per esempio durante \'apt update\' o \'apt upgrade\'). Questo è un falso positivo e non indica realmente un virus.</string>
     <string name="ask_lsp_update">Vuoi aggiornare il language server \'%s\'?</string>
-    <string name="anr_watchdog_desc">Termina Xed-Editor se non risponde per più di 5 secondi</string>
+    <string name="anr_watchdog_desc">Termina xyzterm se non risponde per più di 5 secondi</string>
     <string name="verbose_errors">Errori dettagliati</string>
     <string name="verbose_errors_desc">Inclusi lo stackrace nelle finestre di dialogo di errore</string>
     <string name="unsupported_file_ext">Estensione file non supportata</string>
@@ -350,7 +350,7 @@
     <string name="line_number">Numero riga</string>
     <string name="search_file_folder">Cerca file nel progetto</string>
     <string name="search_code">Cerca codice nel progetto</string>
-    <string name="incompatible_theme_warning">Questo tema non è compatibile con la tua versione attuale di Xed-Editor. Vuoi procedere comunque?</string>
+    <string name="incompatible_theme_warning">Questo tema non è compatibile con la tua versione attuale di xyzterm. Vuoi procedere comunque?</string>
     <string name="theme_install_failed">Installazione tema non riuscita</string>
     <string name="theme_id_missing">Il file JSON non specifica un ID tema valido. Aggiungine uno e riprova.</string>
     <string name="theme_name_missing">Il file JSON non specifica un nome tema valido. Aggiungine uno e riprova.</string>
@@ -390,7 +390,7 @@
     <string name="ctrl">Ctrl</string>
     <string name="alt">Alt</string>
     <string name="shift">Maiusc</string>
-    <string name="keybinds_info">Xed-Editor supporta le scorciatoie da tastiera fisica per aiutarti a lavorare più velocemente ed efficientemente. È già disponibile un\'ampia serie di scorciatoie predefinite e puoi configurarle di seguito a tuo piacimento.</string>
+    <string name="keybinds_info">xyzterm supporta le scorciatoie da tastiera fisica per aiutarti a lavorare più velocemente ed efficientemente. È già disponibile un\'ampia serie di scorciatoie predefinite e puoi configurarle di seguito a tuo piacimento.</string>
     <string name="reset_all">Reimposta tutto</string>
     <string name="search_keybinds">Cerca comandi o scorciatoie da tastiera</string>
     <string name="transform_lowercase">Trasforma in minuscolo</string>
@@ -434,8 +434,8 @@
     <string name="extra_key_bg">Sfondo dei tasti extra</string>
     <string name="extra_key_bg_desc">Mostra uno sfondo per i tasti extra</string>
     <string name="actions">Azioni</string>
-    <string name="enjoying_xed">Ti piace Xed-Editor?</string>
-    <string name="support_message">Hai salvato %s file ed eseguito codice %s volte con Xed.\n\nSono uno sviluppatore indipendente che mantiene questa app gratuita e rispettosa della privacy. Se Xed ha reso la tua esperienza di programmazione più semplice, vorresti considerare di supportarne lo sviluppo?\n\nIl tuo supporto mi aiuta a:\n• Sviluppare funzionalità più rapidamente\n• Mantenere Xed senza pubblicità per sempre\n• Rispondere ai bug rapidamente</string>
+    <string name="enjoying_xed">Ti piace xyzterm?</string>
+    <string name="support_message">Hai salvato %s file ed eseguito codice %s volte con xyzterm.\n\nSono uno sviluppatore indipendente che mantiene questa app gratuita e rispettosa della privacy. Se xyzterm ha reso la tua esperienza di programmazione più semplice, vorresti considerare di supportarne lo sviluppo?\n\nIl tuo supporto mi aiuta a:\n• Sviluppare funzionalità più rapidamente\n• Mantenere xyzterm senza pubblicità per sempre\n• Rispondere ai bug rapidamente</string>
     <string name="yes_support">Sì, voglio supportarti! ❤️</string>
     <string name="not_for_me">No grazie</string>
     <string name="sponsor_desc">Diventa uno sponsor e contribuisci a plasmare il futuro di questo progetto</string>
@@ -497,8 +497,8 @@
     <string name="icon_pack_install_failed">Installazione del pacchetto di icone non riuscita</string>
     <string name="manifest_missing_fields">Il file manifest.json contiene proprietà mancanti o non valide:\n%s\n\nControlla il file e riprova.</string>
     <string name="manifest_missing">Il file manifest.json è mancante. Aggiungilo e riprova.</string>
-    <string name="outdated_extension">Questa estensione è stata creata per una versione precedente di Xed-Editor. Chiedi allo sviluppatore un aggiornamento.</string>
-    <string name="outdated_client">La tua versione di Xed-Editor non è aggiornata. Aggiorna all\'ultima versione per usare questa estensione.</string>
+    <string name="outdated_extension">Questa estensione è stata creata per una versione precedente di xyzterm. Chiedi allo sviluppatore un aggiornamento.</string>
+    <string name="outdated_client">La tua versione di xyzterm non è aggiornata. Aggiorna all\'ultima versione per usare questa estensione.</string>
     <string name="extension_validation_failed">Validazione dell\'estensione non riuscita</string>
     <string name="general">Generale</string>
     <string name="advanced">Avanzata</string>
