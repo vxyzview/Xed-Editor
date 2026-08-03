@@ -135,7 +135,7 @@ class XedColorScheme(
                     currentTheme.value.lightEditorColors
                 }
 
-            if (editorColors.isNullOrEmpty().not()) {
+            if (editorColors.isNotEmpty()) {
                 editorColors.forEach { colorScheme.setColor(it.key, it.color) }
             }
         }
