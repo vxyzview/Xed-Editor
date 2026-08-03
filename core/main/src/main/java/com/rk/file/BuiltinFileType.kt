@@ -15,7 +15,6 @@ private val xml = drawables.xml
 private val js = drawables.javascript
 private val ts = drawables.typescript
 private val lua = drawables.lua
-private val extension = drawables.extension
 private val prop = drawables.settings
 private val c = drawables.c
 private val cpp = drawables.cpp
@@ -54,6 +53,7 @@ private val cmake = drawables.cmake
 private val powershell = drawables.powershell
 private val r = drawables.r
 private val nix = drawables.nix
+private val xed = drawables.xed_editor
 
 // TODO: Add icon for FileType.EXECUTABLE
 // TODO: Add icon for FileType.PASCAL
@@ -371,7 +371,7 @@ enum class BuiltinFileType(
         markdownNames = listOf("powershell", "ps"),
     ),
     SMALI(extensions = listOf("smali"), textmateScope = "source.smali", icon = null, title = "Smali"),
-    ASSEMBLY(extensions = listOf("asm"), textmateScope = "source.asm", icon = null, title = "Assembly"),
+    ASSEMBLY(extensions = listOf("asm","s","S"), textmateScope = "source.asm", icon = null, title = "Assembly"),
     CMAKE(
         extensions = emptyList(),
         names = listOf("cmakelists.txt"),
@@ -474,5 +474,11 @@ enum class BuiltinFileType(
         title = "Executable",
     ),
     APK(extensions = listOf("apk", "xapk", "apks"), textmateScope = null, icon = Icon.ResourceIcon(apk), title = "APK"),
+    XED_PACKAGE(
+        extensions = listOf("xed"),
+        textmateScope = null,
+        icon = Icon.ResourceIcon(xed),
+        title = strings.xed_package.getString(),
+    ),
     UNKNOWN(extensions = emptyList(), textmateScope = null, icon = null, title = strings.unknown.getString()),
 }

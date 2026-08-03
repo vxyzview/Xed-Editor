@@ -1,23 +1,22 @@
 import java.util.Properties
 
 plugins {
-    alias(libs.plugins.android.baselineprofile)
     alias(libs.plugins.android.application)
     alias(libs.plugins.ktfmt)
 }
 
 android {
-    namespace = "com.rk.application"
+    namespace = "com.xyzterm.app"
     compileSdk = 37
 
     defaultConfig {
-        applicationId = "com.rk.xededitor"
+        applicationId = "com.xyzterm.app"
         minSdk = 26
 
         targetSdk = 37
 
         // versioning
-        versionCode = 102
+        versionCode = 103
         versionName = "3.4.4"
         vectorDrawables { useSupportLibrary = true }
     }
@@ -91,13 +90,7 @@ android {
         debug {
             applicationIdSuffix = ".debug"
             versionNameSuffix = "-DEBUG"
-            resValue("string", "app_name", "Xed-Debug")
-        }
-
-        create("benchmark") {
-            initWith(buildTypes.getByName("release"))
-            matchingFallbacks += listOf("release")
-            isDebuggable = false
+            resValue("string", "app_name", "xyzterm-Debug")
         }
     }
 }
@@ -108,12 +101,8 @@ dependencies {
     implementation(libs.androidx.profileinstaller)
     coreLibraryDesugaring(libs.desugar)
 
-    baselineProfile(project(":baselineprofile"))
     implementation(project(":core:main"))
     implementation(project(":core:resources"))
     implementation(libs.androidx.appcompat)
     implementation(project(":features:terminal"))
-    implementation(project(":features:extensions"))
-    implementation(project(":features:runner"))
-    implementation(project(":features:git"))
 }

@@ -24,14 +24,12 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import androidx.navigation.NavHostController
-import com.rk.activities.main.navigation.MainRoutes
 import com.rk.resources.strings
 import com.rk.settings.Settings
 import com.rk.theme.XedTheme
 
 @Composable
-fun DisclaimerScreen(navController: NavHostController, onDecline: () -> Unit) {
+fun DisclaimerScreen(onAccept: () -> Unit, onDecline: () -> Unit) {
     XedTheme {
         Column(
             modifier = Modifier.fillMaxWidth().safeContentPadding().padding(24.dp),
@@ -82,20 +80,6 @@ fun DisclaimerScreen(navController: NavHostController, onDecline: () -> Unit) {
                 Spacer(modifier = Modifier.height(8.dp))
 
                 Text(
-                    text = stringResource(strings.third_party_ext),
-                    style = MaterialTheme.typography.titleMedium,
-                    fontWeight = FontWeight.Bold,
-                    color = MaterialTheme.colorScheme.error,
-                )
-
-                Text(
-                    text = stringResource(strings.third_party_ext_content),
-                    style = MaterialTheme.typography.bodyMedium,
-                )
-
-                Spacer(modifier = Modifier.height(8.dp))
-
-                Text(
                     text = stringResource(strings.no_warranty),
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.Bold,
@@ -137,7 +121,7 @@ fun DisclaimerScreen(navController: NavHostController, onDecline: () -> Unit) {
                     modifier = Modifier.weight(1f),
                     onClick = {
                         Settings.shown_disclaimer = true
-                        navController.navigate(MainRoutes.Main.route)
+                        onAccept()
                     },
                 ) {
                     Text(text = stringResource(strings.i_accept), maxLines = 1)

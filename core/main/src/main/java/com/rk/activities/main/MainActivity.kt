@@ -25,6 +25,7 @@ import com.rk.activities.main.ui.MainContentHost
 import com.rk.commands.KeybindingsManager
 import com.rk.drawer.DrawerPersistence
 import com.rk.drawer.DrawerViewModel
+import com.rk.extension.api.IntentHandleRegistry
 import com.rk.file.FileManager
 import com.rk.file.FilePermission
 import com.rk.file.toFileObject
@@ -119,6 +120,11 @@ class MainActivity : AppCompatActivity() {
 
             val file = uri.toFileObject(expectedIsFile = true)
 
+            if (IntentHandleRegistry.handleIntent(file)) {
+                setIntent(Intent())
+                return
+            }
+
             viewModel.awaitSessionRestoration()
             viewModel.editorManager.openFile(file, projectRoot = null, switchToTab = true)
             setIntent(Intent())
@@ -138,9 +144,7 @@ class MainActivity : AppCompatActivity() {
 
         lifecycleScope.launch(Dispatchers.IO) {
             val db = DocumentStateDatabase.getDatabase(applicationContext)
-            val thirtyDaysInMillis = 1000L * 60 * 60 * 24 * 30
-            val timestamp = System.currentTimeMillis() - thirtyDaysInMillis
-            db.documentStateDao().deleteOlderThan(timestamp)
+            db.documentStateDao().deleteOldestRecords(1000)
         }
 
         enableEdgeToEdge()
@@ -168,7 +172,12 @@ class MainActivity : AppCompatActivity() {
                         FilePermission.verifyStoragePermission(this@MainActivity)
                     }
                 }
-                composable(MainRoutes.Disclaimer.route) { DisclaimerScreen(navController) { finishAffinity() } }
+                composable(MainRoutes.Disclaimer.route) {
+                    DisclaimerScreen(
+                        onAccept = { navController.navigate(MainRoutes.Main.route) },
+                        onDecline = { finishAffinity() },
+                    )
+                }
 
                 MainRouteRegistry.routes.forEach { customRoute ->
                     composable(customRoute.route, arguments = customRoute.arguments) { backStackEntry ->

@@ -29,8 +29,6 @@ dependencies {
     implementation(project(":core:main"))
     implementation(project(":core:components"))
     implementation(project(":core:resources"))
-    implementation(project(":features:runner"))
-    implementation(project(":features:terminal:xed-cli"))
     implementation(project(":features:terminal:proot"))
     implementation(project(":features:terminal:link2symlink"))
 

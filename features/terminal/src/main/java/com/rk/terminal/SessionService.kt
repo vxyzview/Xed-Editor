@@ -114,7 +114,6 @@ class SessionService : Service() {
         sessions.forEach { s -> s.value.finishIfRunning() }
 
         deamonRunning = false
-        XedCliServer.stop()
         if (wakeLock?.isHeld == true) {
             wakeLock?.release()
         }
@@ -146,7 +145,6 @@ class SessionService : Service() {
 
         if (deamonRunning.not()) {
             deamonRunning = true
-            XedCliServer.start(this)
         }
 
         if (wakeLock == null) {

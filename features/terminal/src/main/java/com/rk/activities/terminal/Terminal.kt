@@ -43,12 +43,15 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
+import com.rk.activities.main.ui.DisclaimerScreen
 import com.rk.exec.isTerminalInstalled
+import com.rk.file.FilePermission
 import com.rk.file.child
 import com.rk.file.localBinDir
 import com.rk.file.sandboxDir
 import com.rk.resources.getString
 import com.rk.resources.strings
+import com.rk.settings.Settings
 import com.rk.terminal.NEXT_STAGE
 import com.rk.terminal.ROOTFS_ARM
 import com.rk.terminal.ROOTFS_ARM64
@@ -172,7 +175,15 @@ class Terminal : AppCompatActivity() {
         setContent {
             XedTheme {
                 Surface {
-                    if (sessionBinder != null) {
+                    var disclaimerAccepted by remember { mutableStateOf(Settings.shown_disclaimer) }
+
+                    if (!disclaimerAccepted) {
+                        DisclaimerScreen(
+                            onAccept = { disclaimerAccepted = true },
+                            onDecline = { finishAffinity() },
+                        )
+                    } else if (sessionBinder != null) {
+                        LaunchedEffect(Unit) { FilePermission.verifyStoragePermission(this@Terminal) }
                         TerminalScreenHost(this)
                     } else {
                         Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
@@ -191,6 +202,11 @@ class Terminal : AppCompatActivity() {
         }
 
         super.onDestroy()
+    }
+
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        FilePermission.onRequestPermissionsResult(requestCode, grantResults, lifecycleScope, this)
     }
 
     var progressText by mutableStateOf(strings.installing.getString())
