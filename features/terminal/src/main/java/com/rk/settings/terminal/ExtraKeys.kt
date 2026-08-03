@@ -1,11 +1,13 @@
 package com.rk.settings.terminal
 
 import androidx.activity.compose.LocalOnBackPressedDispatcherOwner
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.imePadding
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.text.selection.LocalTextSelectionColors
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -15,30 +17,30 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextField
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.DisposableEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.viewinterop.AndroidView
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.unit.TextUnit
+import androidx.compose.ui.unit.TextUnitType
+import androidx.compose.ui.unit.dp
 import com.rk.components.ResetButton
-import com.rk.editor.Editor
-import com.rk.file.BuiltinFileType
 import com.rk.resources.drawables
 import com.rk.resources.strings
 import com.rk.settings.Preference
 import com.rk.settings.Settings
-import com.rk.tabs.editor.EditorNotice
-import com.rk.utils.isSystemInDarkTheme
+import com.rk.theme.Typography
 import com.rk.utils.openUrl
-import io.github.rosemoe.sora.event.ContentChangeEvent
-import java.lang.ref.WeakReference
-import kotlinx.coroutines.launch
 
 const val DEFAULT_TERMINAL_EXTRA_KEYS =
     ("[" +
@@ -71,19 +73,13 @@ const val DEFAULT_TERMINAL_EXTRA_KEYS =
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TerminalExtraKeys() {
-    val scope = rememberCoroutineScope()
     val backDispatcher = LocalOnBackPressedDispatcherOwner.current?.onBackPressedDispatcher
-    val keyboardController = LocalSoftwareKeyboardController.current
     val context = LocalContext.current
 
-    var editorRef = remember { WeakReference<Editor?>(null) }
+    var text by remember { mutableStateOf(Settings.terminal_extra_keys) }
 
-    DisposableEffect(Unit) {
-        onDispose {
-            keyboardController?.hide()
-            editorRef.get()?.release()
-            editorRef = WeakReference(null)
-        }
+    fun save() {
+        Settings.terminal_extra_keys = text
     }
 
     Scaffold(
@@ -96,64 +92,57 @@ fun TerminalExtraKeys() {
                         }
                     },
                     title = { Text(stringResource(strings.change_extra_keys)) },
-                    actions = { ResetButton { resetFiles(editorRef.get()) } },
+                    actions = {
+                        ResetButton {
+                            text = DEFAULT_TERMINAL_EXTRA_KEYS
+                            Preference.removeKey("terminal_extra_keys")
+                            save()
+                        }
+                    },
                 )
                 HorizontalDivider()
             }
         }
     ) { paddingValues ->
-        val selectionColors = LocalTextSelectionColors.current
-        val isDarkMode = isSystemInDarkTheme(context)
-        val colorScheme = MaterialTheme.colorScheme
-
         Column(modifier = Modifier.fillMaxSize().padding(paddingValues)) {
-            EditorNotice(
-                text = stringResource(strings.see_termux_extra_keys),
-                actionButton = {
-                    IconButton(
-                        onClick = {
-                            val url = "https://wiki.termux.com/wiki/Touch_Keyboard#Extra_Keys_Row"
-                            context.openUrl(url)
-                        }
-                    ) {
-                        Icon(
-                            painter = painterResource(drawables.open_in_new),
-                            contentDescription = stringResource(strings.open),
-                        )
+            Row(
+                modifier = Modifier
+                    .background(MaterialTheme.colorScheme.surfaceContainerHigh)
+                    .padding(horizontal = 16.dp),
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                Text(
+                    stringResource(strings.see_termux_extra_keys),
+                    fontSize = Typography.bodyMedium.fontSize,
+                    color = MaterialTheme.colorScheme.onSurface,
+                    modifier = Modifier.weight(1f),
+                )
+                IconButton(
+                    onClick = {
+                        context.openUrl("https://wiki.termux.com/wiki/Touch_Keyboard#Extra_Keys_Row")
                     }
+                ) {
+                    Icon(
+                        painter = painterResource(drawables.open_in_new),
+                        contentDescription = stringResource(strings.open),
+                    )
+                }
+            }
+            HorizontalDivider()
+
+            TextField(
+                value = text,
+                onValueChange = {
+                    text = it
+                    Settings.terminal_extra_keys = it
                 },
-            )
-
-            AndroidView(
-                modifier = Modifier.fillMaxSize().imePadding(),
-                factory = { context ->
-                    Editor(context).apply {
-                        editorRef = WeakReference(this)
-
-                        setTextSize(10f)
-                        setText(Settings.terminal_extra_keys)
-                        isWordwrap = false
-
-                        subscribeAlways(ContentChangeEvent::class.java) {
-                            Settings.terminal_extra_keys = it.editor.text.toString()
-                        }
-
-                        setThemeColors(
-                            isDarkMode = isDarkMode,
-                            selectionColors = selectionColors,
-                            colorScheme = colorScheme,
-                        )
-
-                        scope.launch { configureLanguage(BuiltinFileType.JSON.textmateScope!!) }
-                    }
-                },
+                modifier = Modifier
+                    .fillMaxSize()
+                    .imePadding(),
+                fontFamily = FontFamily.Monospace,
+                textStyle = TextStyle(fontSize = TextUnit(10f, TextUnitType.Sp)),
             )
         }
     }
-}
-
-/** Reset order of commands and symbols to default */
-private fun resetFiles(editor: Editor?) {
-    Preference.removeKey("terminal_extra_keys")
-    editor?.setText(DEFAULT_TERMINAL_EXTRA_KEYS)
 }

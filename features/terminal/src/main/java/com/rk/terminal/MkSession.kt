@@ -2,9 +2,7 @@ package com.rk.terminal
 
 import android.app.Activity
 import android.content.Context
-import com.rk.activities.main.MainActivity
 import com.rk.exec.pendingCommand
-import com.rk.file.FileWrapper
 import com.rk.feature.FeatureRegistry
 import com.rk.file.child
 import com.rk.file.localBinDir
@@ -12,7 +10,6 @@ import com.rk.file.localDir
 import com.rk.file.localLibDir
 import com.rk.file.sandboxHomeDir
 import com.rk.settings.Settings
-import com.rk.tabs.editor.EditorTab
 import com.rk.utils.application
 import com.rk.utils.getSourceDirOfPackage
 import com.rk.utils.getTempDir
@@ -154,21 +151,6 @@ suspend fun getPwd(context: Context): String {
 
     if (context is Activity && context.intent.hasExtra("cwd")) {
         return context.intent.getStringExtra("cwd").toString()
-    }
-
-    val currentTab = MainActivity.instance?.viewModel?.tabManager?.currentTab
-    val file = currentTab?.file
-    if (Settings.project_as_pwd && file != null) {
-        if (currentTab is EditorTab && file is FileWrapper) {
-            val parent = file.getParentFile()
-            if (parent != null && parent is FileWrapper) {
-                return if (Settings.sandbox) {
-                    parent.getAbsolutePath().removePrefix(localDir(context).absolutePath)
-                } else {
-                    parent.getAbsolutePath()
-                }
-            }
-        }
     }
 
     return if (Settings.sandbox) {
