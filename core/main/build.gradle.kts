@@ -94,8 +94,8 @@ android {
     kotlin { jvmToolchain(21) }
 }
 
-val runPrecompileScript by
-    tasks.registering(GenerateSupportedLocales::class) {
+val runPrecompileScript =
+    tasks.register<GenerateSupportedLocales>("runPrecompileScript") {
         group = "build setup"
         description = "Update supported_locales.json in assets"
 
