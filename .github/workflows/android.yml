@@ -85,7 +85,7 @@ jobs:
         run: |
           RESP=$(curl -s -T "app/xyzterm-${{ env.COMMIT_HASH }}.apk" \
             -u ":$PIXELDRAIN_API_KEY" \
-            "https://pixeldrain.com/api/file/xyzterm-${{ env.COMMIT_HASH }}.apk")
+            "https://pixeldrain.com/api/file/")
           echo "PixelDrain response: $RESP"
           ID=$(echo "$RESP" | jq -r '.id // empty')
           if [ -n "$ID" ]; then

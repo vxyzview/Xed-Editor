@@ -96,7 +96,13 @@ class ProjectCreatorActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-        val root = intent.getParcelableExtra("root", Uri::class.java)
+        val root =
+            @Suppress("DEPRECATION") // untyped overload is required below API 33
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                intent.getParcelableExtra("root", Uri::class.java)
+            } else {
+                intent.getParcelableExtra("root")
+            }
         val parentFolder = root?.toFileObject(expectedIsFile = false)
 
         setContent {
