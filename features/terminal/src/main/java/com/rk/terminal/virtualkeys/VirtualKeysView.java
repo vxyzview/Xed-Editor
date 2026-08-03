@@ -10,6 +10,7 @@ import android.util.AttributeSet;
 import android.view.HapticFeedbackConstants;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewConfiguration;
 import android.view.ViewGroup;
@@ -608,7 +609,7 @@ public final class VirtualKeysView extends GridLayout {
         mPopupWindow.setContentView(button);
         mPopupWindow.setOutsideTouchable(true);
         mPopupWindow.setFocusable(false);
-        mPopupWindow.showAsDropDown(view, 0, -2 * height);
+        mPopupWindow.showAsDropDown(view, 0, -2 * height, Gravity.NO_GRAVITY);
     }
 
     private void dismissPopup() {
