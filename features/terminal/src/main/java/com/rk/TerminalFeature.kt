@@ -12,13 +12,6 @@ import com.rk.exec.ubuntuProcess
 import com.rk.extension.api.DynamicRoute
 import com.rk.feature.Feature
 import com.rk.feature.FeatureToggle
-import com.rk.lsp.LspRegistry
-import com.rk.lsp.servers.Bash
-import com.rk.lsp.servers.CSS
-import com.rk.lsp.servers.Emmet
-import com.rk.lsp.servers.HTML
-import com.rk.lsp.servers.TypeScript
-import com.rk.lsp.servers.XML
 import com.rk.resources.drawables
 import com.rk.resources.strings
 import com.rk.settings.SettingsCategory
@@ -98,8 +91,6 @@ class TerminalFeature : Feature {
         // Assuming there's at least one item already there
         ToolbarConfiguration.addGlobalToolbarCommand(TerminalCommand, index = 1)
 
-        // Register built-in LSP servers
-        LspRegistry.addBuiltInServers(HTML, Emmet, CSS, TypeScript, Bash, XML)
     }
 
     override fun dispose(application: Application) {
@@ -111,6 +102,5 @@ class TerminalFeature : Feature {
         SandboxedProcessRegistry.provider = null
         CommandProvider.unregisterCommand(TerminalCommand)
         ToolbarConfiguration.removeGlobalToolbarCommand(TerminalCommand)
-        LspRegistry.removeBuiltInServers(HTML, Emmet, CSS, TypeScript, Bash, XML)
     }
 }
