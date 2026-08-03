@@ -13,7 +13,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavController
 import com.rk.DocumentProvider
-import com.rk.activities.main.MainActivity
+import com.rk.activities.settings.SettingsActivity
 import com.rk.activities.settings.SettingsActivity
 import com.rk.activities.settings.SettingsRoutes
 import com.rk.activities.settings.settingsNavController
@@ -182,12 +182,7 @@ fun SettingsTerminalScreen(overrideNavController: NavController? = null) {
                 showSwitch = false,
                 default = false,
                 sideEffect = {
-                    val fileManager =
-                        if (SettingsActivity.instance != null) {
-                            SettingsActivity.instance!!.fileManager
-                        } else {
-                            MainActivity.instance!!.fileManager
-                        }
+                    val fileManager = SettingsActivity.instance!!.fileManager
 
                     fileManager.createNewFile(
                         mimeType = "application/octet-stream",

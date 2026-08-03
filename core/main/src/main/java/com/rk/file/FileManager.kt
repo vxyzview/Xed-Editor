@@ -12,7 +12,6 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.StringRes
 import androidx.lifecycle.lifecycleScope
 import com.rk.DefaultScope
-import com.rk.activities.main.ui.fileTreeViewModel
 import com.rk.resources.getString
 import com.rk.utils.application
 import com.rk.utils.toast
@@ -132,7 +131,6 @@ class FileManager(private val activity: ComponentActivity) {
                     destinationFile?.let { file ->
                         copyUriData(activity.contentResolver, sourceUri, file.toUri())
                         withContext(Dispatchers.Main) {
-                            fileTreeViewModel.get()?.updateCache(parentFile!!)
                             callback(file)
                         }
                     } ?: run { withContext(Dispatchers.Main) { callback(null) } }

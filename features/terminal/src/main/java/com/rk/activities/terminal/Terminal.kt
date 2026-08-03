@@ -43,7 +43,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
-import com.rk.activities.main.ui.DisclaimerScreen
+import com.rk.activities.settings.DisclaimerScreen
 import com.rk.exec.isTerminalInstalled
 import com.rk.file.FilePermission
 import com.rk.file.child

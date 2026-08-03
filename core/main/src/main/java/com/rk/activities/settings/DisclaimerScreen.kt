@@ -1,4 +1,4 @@
-package com.rk.activities.main.ui
+package com.rk.activities.settings
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
