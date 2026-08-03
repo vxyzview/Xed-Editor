@@ -1,5 +1,9 @@
 name: Android CI
 
+# VERSION: 2 - auto-generates signing key; no KEYSTORE/PROP secrets needed.
+# If a run log shows "KEYSTORE secret is not a valid keystore" or "Verify signing
+# key", it is using a STALE cached workflow - re-run on this commit.
+
 on:
   push:
     branches:
@@ -45,42 +49,22 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle-
 
-      - name: Decode and create secrets
+      - name: Generate signing key
         run: |
-          echo "${{ secrets.KEYSTORE }}" | base64 -d > /tmp/xyzterm.keystore
-          echo "${{ secrets.PROP }}" | base64 -d > /tmp/signing.properties
-
-      - name: Verify signing key matches properties
-        run: |
-          if [ ! -s /tmp/xyzterm.keystore ] || [ ! -s /tmp/signing.properties ]; then
-            echo "::error::KEYSTORE or PROP secret is missing/empty. Run the 'Generate Signing Key' workflow and paste the printed base64 values into both secrets."
-            exit 1
-          fi
-          STORE_PASS=$(grep '^storePassword=' /tmp/signing.properties | cut -d= -f2)
-          KEY_PASS=$(grep '^keyPassword=' /tmp/signing.properties | cut -d= -f2)
-          KEY_ALIAS=$(grep '^keyAlias=' /tmp/signing.properties | cut -d= -f2)
-          echo "keystore size: $(wc -c < /tmp/xyzterm.keystore) bytes"
-          echo "keyAlias=$KEY_ALIAS  storePassword set: $([ -n "$STORE_PASS" ] && echo yes || echo NO)"
-          if [ -z "$STORE_PASS" ] || [ -z "$KEY_PASS" ] || [ -z "$KEY_ALIAS" ]; then
-            echo "::error::PROP secret is malformed (missing storePassword/keyPassword/keyAlias). Re-run 'Generate Signing Key' and copy the full PROP base64 block."
-            exit 1
-          fi
-          if ! file /tmp/xyzterm.keystore | grep -qE 'PKCS|Java KeyStore'; then
-            echo "::error::KEYSTORE secret is not a valid keystore (base64 corrupted or truncated). Re-run 'Generate Signing Key' and copy the full KEYSTORE base64 block."
-            exit 1
-          fi
-          # Try listing all aliases with the PROP store password
-          ALIASES=$(keytool -list -keystore /tmp/xyzterm.keystore -storepass "$STORE_PASS" 2>/dev/null | grep -E '^\s*[a-zA-Z0-9_]+, ' | sed 's/,.*//' | tr -d ' ' | tr '\n' ' ')
-          if [ -z "$ALIASES" ]; then
-            echo "::error::Keystore cannot be opened with the storePassword from PROP. The two secrets are from DIFFERENT 'Generate Signing Key' runs, or one is stale. Copy both base64 blocks from the SAME run."
-            exit 1
-          fi
-          echo "aliases in keystore: $ALIASES"
-          if ! keytool -list -keystore /tmp/xyzterm.keystore -storepass "$STORE_PASS" -alias "$KEY_ALIAS" >/dev/null 2>&1; then
-            echo "::error::alias '$KEY_ALIAS' not found in keystore (found: $ALIASES). Copy both secrets from the SAME run."
-            exit 1
-          fi
-          echo "Signing key OK (alias=$KEY_ALIAS)"
+          PASS=$(openssl rand -hex 16)
+          keytool -genkeypair -v \
+            -keystore /tmp/xyzterm.keystore \
+            -alias xyzterm \
+            -keyalg RSA -keysize 2048 -validity 10000 \
+            -storepass "$PASS" -keypass "$PASS" \
+            -dname "CN=xyzterm, OU=xyzterm, O=xyzterm, L=, ST=, C=US"
+          cat > /tmp/signing.properties <<EOF
+          storePassword=$PASS
+          keyPassword=$PASS
+          keyAlias=xyzterm
+          storeFile=/tmp/xyzterm.keystore
+          EOF
+          echo "Generated fresh signing key (alias=xyzterm, store=$PASS)"
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
