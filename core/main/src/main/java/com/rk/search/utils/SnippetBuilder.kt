@@ -89,7 +89,7 @@ class SnippetBuilder(private val context: Context) {
                 if (openedTab != null) {
                     openedTab.editorState.editor.get()?.text.toString().lines()
                 } else {
-                    targetFile.readText()?.lines() ?: emptyList()
+                    targetFile.readText().lines()
                 }
 
             val targetLine = lines[range.start.line]

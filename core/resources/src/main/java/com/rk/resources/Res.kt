@@ -17,22 +17,22 @@ object Res {
     @JvmField var application: Application? = null
 }
 
-inline fun Int.getString(context: Context = Res.application!!): String {
+fun Int.getString(context: Context = Res.application!!): String {
     return ContextCompat.getString(context, this)
 }
 
-inline fun Int.getFilledString(vararg args: Any?, context: Context = Res.application!!): String {
+fun Int.getFilledString(vararg args: Any?, context: Context = Res.application!!): String {
     return this.getString(context).fillPlaceholders(*args)
 }
 
-inline fun String.fillPlaceholders(vararg args: Any?): String {
+fun String.fillPlaceholders(vararg args: Any?): String {
     return String.format(this, *args)
 }
 
-inline fun Int.getDrawable(context: Context = Res.application!!): Drawable? {
+fun Int.getDrawable(context: Context = Res.application!!): Drawable? {
     return ContextCompat.getDrawable(context, this)
 }
 
-inline fun Int.getQuantityString(quantity: Int, vararg formatArgs: Any?, context: Context = Res.application!!): String {
+fun Int.getQuantityString(quantity: Int, vararg formatArgs: Any?, context: Context = Res.application!!): String {
     return context.resources.getQuantityString(this, quantity, *formatArgs)
 }

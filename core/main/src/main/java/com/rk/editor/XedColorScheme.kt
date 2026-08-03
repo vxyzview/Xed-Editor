@@ -130,9 +130,9 @@ class XedColorScheme(
 
             val editorColors =
                 if (isDarkMode) {
-                    currentTheme.value?.darkEditorColors
+                    currentTheme.value.darkEditorColors
                 } else {
-                    currentTheme.value?.lightEditorColors
+                    currentTheme.value.lightEditorColors
                 }
 
             if (editorColors.isNullOrEmpty().not()) {

@@ -391,7 +391,7 @@ private suspend fun List<LspServer>.filterActiveLspServers(
         }
 
         scope.launch(Dispatchers.IO) {
-            if (server.isUpdatable(activity)) {
+            if (server.hasUpdate(activity)) {
                 logInfo("Server ${server.id} has updates available")
                 server.promptLspUpdate(activity, scope)
             }

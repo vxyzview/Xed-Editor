@@ -390,7 +390,7 @@
     <string name="extra_key_bg_desc">Pokaż tło dodatkowych klawiszy</string>
     <string name="actions">Czynności</string>
     <string name="enjoying_xed">Podoba Ci się xyzterm?</string>
-    <string name="support_message">Zapisano pliki: %s oraz Uruchomiono kod: %s razy z xyzterm.\n\nJestem developerem działającym w pojedynkę, utrzymując aplikację jako bezpłatną oraz szanującą prywatność. Jeśli xyzterm sprawił że koduje Ci się przyjemniej, czy rozważysz wsparcie rozwoju?\n\nWsparcie pomoże mi w:\n• Szybszym dodawaniu nowych funkcji\n• Utrzymaniu aplikacji jako bezpłatnej na zawsze\n• Sprawniejszej naprawie błędów</string>
+    <string name="support_message">Zapisano pliki: %1$s oraz Uruchomiono kod: %2$s razy z xyzterm.\n\nJestem developerem działającym w pojedynkę, utrzymując aplikację jako bezpłatną oraz szanującą prywatność. Jeśli xyzterm sprawił że koduje Ci się przyjemniej, czy rozważysz wsparcie rozwoju?\n\nWsparcie pomoże mi w:\n• Szybszym dodawaniu nowych funkcji\n• Utrzymaniu aplikacji jako bezpłatnej na zawsze\n• Sprawniejszej naprawie błędów</string>
     <string name="yes_support">Tak, wesprę! ❤️</string>
     <string name="not_for_me">Nie, dziękuję</string>
     <string name="sponsor_desc">Zostań sponsorem, pomóż kształtować przyszłość projektu! 💰</string>
@@ -458,7 +458,7 @@
     <string name="icon_pack_install_failed">Instalacja paczki ikon zakończona niepowodzeniem</string>
     <string name="icon_pack_missing_fields">Plik manifest.json ma brakujące lub błędne właściwości:\n%s\n\nProszę sprawdź plik i spróbuj ponownie.</string>
     <string name="manifest_missing">Brak pliku manifest.json. Proszę dodaj i spróbuj ponownie.</string>
-    <string name="content_property">%s pozycji, łącznie %s</string>
+    <string name="content_property">%1$s pozycji, łącznie %2$s</string>
     <string name="general">Ogólne</string>
     <string name="advanced">Zaawansowane</string>
     <string name="clone_repo_desc">Klonuj zdalne repozytorium</string>

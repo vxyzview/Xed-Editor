@@ -18,6 +18,7 @@ import java.io.File
 
 /** These checks are intended for troubleshooting terminal issues */
 @Composable
+@Suppress("NOTHING_TO_INLINE")
 inline fun terminalChecks(): SnapshotStateList<Check> {
     val checkProot = stringResource(strings.check_proot)
     val checkSystemShell = stringResource(strings.check_system_shell)

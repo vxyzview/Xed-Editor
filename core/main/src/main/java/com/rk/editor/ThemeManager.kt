@@ -109,11 +109,7 @@ object ThemeManager {
 
                 val selectedTheme = currentTheme.value
                 val tokenArray =
-                    when {
-                        selectedTheme == null -> JsonArray()
-                        darkTheme -> selectedTheme.darkTokenColors
-                        else -> selectedTheme.lightTokenColors
-                    }
+                    if (darkTheme) selectedTheme.darkTokenColors else selectedTheme.lightTokenColors
 
                 // In some TextMate theme files the token colors are saved in an array
                 // called settings and in some it's called tokenColors
@@ -124,11 +120,11 @@ object ThemeManager {
                         "tokenColors"
                     } else null
 
-                selectedTheme?.let { jsonObject.add("name", JsonPrimitive(it.name)) }
+                jsonObject.add("name", JsonPrimitive(selectedTheme.name))
 
                 if (!tokenArray.isEmpty) {
                     if (arrayName != null) {
-                        if (selectedTheme!!.inheritBase) {
+                        if (selectedTheme.inheritBase) {
                             val existingTokenColors = jsonObject[arrayName].asJsonArray
                             existingTokenColors.addAll(tokenArray)
                         } else {

@@ -390,7 +390,7 @@
     <string name="extra_key_bg_desc">Ek tuşlar için arka planı göster</string>
     <string name="actions">Eylemler</string>
     <string name="enjoying_xed">xyzterm\'ü beğeniyor musun?</string>
-    <string name="support_message">xyzterm ile %s dosya kaydettiniz ve kodu %s kez çalıştırdınız.\n\nBen bu uygulamayı ücretsiz ve gizlilik odaklı tutan tek bir geliştiriciyim. xyzterm, topluluktan katkıda bulunanların yardımıyla geliştirilmiş açık kaynaklı, gizlilik odaklı bir uygulamadır. Eğer xyzterm kod yazmanızı kolaylaştırdıysa, gelişimini desteklemeyi düşünür müsünüz?\n\nDesteğiniz bana yardımcı olur:\n• Özellikleri daha hızlı geliştirmeme\n• xyzterm\'i sonsuza dek reklamsız tutmama\n• Hatalara hızlıca yanıt vermeme</string>
+    <string name="support_message">xyzterm ile %1$s dosya kaydettiniz ve kodu %2$s kez çalıştırdınız.\n\nBen bu uygulamayı ücretsiz ve gizlilik odaklı tutan tek bir geliştiriciyim. xyzterm, topluluktan katkıda bulunanların yardımıyla geliştirilmiş açık kaynaklı, gizlilik odaklı bir uygulamadır. Eğer xyzterm kod yazmanızı kolaylaştırdıysa, gelişimini desteklemeyi düşünür müsünüz?\n\nDesteğiniz bana yardımcı olur:\n• Özellikleri daha hızlı geliştirmeme\n• xyzterm\'i sonsuza dek reklamsız tutmama\n• Hatalara hızlıca yanıt vermeme</string>
     <string name="yes_support">Evet, destekleyeceğim! ❤️</string>
     <string name="not_for_me">Hayır teşekkürler</string>
     <string name="sponsor_desc">Sponsor ol ve bu projenin geleceğini şekillendirmeye yardım et</string>
@@ -452,7 +452,7 @@
     <string name="icon_packs">İkon paketleri</string>
     <string name="add_icon_pack">İkon paketi ekle</string>
     <string name="last_modified">Son Düzenleme</string>
-    <string name="content_property">%s öğe, toplam %s</string>
+    <string name="content_property">%1$s öğe, toplam %2$s</string>
     <string name="icon_pack_install_failed">İkon paketi kurulumu başarısız oldu</string>
     <string name="icon_pack_missing_fields">manifest.json dosyasında eksik veya geçersiz özellikler bulunuyor:\n%s\n\nLütfen dosyayı kontrol edin ve tekrar deneyin.</string>
     <string name="manifest_missing">manifest.json dosyası eksik. Lütfen ekleyin ve tekrar deneyin.</string>

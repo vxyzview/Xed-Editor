@@ -390,7 +390,7 @@
     <string name="extra_key_bg_desc">Tampilkan latar belakang tombol tambahan</string>
     <string name="actions">Tindakan</string>
     <string name="enjoying_xed">Suka menggunakan xyzterm?</string>
-    <string name="support_message">Anda telah menyimpan %s file dan menjalankan kode %s kali menggunakan xyzterm. \n\nxyzterm adalah aplikasi sumber terbuka yang berfokus pada privasi, yang dikembangkan berkat bantuan para kontributor dari komunitas. Jika xyzterm telah memudahkan Anda dalam menulis kode, maukah Anda mempertimbangkan untuk mendukung pengembangannya?\n\nDukungan Anda membantu saya:\n• Mengembangkan fitur dengan lebih cepat\n• Menjaga xyzterm tetap bebas iklan selamanya\n• Menanggapi laporan bug dengan cepat</string>
+    <string name="support_message">Anda telah menyimpan %1$s file dan menjalankan kode %2$s kali menggunakan xyzterm. \n\nxyzterm adalah aplikasi sumber terbuka yang berfokus pada privasi, yang dikembangkan berkat bantuan para kontributor dari komunitas. Jika xyzterm telah memudahkan Anda dalam menulis kode, maukah Anda mempertimbangkan untuk mendukung pengembangannya?\n\nDukungan Anda membantu saya:\n• Mengembangkan fitur dengan lebih cepat\n• Menjaga xyzterm tetap bebas iklan selamanya\n• Menanggapi laporan bug dengan cepat</string>
     <string name="yes_support">Ya, saya akan mendukung! ❤️</string>
     <string name="not_for_me">Tidak, terima kasih</string>
     <string name="sponsor_desc">Jadilah sponsor dan bantu menentukan masa depan proyek ini</string>
@@ -452,7 +452,7 @@
     <string name="icon_packs">Paket ikon</string>
     <string name="add_icon_pack">Tambah paket ikon</string>
     <string name="last_modified">Terakhir diubah</string>
-    <string name="content_property">%s item, total %s</string>
+    <string name="content_property">%1$s item, total %2$s</string>
     <string name="icon_pack_install_failed">Gagal menginstal paket ikon</string>
     <string name="icon_pack_missing_fields">File manifest.json memiliki properti yang hilang atau tidak valid:\n%s.\n\nSilakan periksa file dan coba lagi.</string>
     <string name="manifest_missing">File manifest.json tidak ada. Silakan tambahkan lalu coba lagi.</string>

@@ -392,7 +392,7 @@
     <string name="keybinds_info">xyzterm admite atajos de teclado de hardware para que trabajes más rápido y eficientemente. Dispones de una amplia gama de combinaciones de teclas predeterminadas, que puedes configurar a continuación a tu gusto.</string>
     <string name="auto_open_new_files">Abrir archivos creados</string>
     <string name="auto_open_new_files_desc">Abrir automáticamente archivos recientemente creados</string>
-    <string name="support_message">Has guardado %s archivos y ejecutado código %s veces con xyzterm.\n\nSoy un desarrollador independiente que mantiene esta aplicación gratuita y centrada en la privacidad. Si xyzterm te ha facilitado la programación, ¿considerarías apoyar su desarrollo?\n\nTu apoyo me ayuda a:\n• Desarrollar funciones más rápido\n• Mantener xyzterm sin publicidad para siempre\n• Responder a los errores rápidamente</string>
+    <string name="support_message">Has guardado %1$s archivos y ejecutado código %2$s veces con xyzterm.\n\nSoy un desarrollador independiente que mantiene esta aplicación gratuita y centrada en la privacidad. Si xyzterm te ha facilitado la programación, ¿considerarías apoyar su desarrollo?\n\nTu apoyo me ayuda a:\n• Desarrollar funciones más rápido\n• Mantener xyzterm sin publicidad para siempre\n• Responder a los errores rápidamente</string>
     <string name="clone_repo_desc">Clonar repositorio remoto</string>
     <string name="repo_url">URL del repositorio</string>
     <string name="branch">Rama</string>
@@ -456,7 +456,7 @@
     <string name="icon_packs">Paquetes de iconos</string>
     <string name="add_icon_pack">Añadir paquete de icono</string>
     <string name="last_modified">Último modificado</string>
-    <string name="content_property">%s elementos, total de %s</string>
+    <string name="content_property">%1$s elementos, total de %2$s</string>
     <string name="icon_pack_install_failed">Paquete de icono de instalación incorrecto</string>
     <string name="icon_pack_missing_fields">El archivo manifest.json tiene ausente o propiedades no válidas:\n%s\n\nCompruebe el archivo e inténtelo de nuevo.</string>
     <string name="manifest_missing">El archivo manifest.json está ausente. Añádalo e inténtelo de nuevo.</string>

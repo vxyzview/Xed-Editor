@@ -390,7 +390,7 @@
     <string name="extra_key_bg_desc">Hintergrund für Zusatztasten anzeigen</string>
     <string name="actions">Aktionen</string>
     <string name="enjoying_xed">Gefällt dir xyzterm?</string>
-    <string name="support_message">Du hast %s Dateien gespeichert und %s Mal Code mit xyzterm ausgeführt.\n\nxyzterm ist eine Open-Source-App mit Fokus auf Datenschutz, die mithilfe von Mitwirkenden aus der Community entwickelt wurde. Wenn xyzterm dir das Programmieren erleichtert hat, würdest du die Entwicklung unterstützen?\n\nDeine Unterstützung hilft mir:\n• Neue Funktionen schneller zu entwickeln\n• xyzterm dauerhaft werbefrei zu halten\n• Fehler schnell zu beheben</string>
+    <string name="support_message">Du hast %1$s Dateien gespeichert und %2$s Mal Code mit xyzterm ausgeführt.\n\nxyzterm ist eine Open-Source-App mit Fokus auf Datenschutz, die mithilfe von Mitwirkenden aus der Community entwickelt wurde. Wenn xyzterm dir das Programmieren erleichtert hat, würdest du die Entwicklung unterstützen?\n\nDeine Unterstützung hilft mir:\n• Neue Funktionen schneller zu entwickeln\n• xyzterm dauerhaft werbefrei zu halten\n• Fehler schnell zu beheben</string>
     <string name="yes_support">Ja, ich werde es unterstützen! ❤️</string>
     <string name="not_for_me">Nein danke</string>
     <string name="sponsor_desc">Werde ein Sponsor und hilf mit, die Zukunft dieses Projekts zu gestalten</string>
@@ -452,7 +452,7 @@
     <string name="icon_packs">Icon-Pakete</string>
     <string name="add_icon_pack">Icon-Paket hinzufügen</string>
     <string name="last_modified">Zuletzt geändert</string>
-    <string name="content_property">%s Einträge, %s gesamt</string>
+    <string name="content_property">%1$s Einträge, %2$s gesamt</string>
     <string name="icon_pack_install_failed">Installation des Icon-Pakets fehlgeschlagen</string>
     <string name="icon_pack_missing_fields">Die Datei manifest.json enthält fehlende oder ungültige Eigenschaften:\n%s\n\nBitte überprüfe die Datei und versuche es erneut.</string>
     <string name="manifest_missing">Die Datei manifest.json fehlt. Bitte füge sie hinzu und versuche es erneut.</string>

@@ -273,7 +273,7 @@ fun rememberLspInstallStatus(context: Context, server: LspServer, refreshKey: In
             withContext(Dispatchers.IO) {
                 if (server.isInstalled(context)) {
                     value = LspInstallationAction.UNINSTALL
-                    if (server.isUpdatable(context)) {
+                    if (server.hasUpdate(context)) {
                         value = LspInstallationAction.UPDATE
                     }
                 } else {

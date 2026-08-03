@@ -397,7 +397,7 @@
     <string name="extra_key_bg">Фон дополнительной клавиши</string>
     <string name="extra_key_bg_desc">Показывать фон для дополнительных клавиш</string>
     <string name="enjoying_xed">Нравится xyzterm?</string>
-    <string name="support_message">Вы сохранили файлы (%s) и запускали код %s раз(-а) с помощью xyzterm.\n\nЯ — один разработчик, который делает это приложение бесплатным и ориентированным на конфиденциальность. Если xyzterm облегчает вашу работу с кодом, не хотели бы вы поддержать его развитие?\n\nВаша поддержка помогает мне:\n• Быстрее добавлять новые функции\n• Держать xyzterm навсегда без рекламы\n• Быстро исправлять ошибки</string>
+    <string name="support_message">Вы сохранили файлы (%1$s) и запускали код %2$s раз(-а) с помощью xyzterm.\n\nЯ — один разработчик, который делает это приложение бесплатным и ориентированным на конфиденциальность. Если xyzterm облегчает вашу работу с кодом, не хотели бы вы поддержать его развитие?\n\nВаша поддержка помогает мне:\n• Быстрее добавлять новые функции\n• Держать xyzterm навсегда без рекламы\n• Быстро исправлять ошибки</string>
     <string name="yes_support">Да, я поддержу! ❤️</string>
     <string name="not_for_me">Нет, спасибо</string>
     <string name="sponsor_desc">Станьте спонсором и помогите формировать будущее этого проекта</string>
@@ -454,7 +454,7 @@
     <string name="icon_packs">Наборы иконок</string>
     <string name="add_icon_pack">Добавить набор значков</string>
     <string name="last_modified">Дата изменения</string>
-    <string name="content_property">%s элем., всего %s</string>
+    <string name="content_property">%1$s элем., всего %2$s</string>
     <string name="icon_pack_install_failed">Не удалось установить набор значков</string>
     <string name="icon_pack_missing_fields">Файл manifest.json содержит отсутствующие или недопустимые свойства:\n%s\n\nПожалуйста, проверьте файл и попробуйте снова.</string>
     <string name="manifest_missing">Файл manifest.json отсутствует. Пожалуйста, добавьте его и попробуйте снова.</string>

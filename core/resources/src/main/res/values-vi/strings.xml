@@ -259,7 +259,7 @@
     <string name="default_option">Mặc định</string>
     <string name="launch_in_browser">Mở trong trình duyệt</string>
     <string name="actions">Hành động</string>
-    <string name="support_message">Bạn đã lưu %s tệp và chạy code %s lần với xyzterm. \n\nTôi là nhà phát triển cá nhân giữ ứng dụng này miễn phí và tập trung vào quyền riêng tư. Nếu xyzterm giúp bạn lập trình dễ dàng hơn, bạn có thể cân nhắc hỗ trợ phát triển nó không?\n\nSự hỗ trợ của bạn giúp tôi:\n• Xây dựng tính năng mới nhanh hơn\n• Giữ xyzterm không quảng cáo vĩnh viễn\n• Phản hồi với lỗi nhanh chóng</string>
+    <string name="support_message">Bạn đã lưu %1$s tệp và chạy code %2$s lần với xyzterm. \n\nTôi là nhà phát triển cá nhân giữ ứng dụng này miễn phí và tập trung vào quyền riêng tư. Nếu xyzterm giúp bạn lập trình dễ dàng hơn, bạn có thể cân nhắc hỗ trợ phát triển nó không?\n\nSự hỗ trợ của bạn giúp tôi:\n• Xây dựng tính năng mới nhanh hơn\n• Giữ xyzterm không quảng cáo vĩnh viễn\n• Phản hồi với lỗi nhanh chóng</string>
     <string name="yes_support">Có, tôi sẽ hỗ trợ! ❤️</string>
     <string name="not_for_me">Không, cảm ơn</string>
     <string name="sponsor_desc">Trở thành nhà tài trợ và giúp định hình tương lai của dự án này</string>

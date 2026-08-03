@@ -364,7 +364,7 @@
     <string name="extra_key_bg">Pozadí extra kláves</string>
     <string name="extra_key_bg_desc">Zobrazit pozadí pro extra klávesy</string>
     <string name="actions">Akce</string>
-    <string name="support_message">Uložili jste %s souborů/y a spustili kód %s krát s xyzterm.\n\nxyzterm je aplikace s otevřeným zdrojovým kódem a zaměřena na soukromí postavena pomocí přispěvatelů z komunity. Jestli vám xyzterm ulehčil programování, chtěli byste podpořit jeho vývoj?\n\nVaše podpora pomůže mi:\n• Sestavit funkce rychleji\n• Nechat xyzterm vždy bez reklam\n• Urychleně odpovítat na chyby</string>
+    <string name="support_message">Uložili jste %1$s souborů/y a spustili kód %2$s krát s xyzterm.\n\nxyzterm je aplikace s otevřeným zdrojovým kódem a zaměřena na soukromí postavena pomocí přispěvatelů z komunity. Jestli vám xyzterm ulehčil programování, chtěli byste podpořit jeho vývoj?\n\nVaše podpora pomůže mi:\n• Sestavit funkce rychleji\n• Nechat xyzterm vždy bez reklam\n• Urychleně odpovítat na chyby</string>
     <string name="yes_support">Ano, půjdu podpořit tě! ❤️</string>
     <string name="not_for_me">Ne, děkují</string>
     <string name="sponsor_desc">Staňte se sponzorem a pomožte utvářet budoucnost projektu</string>
@@ -436,7 +436,7 @@
     <string name="icon_packs">Sady ikon</string>
     <string name="add_icon_pack">Přidat sadu ikon</string>
     <string name="last_modified">Posledně změněno</string>
-    <string name="content_property">%s položky/ek, roven %s</string>
+    <string name="content_property">%1$s položky/ek, roven %2$s</string>
     <string name="icon_pack_install_failed">Instalace sadu ikon selhalo</string>
     <string name="emulate_editor_key">Emulovat stisknutí klávesy</string>
     <string name="select_key">Vyberte kód klávesy</string>

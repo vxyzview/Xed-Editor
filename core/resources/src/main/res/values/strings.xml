@@ -450,7 +450,7 @@
     <string name="extra_key_bg_desc">Show background for extra keys</string>
     <string name="actions">Actions</string>
     <string name="enjoying_xed">Enjoying xyzterm?</string>
-    <string name="support_message">xyzterm is an open-source, privacy-focused terminal app built with the help of contributors from the community. If xyzterm has made your work easier, would you consider supporting its development?\n\nYour support helps me:\n• Build features faster\n• Keep xyzterm ad-free forever\n• Respond to bugs quickly</string>
+    <string name="support_message">You have saved %1$s files and run code %2$s times with xyzterm. xyzterm is an open-source, privacy-focused terminal app built with the help of contributors from the community. If xyzterm has made your work easier, would you consider supporting its development?\n\nYour support helps me:\n• Build features faster\n• Keep xyzterm ad-free forever\n• Respond to bugs quickly</string>
     <string name="yes_support">Yes, I\'ll support! ❤️</string>
     <string name="not_for_me">No thanks</string>
     <string name="sponsor_desc">Become a sponsor and help shape the future of this project</string>
@@ -509,13 +509,20 @@
     <string name="icon_packs">Icon packs</string>
     <string name="add_icon_pack">Add icon pack</string>
     <string name="last_modified">Last modified</string>
-    <string name="content_property">%s items, totaling %s</string>
+    <string name="content_property">%1$s items, totaling %2$s</string>
     <string name="icon_pack_install_failed">Icon pack installation failed</string>
     <string name="manifest_missing_fields">The manifest.json file has missing or invalid properties:\n%s\n\nPlease check the file and try again.</string>
     <string name="manifest_missing">The manifest.json file is missing. Please add it and try again.</string>
     <string name="outdated_extension">This extension was made for an older version of xyzterm. Please ask the developer for an update.</string>
     <string name="outdated_client">Your xyzterm is out of date. Please update to the latest version to use this extension.</string>
     <string name="extension_validation_failed">Extension validation failed</string>
+    <string name="crashed">Crashed</string>
+    <string name="verified">Verified</string>
+    <string name="samsung_proot_warning">Your Samsung device is affected by a known issue that causes the PRoot-based terminal installation to fail.</string>
+    <string name="terminal_degraded_warning">The terminal is currently running in a degraded mode due to a known compatibility issue caused by a malfunction in the PRoot environment on some devices. Some features may be limited or behave differently.</string>
+    <string name="icon_pack_missing_fields">The manifest.json file has missing or invalid properties:\n%s\n\nPlease check the file and try again.</string>
+    <string name="third_party_ext">Third-Party Extensions</string>
+    <string name="third_party_ext_content">This application supports third-party extensions that may be developed by external parties. These extensions can:\n• Access and modify your files and data\n• Execute arbitrary code on your system\n• Contain bugs, vulnerabilities, or malicious code\n• Cause system instability or crashes\n• Compromise your security or privacy\n\nWe do not review, endorse, or take responsibility for any third-party extensions. You install and use extensions entirely at your own risk. We are not liable for any damage, data loss, or security issues caused by third-party extensions.</string>
     <string name="general">General</string>
     <string name="advanced">Advanced</string>
     <string name="git" translatable="false">Git</string>

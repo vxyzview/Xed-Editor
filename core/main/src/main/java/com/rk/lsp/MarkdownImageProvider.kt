@@ -55,6 +55,7 @@ class MarkdownImageProvider : SimpleMarkdownRenderer.ImageProvider {
         }
     }
 
+    @Suppress("DEPRECATION") // BitmapDrawable(bitmap) still works; no context available for the resources overload
     private fun loadSvg(imageByteArray: ByteArray): Drawable? {
         val svgText = String(imageByteArray)
         val svg =
@@ -86,6 +87,7 @@ class MarkdownImageProvider : SimpleMarkdownRenderer.ImageProvider {
         return BitmapDrawable(bitmap)
     }
 
+    @Suppress("DEPRECATION") // BitmapDrawable(bitmap) still works; no context available for the resources overload
     private fun loadRaster(imageByteArray: ByteArray): Drawable? {
         val bitmap = BitmapFactory.decodeByteArray(imageByteArray, 0, imageByteArray.size) ?: return null
         val scaledBitmap = scaleIfNeeded(bitmap, 800)

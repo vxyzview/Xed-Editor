@@ -193,8 +193,9 @@ class Editor : CodeEditor {
         insertFinalNewline = finalNewline
         trimTrailingWhitespace = trailingWhitespace
 
-        val minScaleSize: Float = 6f * resources.displayMetrics.scaledDensity
-        val maxScaleSize: Float = 100f * resources.displayMetrics.scaledDensity
+        val scaledDensity = resources.configuration.fontScale * resources.displayMetrics.density
+        val minScaleSize: Float = 6f * scaledDensity
+        val maxScaleSize: Float = 100f * scaledDensity
         setScaleTextSizes(minScaleSize, maxScaleSize)
 
         nonPrintablePaintingFlags =

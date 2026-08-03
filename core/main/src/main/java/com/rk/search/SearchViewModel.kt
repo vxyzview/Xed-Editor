@@ -278,7 +278,7 @@ class SearchViewModel : ViewModel() {
                     val editor = tab.editorState.editor.get() ?: return@withContext
                     replaceInEditor(codeItem, editor)
                 } else {
-                    val content = codeItem.file.readText() ?: return@withContext
+                    val content = codeItem.file.readText()
                     val lines = content.lines().toMutableList()
 
                     replaceInRawList(codeItem, lines)
@@ -322,7 +322,7 @@ class SearchViewModel : ViewModel() {
                             }
                         }
                     } else {
-                        val content = file.readText() ?: continue
+                        val content = file.readText()
                         val lines = content.lines().toMutableList()
 
                         for (codeItem in itemsSorted) {

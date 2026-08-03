@@ -55,7 +55,7 @@ fun File.toFileWrapper(): FileWrapper {
     return FileWrapper(this)
 }
 
-inline fun isFileManager(): Boolean {
+fun isFileManager(): Boolean {
     return ((Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) && Environment.isExternalStorageManager())
 }
 

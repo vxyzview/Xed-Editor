@@ -65,11 +65,11 @@ import java.util.Locale
 import kotlin.math.roundToInt
 
 @OptIn(DelicateCoroutinesApi::class)
-inline fun runOnUiThread(runnable: Runnable) {
+fun runOnUiThread(runnable: Runnable) {
     GlobalScope.launch(Dispatchers.Main) { runnable.run() }
 }
 
-inline fun toast(@StringRes resId: Int) {
+fun toast(@StringRes resId: Int) {
     toast(resId.getString())
 }
 
@@ -118,12 +118,12 @@ fun isSystemInDarkTheme(ctx: Context): Boolean {
         Configuration.UI_MODE_NIGHT_YES)
 }
 
-inline fun dpToPx(dp: Float, ctx: Context): Int {
+fun dpToPx(dp: Float, ctx: Context): Int {
     val density = ctx.resources.displayMetrics.density
     return (dp * density).roundToInt()
 }
 
-inline fun isMainThread(): Boolean {
+fun isMainThread(): Boolean {
     return ThreadUtils.isMainThread()
 }
 
@@ -152,6 +152,7 @@ fun hasHardwareKeyboard(context: Context): Boolean {
     return configuration.keyboard != Configuration.KEYBOARD_NOKEYS
 }
 
+@Suppress("DEPRECATION")
 fun origin(): String {
     return application!!.run {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
@@ -266,9 +267,9 @@ fun getUnderlineColor(context: Context, fileTreeViewModel: FileTreeViewModel, fi
     val diagnosticSeverity = file?.let { fileTreeViewModel.getNodeSeverity(it) } ?: -1
     val editorColors =
         if (isDarkTheme(context)) {
-            currentTheme.value?.darkEditorColors
+            currentTheme.value.darkEditorColors
         } else {
-            currentTheme.value?.lightEditorColors
+            currentTheme.value.lightEditorColors
         }
     val underlineColor =
         when (diagnosticSeverity) {

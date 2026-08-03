@@ -390,7 +390,7 @@
     <string name="extra_key_bg_desc">Affiche l\'arrière-plan pour les touches additionnelles</string>
     <string name="actions">Actions</string>
     <string name="enjoying_xed">Vous appréciez xyzterm Editor ?</string>
-    <string name="support_message">Vous avez enregistré %s fichiers et fait tourner %s fois du code avec xyzterm. \n\nJe suis un développeur indépendant, gardant ce logiciel libre et attentif à la vie privée. Si xyzterm a facilité votre travail de codage, pourriez-vous soutenir son développement ?\n\nVotre soutien m\'aidera à :\n• Développer plus rapidement des fonctionnalités \n• Gardez xyzterm sans publicité pour toujours\n• Réagir rapidement à des bugs</string>
+    <string name="support_message">Vous avez enregistré %1$s fichiers et fait tourner %2$s fois du code avec xyzterm. \n\nJe suis un développeur indépendant, gardant ce logiciel libre et attentif à la vie privée. Si xyzterm a facilité votre travail de codage, pourriez-vous soutenir son développement ?\n\nVotre soutien m\'aidera à :\n• Développer plus rapidement des fonctionnalités \n• Gardez xyzterm sans publicité pour toujours\n• Réagir rapidement à des bugs</string>
     <string name="yes_support">Oui, je vais soutenir ! ❤️</string>
     <string name="not_for_me">Non merci</string>
     <string name="sponsor_desc">Devenir sponsor et prendre part au projet</string>
@@ -452,7 +452,7 @@
     <string name="icon_packs">Packs d\'icônes</string>
     <string name="add_icon_pack">Ajouter un pack d\'icônes</string>
     <string name="last_modified">Dernière modification</string>
-    <string name="content_property">%s éléments, %s au total</string>
+    <string name="content_property">%1$s éléments, %2$s au total</string>
     <string name="icon_pack_install_failed">Échec de l\'installation du pack d\'icônes</string>
     <string name="icon_pack_missing_fields">Le fichier manifest.json a des propriétés manquantes ou invalides\n%s\n\nVerifiez le fichier et réessayez.</string>
     <string name="manifest_missing">Le fichier manifest.json est manquant. Ajoutez-le et réessayez.</string>

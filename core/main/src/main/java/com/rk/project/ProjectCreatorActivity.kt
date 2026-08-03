@@ -96,12 +96,7 @@ class ProjectCreatorActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-        val root =
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-                intent.getParcelableExtra("root", Uri::class.java)
-            } else {
-                intent.getParcelableExtra("root")
-            }
+        val root = intent.getParcelableExtra("root", Uri::class.java)
         val parentFolder = root?.toFileObject(expectedIsFile = false)
 
         setContent {

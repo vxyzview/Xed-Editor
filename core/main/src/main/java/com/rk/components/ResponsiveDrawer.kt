@@ -25,6 +25,7 @@ import androidx.compose.ui.unit.dp
 import com.rk.settings.Settings
 
 @Composable
+@Suppress("NOTHING_TO_INLINE")
 inline fun getDrawerWidth(): Dp {
     val density = LocalDensity.current
     val widthPx = LocalWindowInfo.current.containerSize.width

@@ -29,6 +29,7 @@ class DisposableManager {
         }
     }
 
+    @Suppress("UNCHECKED_CAST")
     fun onDispose(beforeDispose: (Registerable) -> Unit = {}) {
         registry.forEach { (registerable, disposers) ->
             beforeDispose(registerable)

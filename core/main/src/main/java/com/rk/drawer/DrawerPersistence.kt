@@ -40,6 +40,7 @@ object DrawerPersistence {
         }
     }
 
+    @Suppress("UNCHECKED_CAST")
     suspend fun restoreState(viewModel: DrawerViewModel) {
         saveMutex.withLock {
             runCatching {
