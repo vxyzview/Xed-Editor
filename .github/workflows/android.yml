@@ -50,6 +50,21 @@ jobs:
           echo "${{ secrets.KEYSTORE }}" | base64 -d > /tmp/xyzterm.keystore
           echo "${{ secrets.PROP }}" | base64 -d > /tmp/signing.properties
 
+      - name: Verify signing key matches properties
+        run: |
+          if [ ! -s /tmp/xyzterm.keystore ] || [ ! -s /tmp/signing.properties ]; then
+            echo "::error::KEYSTORE or PROP secret is missing/empty. Run the 'Generate Signing Key' workflow and paste the printed base64 values into both secrets."
+            exit 1
+          fi
+          STORE_PASS=$(grep '^storePassword=' /tmp/signing.properties | cut -d= -f2)
+          KEY_ALIAS=$(grep '^keyAlias=' /tmp/signing.properties | cut -d= -f2)
+          echo "keyAlias=$KEY_ALIAS"
+          if ! keytool -list -keystore /tmp/xyzterm.keystore -storepass "$STORE_PASS" -alias "$KEY_ALIAS" >/dev/null 2>&1; then
+            echo "::error::Keystore and signing.properties do not match. Ensure both secrets were copied from the SAME 'Generate Signing Key' run (keystore, alias and passwords are generated fresh each run)."
+            exit 1
+          fi
+          echo "Signing key OK (alias=$KEY_ALIAS)"
+
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
