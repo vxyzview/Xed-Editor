@@ -36,6 +36,7 @@ object UpdateManager {
         }
 
     @OptIn(DelicateCoroutinesApi::class)
+    @Suppress("DEPRECATION") // migration code intentionally uses deprecated legacy APIs
     fun inspect() =
         with(application!!) {
             val lastVersionCode = Settings.last_version_code

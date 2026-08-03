@@ -179,6 +179,7 @@ fun DeveloperOptions(modifier: Modifier = Modifier, navController: NavController
     }
 }
 
+@OptIn(DelicateCoroutinesApi::class)
 fun startThemeFlipperIfNotRunning() {
     if (flipperJob == null || flipperJob?.isActive?.not() == true) {
         flipperJob =

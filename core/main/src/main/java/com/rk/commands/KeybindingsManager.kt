@@ -82,6 +82,7 @@ object KeybindingsManager {
     }
 
     @Deprecated("This is temporary migration code.")
+    @Suppress("DEPRECATION") // uses deprecated legacy keybindings storage on purpose
     fun migrate() {
         runCatching {
             val old = Preference.getString(KEY_KEYBINDINGS, "")

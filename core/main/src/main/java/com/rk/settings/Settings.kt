@@ -29,6 +29,7 @@ import kotlin.reflect.full.declaredMemberProperties
 import kotlin.reflect.jvm.isAccessible
 
 // NOTE: USE snake_case FOR KEYS!
+@Suppress("IDENTITY_SENSITIVE_OPERATIONS") // WeakReference cache on boxed primitives is deliberate
 object Settings {
     var detect_bin_files by CachedPreference("detect_bin_files", true)
     var oom_prediction by CachedPreference("disable_oom_prediction", false)

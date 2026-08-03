@@ -121,6 +121,7 @@ data class ThemePaletteNew(
 ) : java.io.Serializable {
     companion object {
         @Deprecated("This conversion exists for backwards compatibility")
+        @Suppress("DEPRECATION") // reads deprecated ThemePalette fields on purpose
         fun fromLegacyPalette(palette: ThemePalette): ThemePaletteNew {
             return ThemePaletteNew(
                 baseColors = palette.baseColors,
@@ -138,6 +139,7 @@ fun com.google.gson.JsonElement.toKotlinxJsonElement(): JsonElement {
 }
 
 @Deprecated("Use ThemeManifest instead. This class exists for backwards compatibility")
+@Suppress("DEPRECATION") // references deprecated ThemePalette for backwards compat
 @Keep
 data class ThemeConfig(
     val id: String?,

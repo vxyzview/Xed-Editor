@@ -261,6 +261,7 @@ class ThemeManager(private val context: Application) : CoroutineScope by Corouti
             }
         }
 
+    @Suppress("DEPRECATION") // migration path uses deprecated legacy theme APIs
     suspend fun indexLocalThemes() = mutex.withLock {
         withContext(Dispatchers.IO) {
             val themeDir = themeDir()
@@ -310,6 +311,7 @@ class ThemeManager(private val context: Application) : CoroutineScope by Corouti
     }
 
     @Deprecated("Migration from old theme format for backwards compatibility")
+    @Suppress("DEPRECATION") // migration path uses deprecated legacy theme APIs
     private suspend fun migrateOldThemes(themeDir: File) {
         val listFiles = themeDir.listFiles()
         var migratedCount = 0

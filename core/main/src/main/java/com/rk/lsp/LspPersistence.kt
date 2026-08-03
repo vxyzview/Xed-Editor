@@ -25,6 +25,7 @@ object LspPersistence {
     @Deprecated("This is now saved as a file.") private const val KEY_EXTERNAL_LSP = "saved_external_servers"
 
     @Deprecated("This is temporary migration code.")
+    @Suppress("DEPRECATION") // uses deprecated legacy storage on purpose
     fun migrate() {
         runCatching {
             saveFile.writeText(Preference.getString(KEY_EXTERNAL_LSP, ""))
