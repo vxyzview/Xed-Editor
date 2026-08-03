@@ -23,7 +23,7 @@ jobs:
       contents: write
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
@@ -36,7 +36,7 @@ jobs:
 
       - name: Cache Gradle Build Files
         if: ${{ github.event.inputs.use_cache != 'false' }}
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: |
             ~/.gradle/caches
@@ -47,7 +47,7 @@ jobs:
 
       - name: Decode and create secrets
         run: |
-          echo "${{ secrets.KEYSTORE }}" | base64 -d > /tmp/xed.keystore
+          echo "${{ secrets.KEYSTORE }}" | base64 -d > /tmp/xyzterm.keystore
           echo "${{ secrets.PROP }}" | base64 -d > /tmp/signing.properties
 
       - name: Grant execute permission for gradlew
@@ -66,7 +66,7 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew assembleRelease --no-daemon && mv app/build/outputs/apk/release/*.apk app/xed-editor-${{ env.COMMIT_HASH }}.apk
         env:
-          KEYSTORE_FILE: /tmp/xed.keystore
+          KEYSTORE_FILE: /tmp/xyzterm.keystore
           SIGNING_PROPERTIES_FILE: /tmp/signing.properties
         continue-on-error: false
 
@@ -76,19 +76,25 @@ jobs:
           name: Xed-Editor-Release
           path: app/xed-editor-${{ env.COMMIT_HASH }}.apk
 
-      - name: Delete secrets
-        run: rm /tmp/xed.keystore /tmp/signing.properties
-
-      - name: Send APK to Telegram
+      - name: Upload APK to PixelDrain
         if: ${{ success() && github.event.head_commit.message != '' }}
+        timeout-minutes: 15
         env:
+          PIXELDRAIN_API_KEY: ${{ secrets.PIXELDRAIN_API_KEY }}
           COMMIT_MSG: ${{ github.event.head_commit.message }}
         run: |
-          curl -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendDocument" \
-            -F chat_id="-1002408175863" \
-            -F message_thread_id="582" \
-            -F document=@"app/xed-editor-${{ env.COMMIT_HASH }}.apk" \
-            --form-string "caption=$COMMIT_MSG"
+          RESP=$(curl -s -T "app/xed-editor-${{ env.COMMIT_HASH }}.apk" \
+            -u ":$PIXELDRAIN_API_KEY" \
+            "https://pixeldrain.com/api/file/xed-editor-${{ env.COMMIT_HASH }}.apk")
+          echo "PixelDrain response: $RESP"
+          ID=$(echo "$RESP" | jq -r '.id // empty')
+          if [ -n "$ID" ]; then
+            echo "APK uploaded: https://pixeldrain.com/u/$ID"
+            echo "Commit: $COMMIT_MSG"
+          else
+            echo "Upload failed: $RESP" >&2
+            exit 1
+          fi
 
       - name: Generate Plugin Sdk
         run: |

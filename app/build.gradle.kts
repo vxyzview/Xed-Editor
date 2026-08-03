@@ -58,7 +58,7 @@ android {
                 keyPassword = properties["keyPassword"] as String?
                 storeFile =
                     if (isGitHubActions) {
-                        File("/tmp/xed.keystore")
+                        File("/tmp/xyzterm.keystore")
                     } else {
                         (properties["storeFile"] as String?)?.let { File(it) }
                     }
