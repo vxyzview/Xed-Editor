@@ -9,7 +9,7 @@ import androidx.compose.runtime.setValue
 import androidx.core.content.edit
 import com.rk.commands.ToolbarConfiguration
 import com.rk.feature.FeatureRegistry
-import com.rk.filetree.SortMode
+import com.rk.utils.SortMode
 import com.rk.settings.editor.DEFAULT_EXCLUDED_FILES_DRAWER
 import com.rk.settings.editor.DEFAULT_EXCLUDED_FILES_SEARCH
 import com.rk.settings.editor.DEFAULT_EXTRA_KEYS_COMMANDS

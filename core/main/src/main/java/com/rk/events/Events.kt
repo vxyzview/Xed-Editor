@@ -1,16 +1,9 @@
 package com.rk.events
 
-import com.rk.drawer.DrawerTab
-import com.rk.editor.Editor
 import com.rk.extension.api.XedExtensionPoint
 import com.rk.file.FileObject
 import com.rk.icons.pack.LocalIconPack
-import com.rk.lsp.LspConnectionStatus
-import com.rk.lsp.LspLogEntry
-import com.rk.lsp.LspServerInstance
 import com.rk.settings.debugOptions.LogEntry
-import com.rk.tabs.base.Tab
-import com.rk.tabs.editor.EditorTab
 import com.rk.theme.ThemeHolder
 import com.rk.utils.logError
 import java.util.Locale
@@ -18,67 +11,6 @@ import kotlin.reflect.KClass
 
 /** Base interface for all events in the application. */
 interface Event
-
-/** Events related to the drawer and its tabs. */
-sealed interface DrawerEvent : Event {
-
-    /** Event triggered when a drawer tab has been added. */
-    data class TabAdded(val tab: DrawerTab) : DrawerEvent
-
-    /** Event triggered when a drawer tab has been removed. */
-    data class TabRemoved(val tab: DrawerTab) : DrawerEvent
-
-    /** Event triggered when the active drawer tab changes. */
-    data class TabSelected(val tab: DrawerTab?) : DrawerEvent
-
-    /** Event triggered when the registered service tabs have been initialized. */
-    data class ServicesInitialized(val tabs: List<DrawerTab>) : DrawerEvent
-
-    /** Event triggered when the active service tab changes. */
-    data class ServiceTabSelected(val tab: DrawerTab?) : DrawerEvent
-}
-
-/** Events related to the file tree and its nodes. */
-sealed interface FileTreeEvent : Event {
-
-    /** Event triggered when a node in the file tree is expanded. */
-    data class NodeExpanded(
-        val projectRoot: FileObject,
-        val path: FileObject,
-    ) : FileTreeEvent
-
-    /** Event triggered when a node in the file tree is collapsed. */
-    data class NodeCollapsed(
-        val projectRoot: FileObject,
-        val path: FileObject,
-    ) : FileTreeEvent
-
-    /** Event triggered when a node in the file tree becomes focused. */
-    data class Focused(
-        val projectRoot: FileObject,
-        val path: FileObject,
-    ) : FileTreeEvent
-
-    /** Event triggered when the selection in the file tree changes. */
-    data class SelectionChanged(
-        val projectRoot: FileObject,
-        val selected: List<FileObject>,
-    ) : FileTreeEvent
-
-    /** Event triggered when a file tree drawer tab has been selected. */
-    data class Opened(val projectRoot: FileObject) : FileTreeEvent
-
-    /** Event triggered when a file tree drawer tab has been closed. */
-    data class Closed(val projectRoot: FileObject) : FileTreeEvent
-
-    /**
-     * Event triggered when the file tree structure has been updated/synchronized with the file system. This can occur
-     * after files have been moved or the refresh button has been pressed.
-     *
-     * **NOTE:** This event is not triggered on initial file tree load.
-     */
-    data class TreeSynchronized(val parent: FileObject) : FileTreeEvent
-}
 
 /** Events related to file system operations. */
 sealed interface FileEvent : Event {
@@ -106,86 +38,6 @@ sealed interface FileEvent : Event {
         val file: FileObject,
         val sourcePath: String,
     ) : FileEvent
-}
-
-/**
- * Events related to tab lifecycle and interaction.
- *
- * @see EditorTabEvent
- */
-sealed interface TabEvent : Event {
-
-    /** Event triggered when a tab is opened. */
-    data class Opened(val tab: Tab) : TabEvent
-
-    /** Event triggered when a tab is closed. */
-    data class Closed(val tab: Tab) : TabEvent
-
-    /** Event triggered when tabs are reordered. */
-    data class Reordered(
-        val tab: Tab,
-        val from: Int,
-        val to: Int,
-    ) : TabEvent
-
-    /** Event triggered when a tab is selected. */
-    data class Selected(val tab: Tab) : TabEvent
-}
-
-/**
- * Events specifically related to editor tabs.
- *
- * @see TabEvent
- */
-sealed interface EditorTabEvent : Event {
-
-    /** Event triggered when an editor tab is refreshed. */
-    data class Refreshed(val tab: EditorTab) : EditorTabEvent
-
-    /** Event triggered when the content of an editor tab is saved. */
-    data class Saved(val tab: EditorTab, val file: FileObject, val quickSave: Boolean) : EditorTabEvent
-
-    /** Event triggered when an editor tab is opened. */
-    data class Opened(val tab: EditorTab) : EditorTabEvent
-
-    /** Event triggered when an editor tab is closed. */
-    data class Closed(val tab: EditorTab) : EditorTabEvent
-
-    /** Event triggered when editor tabs are reordered. */
-    data class Reordered(
-        val tab: EditorTab,
-        val from: Int,
-        val to: Int,
-    ) : EditorTabEvent
-
-    /** Event triggered when an editor tab is selected. */
-    data class Selected(val tab: EditorTab) : EditorTabEvent
-}
-
-/** Events related to the editor instances. */
-sealed interface EditorEvent : Event {
-    /** Event triggered when a new editor instance is created. */
-    data class InstanceCreated(val editor: Editor) : EditorEvent
-
-    /** Event triggered when an editor instance is destroyed. */
-    data class InstanceDestroyed(val editor: Editor) : EditorEvent
-}
-
-/** Events related to Language Server Protocol (LSP) operations. */
-sealed interface LSPEvent : Event {
-
-    /** Event triggered when an LSP server instance is created. */
-    data class InstanceCreated(val instance: LspServerInstance) : LSPEvent
-
-    /** Event triggered when the status of an LSP server instance changes. */
-    data class StatusChanged(
-        val instance: LspServerInstance,
-        val newStatus: LspConnectionStatus,
-        val oldStatus: LspConnectionStatus,
-    ) : LSPEvent
-
-    /** Event triggered when a log entry is written by an LSP server. */
-    data class LogEntryWritten(val instance: LspServerInstance, val logEntry: LspLogEntry) : LSPEvent
 }
 
 /** General application-level events. */

@@ -8,11 +8,15 @@ import android.os.Process
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.text.selection.LocalTextSelectionColors
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.text.selection.SelectionContainer
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.unit.TextUnit
+import androidx.compose.ui.unit.TextUnitType
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.Close
@@ -29,10 +33,8 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.content.pm.PackageInfoCompat
 import com.rk.crashhandler.CrashHandler.logErrorOrExit
-import com.rk.editor.Editor
 import com.rk.resources.getString
 import com.rk.resources.strings
 import com.rk.theme.XedTheme
@@ -205,27 +207,19 @@ class CrashActivity : ComponentActivity() {
                             }
                         }
                     ) { paddingValues ->
-                        val selectionColors = LocalTextSelectionColors.current
-                        val isDarkMode = isSystemInDarkTheme()
-                        val colorScheme = MaterialTheme.colorScheme
-
-                        AndroidView(
-                            modifier = Modifier.fillMaxSize().padding(paddingValues),
-                            factory = { context ->
-                                Editor(context).apply {
-                                    setTextSize(10f)
-                                    setText(crashText)
-                                    editable = false
-                                    isWordwrap = false
-                                    setThemeColors(
-                                        isDarkMode = isDarkMode,
-                                        selectionColors = selectionColors,
-                                        colorScheme = colorScheme,
-                                    )
-                                }
-                            },
-                            update = { editor -> editor.setText(crashText) },
-                        )
+                        SelectionContainer {
+                            Text(
+                                text = crashText,
+                                modifier =
+                                    Modifier
+                                        .fillMaxSize()
+                                        .padding(paddingValues)
+                                        .verticalScroll(rememberScrollState()),
+                                fontFamily = FontFamily.Monospace,
+                                fontSize = TextUnit(10f, TextUnitType.Sp),
+                                color = MaterialTheme.colorScheme.onSurface,
+                            )
+                        }
                     }
                 }
             }
