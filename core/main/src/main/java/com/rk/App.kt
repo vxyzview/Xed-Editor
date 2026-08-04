@@ -7,25 +7,17 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.content.pm.PackageInfoCompat
 import androidx.core.os.LocaleListCompat
 import com.github.anrwatchdog.ANRWatchDog
-import com.rk.activities.main.session.SessionManager
 import com.rk.commands.CommandProvider
 import com.rk.commands.KeybindingsManager
 import com.rk.crashhandler.CrashHandler
-import com.rk.editor.CodeHighlighter
-import com.rk.editor.FontCache
-import com.rk.editor.KeywordManager
-import com.rk.editor.LanguageManager
+import com.rk.utils.FontCache
 import com.rk.icons.pack.IconPackManager
-import com.rk.lsp.FileIconProvider
-import com.rk.lsp.LspPersistence
-import com.rk.lsp.MarkdownImageProvider
 import com.rk.resources.Res
 import com.rk.settings.Preference
 import com.rk.settings.Settings
 import com.rk.settings.debugOptions.LogcatService
 import com.rk.settings.debugOptions.startThemeFlipperIfNotRunning
 import com.rk.settings.editor.DEFAULT_APP_FONT_PATH
-import com.rk.settings.editor.DEFAULT_EDITOR_FONT_PATH
 import com.rk.settings.editor.DEFAULT_TERMINAL_FONT_PATH
 import com.rk.theme.ThemeManager
 import com.rk.utils.application
@@ -76,11 +68,6 @@ open class App : Application() {
         application = this
         Res.application = this
 
-        LspPersistence.restoreServers()
-
-        MarkdownImageProvider.register()
-        FileIconProvider.register()
-
         CommandProvider.buildCommands()
         KeybindingsManager.loadKeybindings()
 
@@ -98,25 +85,13 @@ open class App : Application() {
                 themeManager.indexStoreThemes()
             }
 
-            launch { LanguageManager.initGrammarRegistry() }
-
-            launch { KeywordManager.initKeywordRegistry(this@App) }
-
-            launch { CodeHighlighter.registerMarkdownCodeHighlighter(this@App) }
-
-            launch(Dispatchers.IO) { SessionManager.preloadSession() }
-
             launch(Dispatchers.IO) {
-                val editorFontPath = Settings.editor_font_path.ifEmpty { DEFAULT_EDITOR_FONT_PATH }
-                val isEditorAsset = if (editorFontPath.isNotEmpty()) Settings.is_editor_font_asset else true
-
                 val appFontPath = Settings.app_font_path.ifEmpty { DEFAULT_APP_FONT_PATH }
-                val isAppAsset = if (editorFontPath.isNotEmpty()) Settings.is_app_font_asset else true
+                val isAppAsset = if (appFontPath.isNotEmpty()) Settings.is_app_font_asset else true
 
                 val terminalFontPath = Settings.terminal_font_path.ifEmpty { DEFAULT_TERMINAL_FONT_PATH }
                 val isTerminalAsset = if (terminalFontPath.isNotEmpty()) Settings.is_terminal_font_asset else true
 
-                FontCache.loadFont(this@App, editorFontPath, isEditorAsset)
                 FontCache.loadFont(this@App, appFontPath, isAppAsset)
                 FontCache.loadFont(this@App, terminalFontPath, isTerminalAsset)
             }

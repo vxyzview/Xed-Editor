@@ -1,4 +1,4 @@
-package com.rk.editor
+package com.rk.utils
 
 import android.content.Context
 import android.graphics.Typeface

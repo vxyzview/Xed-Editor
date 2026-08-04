@@ -71,7 +71,7 @@ import com.rk.activities.settings.SettingsRoutes
 import com.rk.activities.terminal.Terminal
 import com.rk.animations.NavigationAnimationTransitions
 import com.rk.components.SingleInputDialog
-import com.rk.editor.FontCache
+import com.rk.utils.FontCache
 import com.rk.exec.pendingCommand
 import com.rk.file.child
 import com.rk.file.sandboxDir
