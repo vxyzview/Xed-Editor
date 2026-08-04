@@ -2,7 +2,7 @@ package com.rk.file
 
 import android.content.Context
 import android.content.Intent
-import com.rk.activities.main.MainActivity
+import com.rk.activities.settings.SettingsActivity
 import com.rk.components.ContentProgress
 import com.rk.events.Events
 import com.rk.events.FileEvent
@@ -31,14 +31,14 @@ object FileOperations {
 
     fun saveAs(file: FileObject) {
         to_save_file = file
-        MainActivity.instance?.fileManager?.requestOpenDirectoryToSaveFile(file)
+        SettingsActivity.instance?.fileManager?.requestOpenDirectoryToSaveFile(file)
     }
 
     fun addFile(parentFile: FileObject) {
         val intent = Intent(Intent.ACTION_OPEN_DOCUMENT)
         intent.addCategory(Intent.CATEGORY_OPENABLE)
         intent.type = "*/*"
-        MainActivity.instance?.fileManager?.requestAddFile(parentFile)
+        SettingsActivity.instance?.fileManager?.requestAddFile(parentFile)
     }
 
     /**
