@@ -140,8 +140,11 @@ fun TerminalExtraKeys() {
                 modifier = Modifier
                     .fillMaxSize()
                     .imePadding(),
-                fontFamily = FontFamily.Monospace,
-                textStyle = TextStyle(fontSize = TextUnit(10f, TextUnitType.Sp)),
+                textStyle =
+                    TextStyle(
+                        fontFamily = FontFamily.Monospace,
+                        fontSize = TextUnit(10f, TextUnitType.Sp),
+                    ),
             )
         }
     }

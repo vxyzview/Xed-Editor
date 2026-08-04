@@ -14,7 +14,6 @@ import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavController
 import com.rk.DocumentProvider
 import com.rk.activities.settings.SettingsActivity
-import com.rk.activities.settings.SettingsActivity
 import com.rk.activities.settings.SettingsRoutes
 import com.rk.activities.settings.settingsNavController
 import com.rk.components.NextScreenCard
