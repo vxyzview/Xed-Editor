@@ -57,7 +57,6 @@ object ToolbarConfiguration {
 
     private var _globalCommands: SnapshotStateList<Command> =
         mutableStateListOf(
-            CommandProvider.NewFileCommand,
             CommandProvider.SettingsCommand,
         )
 

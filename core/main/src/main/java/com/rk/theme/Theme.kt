@@ -19,7 +19,7 @@ import androidx.compose.ui.unit.dp
 import com.google.android.material.color.MaterialColors
 import com.rk.App.Companion.themeManager
 import com.rk.settings.Settings
-import com.rk.settings.editor.rememberAppTypography
+import com.rk.theme.rememberAppTypography
 import com.rk.utils.isDarkTheme
 
 val currentTheme = derivedStateOf {

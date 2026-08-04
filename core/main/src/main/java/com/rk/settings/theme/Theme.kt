@@ -48,7 +48,6 @@ import com.rk.icons.pack.currentIconPack
 import com.rk.resources.drawables
 import com.rk.resources.strings
 import com.rk.settings.Settings
-import com.rk.settings.editor.refreshEditors
 import com.rk.theme.blueberry
 import com.rk.theme.builtInThemes
 import com.rk.theme.currentTheme
@@ -77,7 +76,6 @@ fun ThemeScreen(navController: NavController, modifier: Modifier = Modifier) {
                 state = amoledState,
                 sideEffect = {
                     Settings.amoled = it
-                    refreshEditors()
                 },
             )
 
@@ -89,7 +87,6 @@ fun ThemeScreen(navController: NavController, modifier: Modifier = Modifier) {
                 state = monetState,
                 sideEffect = {
                     Settings.monet = it
-                    refreshEditors()
                 },
             )
         }
@@ -113,7 +110,6 @@ fun ThemeScreen(navController: NavController, modifier: Modifier = Modifier) {
                     sideEffect = {
                         val oldTheme = currentTheme.value
                         Settings.theme = theme.id
-                        refreshEditors()
                         DefaultScope.launch { Events.publish(AppEvent.ThemeChanged(theme, oldTheme)) }
                     },
                     endWidget = {
@@ -123,7 +119,6 @@ fun ThemeScreen(navController: NavController, modifier: Modifier = Modifier) {
                                     if (currentTheme.value.id == theme.id) {
                                         val oldTheme = currentTheme.value
                                         Settings.theme = blueberry.id
-                                        refreshEditors()
                                         DefaultScope.launch {
                                             Events.publish(AppEvent.ThemeChanged(blueberry, oldTheme))
                                         }

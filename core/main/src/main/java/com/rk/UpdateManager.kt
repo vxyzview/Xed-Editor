@@ -11,7 +11,7 @@ import com.rk.file.toFileWrapper
 import com.rk.lsp.LspPersistence
 import com.rk.settings.Preference
 import com.rk.settings.Settings
-import com.rk.settings.editor.DEFAULT_EXTRA_KEYS_SYMBOLS
+import com.rk.utils.DEFAULT_EXTRA_KEYS_SYMBOLS
 import com.rk.utils.application
 import com.rk.utils.hasHardwareKeyboard
 import com.xyzterm.BuildConfig

@@ -35,7 +35,6 @@ import com.rk.file.toFileObject
 import com.rk.resources.strings
 import com.rk.settings.Preference
 import com.rk.settings.Settings
-import com.rk.settings.editor.refreshEditors
 import com.rk.theme.currentTheme
 import com.rk.utils.application
 import com.rk.utils.toast
@@ -226,7 +225,6 @@ fun SettingsAppScreen(activity: SettingsActivity, navController: NavController) 
                                 // Update theme in the UI if the setting changed
                                 withContext(Dispatchers.Main) {
                                     AppCompatDelegate.setDefaultNightMode(Settings.theme_mode)
-                                    refreshEditors()
                                 }
 
                                 toast(strings.import_successful)

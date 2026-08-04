@@ -78,7 +78,7 @@ import com.rk.file.sandboxDir
 import com.rk.resources.getString
 import com.rk.resources.strings
 import com.rk.settings.Settings
-import com.rk.settings.editor.DEFAULT_TERMINAL_FONT_PATH
+import com.rk.utils.DEFAULT_TERMINAL_FONT_PATH
 import com.rk.settings.editor.TerminalFontScreen
 import com.rk.settings.terminal.DEFAULT_TERMINAL_EXTRA_KEYS
 import com.rk.settings.terminal.SettingsTerminalScreen
