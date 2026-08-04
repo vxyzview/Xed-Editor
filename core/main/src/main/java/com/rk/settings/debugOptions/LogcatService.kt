@@ -10,7 +10,7 @@ import android.content.Intent
 import android.os.IBinder
 import androidx.compose.runtime.mutableStateListOf
 import androidx.core.app.NotificationCompat
-import com.rk.activities.main.MainActivity
+import com.rk.activities.settings.SettingsActivity
 import com.rk.resources.drawables
 import com.rk.resources.getString
 import com.rk.resources.strings
@@ -206,7 +206,7 @@ class LogcatService : Service() {
     }
 
     private fun createNotification(): Notification {
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, SettingsActivity::class.java)
         val pendingIntent =
             PendingIntent.getActivity(
                 this,

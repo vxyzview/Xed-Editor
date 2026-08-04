@@ -23,7 +23,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.unit.dp
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.rk.activities.main.MainActivity
 import com.rk.extension.ActivityProvider
 import com.rk.extension.api.XedExtensionPoint
 import com.rk.resources.getString
@@ -57,7 +56,7 @@ fun errorDialog(@StringRes msgRes: Int) {
 }
 
 fun errorDialog(
-    activity: Activity? = MainActivity.instance,
+    activity: Activity? = ActivityProvider.currentActivity,
     throwable: Throwable,
     title: String = strings.error.getString(),
 ) {
@@ -231,7 +230,7 @@ private fun DialogContent(
 
 @XedExtensionPoint
 fun composableDialog(
-    activity: Activity? = MainActivity.instance,
+    activity: Activity? = ActivityProvider.currentActivity,
     cancelable: Boolean = true,
     composable: @Composable (AlertDialog?) -> Unit,
 ) {

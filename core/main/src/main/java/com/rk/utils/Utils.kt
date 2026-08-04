@@ -42,14 +42,11 @@ import com.rk.extension.ActivityProvider
 import com.rk.file.BuiltinFileType
 import com.rk.file.FileDecorationRegistry
 import com.rk.file.FileObject
-import com.rk.filetree.FileTreeViewModel
 import com.rk.resources.getQuantityString
 import com.rk.resources.getString
 import com.rk.resources.plurals
 import com.rk.resources.strings
 import com.rk.settings.Settings
-import com.rk.theme.currentTheme
-import io.github.rosemoe.sora.widget.schemes.EditorColorScheme
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
@@ -262,70 +259,6 @@ suspend fun handleLazyListScroll(lazyListState: LazyListState, dropIndex: Int): 
     }
 }
 
-@Composable
-fun getUnderlineColor(context: Context, fileTreeViewModel: FileTreeViewModel, file: FileObject?): Color? {
-    val diagnosticSeverity = file?.let { fileTreeViewModel.getNodeSeverity(it) } ?: -1
-    val editorColors =
-        if (isDarkTheme(context)) {
-            currentTheme.value.darkEditorColors
-        } else {
-            currentTheme.value.lightEditorColors
-        }
-    val underlineColor =
-        when (diagnosticSeverity) {
-            1 -> {
-                editorColors.find { it.key == EditorColorScheme.PROBLEM_TYPO }?.color?.let { Color(it) }
-                    ?: Color(0x6600ff11) // Color was taken from EditorColorScheme.java
-            }
-            2 -> {
-                editorColors.find { it.key == EditorColorScheme.PROBLEM_WARNING }?.color?.let { Color(it) }
-                    ?: Color(0xaafff100) // Color was taken from EditorColorScheme.java
-            }
-            3 -> {
-                editorColors.find { it.key == EditorColorScheme.PROBLEM_ERROR }?.color?.let { Color(it) }
-                    ?: MaterialTheme.colorScheme.error
-            }
-            else -> null
-        }
-
-    return underlineColor
-}
-
-fun Modifier.drawErrorUnderline(errorColor: Color): Modifier = drawBehind {
-    val strokeWidth = 3f
-    val waveOffset = 5f
-    val waveHeight = 6f
-    val waveLength = 20f
-
-    val path = Path()
-    var x = 0f
-    val y = size.height + waveOffset - strokeWidth
-    var up = true
-
-    path.moveTo(0f, y)
-
-    while (x < size.width) {
-        val remaining = size.width - x
-        val segment = minOf(waveLength / 2, remaining)
-
-        val controlX = x + segment / 2
-        val endX = x + segment
-
-        val controlY = if (up) y - waveHeight else y + waveHeight
-
-        path.quadraticTo(controlX, controlY, endX, y)
-
-        up = !up
-        x = endX
-    }
-
-    drawPath(path = path, color = errorColor, style = Stroke(width = strokeWidth, cap = StrokeCap.Round))
-}
-
-@Composable
-fun getFileColor(file: FileObject?): Color? {
-    return file?.let { FileDecorationRegistry.getDecoration(it).color }
-}
 
 fun hasBinaryChars(text: String): Boolean {
     val threshold = 0.3
