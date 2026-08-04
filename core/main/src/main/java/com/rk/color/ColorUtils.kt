@@ -1,12 +1,11 @@
 package com.rk.color
 
 import androidx.compose.ui.graphics.Color
-import io.github.rosemoe.sora.lsp.utils.ColorUtils
 import kotlin.math.abs
 import kotlin.math.roundToInt
 
 fun String.parseColor(): Color? {
-    return ColorUtils.parseColor(this)?.let { Color(it) }
+    return runCatching { Color(android.graphics.Color.parseColor(this)) }.getOrNull()
 }
 
 fun String.parseUnknownColor(): Pair<Color, ColorFormat>? {
@@ -36,7 +35,21 @@ fun Color.toHex(): String {
 }
 
 fun String.parseHex(): Color? {
-    return ColorUtils.parseHex(this)?.let { Color(it) }
+    val hex = trim().removePrefix("#")
+    if (hex.isEmpty()) return null
+    val argb =
+        when (hex.length) {
+            3 -> {
+                val r = hex[0].toString().repeat(2).toInt(16)
+                val g = hex[1].toString().repeat(2).toInt(16)
+                val b = hex[2].toString().repeat(2).toInt(16)
+                (0xFF000000.toInt() or (r shl 16) or (g shl 8) or b)
+            }
+            6 -> (0xFF000000.toInt() or hex.toInt(16))
+            8 -> hex.toLong(16).toInt()
+            else -> return null
+        }
+    return Color(argb)
 }
 
 fun Color.toRgb(): String {
@@ -52,7 +65,13 @@ fun Color.toRgb(): String {
 }
 
 fun String.parseRgb(): Color? {
-    return ColorUtils.parseRgb(this)?.let { Color(it) }
+    val match = Regex("rgba?\\(\\s*([\\d.]+)\\s*,\\s*([\\d.]+)\\s*,\\s*([\\d.]+)\\s*(?:,\\s*([\\d.]+)\\s*)?\\)").find(trim())
+        ?: return null
+    val r = match.groupValues[1].toFloatOrNull() ?: return null
+    val g = match.groupValues[2].toFloatOrNull() ?: return null
+    val b = match.groupValues[3].toFloatOrNull() ?: return null
+    val a = match.groupValues[4].takeIf { it.isNotEmpty() }?.toFloatOrNull() ?: 1f
+    return Color(r, g, b, a)
 }
 
 private fun rgbToHsl(rf: Float, gf: Float, bf: Float): FloatArray {
@@ -92,5 +111,25 @@ fun Color.toHsl(): String {
 }
 
 fun String.parseHsl(): Color? {
-    return ColorUtils.parseHsl(this)?.let { Color(it) }
+    val match = Regex("hsla?\\(\\s*([\\d.]+)\\s*,\\s*([\\d.]+)%\\s*,\\s*([\\d.]+)%\\s*(?:,\\s*([\\d.]+)\\s*)?\\)").find(trim())
+        ?: return null
+    val h = match.groupValues[1].toFloatOrNull() ?: return null
+    val s = (match.groupValues[2].toFloatOrNull() ?: return null) / 100f
+    val l = (match.groupValues[3].toFloatOrNull() ?: return null) / 100f
+    val a = match.groupValues[4].takeIf { it.isNotEmpty() }?.toFloatOrNull() ?: 1f
+
+    val c = (1f - abs(2f * l - 1f)) * s
+    val x = c * (1f - abs(((h / 60f) % 2f) - 1f))
+    val m = l - c / 2f
+
+    val (r, g, b) =
+        when {
+            h < 60f -> Triple(c, x, 0f)
+            h < 120f -> Triple(x, c, 0f)
+            h < 180f -> Triple(0f, c, x)
+            h < 240f -> Triple(0f, x, c)
+            h < 300f -> Triple(x, 0f, c)
+            else -> Triple(c, 0f, x)
+        }
+    return Color(r + m, g + m, b + m, a)
 }
