@@ -132,11 +132,6 @@ fun SettingsAppScreen(activity: SettingsActivity, navController: NavController) 
                 )
             }
 
-            NextScreenCard(
-                label = stringResource(strings.manage_app_font),
-                description = stringResource(strings.manage_app_font),
-                route = SettingsRoutes.AppFontScreen,
-            )
         }
 
         PreferenceGroup(heading = stringResource(strings.feature_toggles)) {

@@ -3,7 +3,7 @@ package com.rk
 import android.content.Intent
 import androidx.core.net.toUri
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.rk.activities.main.MainActivity
+import com.rk.extension.ActivityProvider
 import com.rk.resources.getString
 import com.rk.resources.strings
 import com.rk.settings.Settings
@@ -100,7 +100,7 @@ object UpdateChecker {
 
         withContext(Dispatchers.Main) {
             if (updates.isNotEmpty()) {
-                MainActivity.instance?.let {
+                ActivityProvider.currentActivity?.let {
                     MaterialAlertDialogBuilder(it).apply {
                         setTitle(strings.update_av.getString())
                         setMessage(updates.joinToString("\n"))
