@@ -138,7 +138,6 @@ dependencies {
     implementation(libs.photoview)
     implementation(libs.glide)
     implementation(libs.anrwatchdog)
-    implementation(libs.lsp4j)
     implementation(libs.kotlin.reflect)
     implementation(libs.androidx.documentfile)
     implementation(libs.compose.dnd)
@@ -157,9 +156,6 @@ dependencies {
     // Modules
     implementation(project(":core:resources"))
     implementation(project(":core:components"))
-    implementation(project(":editor"))
-    implementation(project(":editor-lsp"))
-    implementation(project(":language-textmate"))
 }
 
 abstract class GenerateSupportedLocales : DefaultTask() {
