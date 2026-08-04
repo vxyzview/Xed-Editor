@@ -188,9 +188,6 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
-      - name: Clone submodules
-        run: git submodule update --init --recursive
-
       - name: Build First APK
         run: |
           sed -r '/(foojay|toolchainVendor)/d' -i gradle/gradle-daemon-jvm.properties || true
