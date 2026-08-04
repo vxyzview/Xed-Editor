@@ -80,8 +80,6 @@ val blueberry =
             ),
         lightTokenColors = JsonArray(),
         darkTokenColors = JsonArray(),
-        lightEditorColors = emptyList(),
-        darkEditorColors = emptyList(),
         lightTerminalColors =
             Properties().also {
                 it["foreground"] = Color(0xFF1A1B20).toHex()
@@ -237,8 +235,6 @@ val lime =
             ),
         lightTokenColors = JsonArray(),
         darkTokenColors = JsonArray(),
-        lightEditorColors = emptyList(),
-        darkEditorColors = emptyList(),
         lightTerminalColors =
             Properties().also {
                 it["foreground"] = Color(0xFF1A1C16).toHex()

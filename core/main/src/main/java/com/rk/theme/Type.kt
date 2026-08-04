@@ -2,6 +2,7 @@ package com.rk.theme
 
 import android.content.Context
 import androidx.compose.material3.Typography
+import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.key
 import androidx.compose.runtime.mutableIntStateOf
@@ -24,6 +25,7 @@ val LegacyOutfitFontFamily = FontFamily(Font(R.font.outfit_regular, FontWeight.N
 
 private var appFontRefreshKey by mutableIntStateOf(0)
 
+@Composable
 fun rememberAppTypography(context: Context): Typography {
     val fontPath = key(appFontRefreshKey) { Settings.app_font_path }
     val font =

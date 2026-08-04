@@ -382,8 +382,6 @@ class ThemeManager(private val context: Application) : CoroutineScope by Corouti
             darkScheme = dark?.build(isDarkTheme = true) ?: blueberry.darkScheme,
             lightTerminalColors = light?.terminalColors?.toProperties() ?: Properties(),
             darkTerminalColors = dark?.terminalColors?.toProperties() ?: Properties(),
-            lightEditorColors = mapEditorColorScheme(light?.editorColors),
-            darkEditorColors = mapEditorColorScheme(dark?.editorColors),
             lightTokenColors = lightTokenColors,
             darkTokenColors = darkTokenColors,
         )
