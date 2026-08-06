@@ -1,0 +1,32 @@
+Categories:
+  - System
+License: GPL-3.0-or-later
+SourceCode: https://github.com/vxyzview/Xed-Editor
+IssueTracker: https://github.com/vxyzview/Xed-Editor/issues
+Changelog: https://github.com/vxyzview/Xed-Editor/releases
+
+AutoName: xyzterm
+Summary: Terminal-only proot Ubuntu environment
+Description: |
+  Minimal terminal app providing a proot-based Ubuntu environment with a full
+  terminal emulator. Stripped-down fork of Xed-Editor keeping only the terminal
+  feature and shared infrastructure (settings, theming, crash handling).
+
+RepoType: git
+Repo: https://github.com/vxyzview/Xed-Editor
+
+Builds:
+  - versionName: 3.4.4
+    versionCode: 103
+    commit: 3fcf5cfa6d6eefc53e22bca24f8fe704ad74a828
+    gradle:
+      - ':app:assembleRelease'
+    prebuild:
+      - sed -r '/(foojay|toolchainVendor)/d' -i gradle/gradle-daemon-jvm.properties || true
+      - sed -ri '/foojay-resolver-convention/d' settings.gradle.kts || true
+      - sed -r '/signingConfigs.getByName/d' -i app/build.gradle.kts || true
+
+# No release tags exist yet; builds are added manually per release until
+# version-tagged releases are published. Set AutoUpdateMode: Version + a
+# UpdateCheckMode: Tags regex once the repo starts tagging vX.Y.Z.
+AutoUpdateMode: None
