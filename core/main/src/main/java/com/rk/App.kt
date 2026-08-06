@@ -108,8 +108,6 @@ open class App : Application() {
                 }
             }
 
-            launch { runCatching { UpdateChecker.checkForUpdates("main") } }
-
             // wait until UpdateManager is done, it should only take few milliseconds
             UpdateManager.inspect()
 
