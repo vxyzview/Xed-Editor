@@ -3,24 +3,11 @@ package com.rk.terminal
 import com.rk.file.child
 import com.rk.file.createFileIfNot
 import com.rk.file.localBinDir
-import com.rk.file.localDir
 import com.rk.file.sandboxDir
 import com.rk.utils.application
 
 fun setupTerminalFiles() {
     if (sandboxDir().exists().not() || localBinDir().exists().not()) return
-
-    with(localDir().child("stat")) {
-        if (exists().not()) {
-            createFileIfNot()
-        }
-    }
-
-    with(localDir().child("vmstat")) {
-        if (exists().not()) {
-            createFileIfNot()
-        }
-    }
 
     with(localBinDir().child("termux-x11")) {
         if (exists().not()) {
