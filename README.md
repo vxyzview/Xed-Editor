@@ -41,10 +41,6 @@ The generated debug APK will be located at `out/debug/app-debug.apk`.
 
 </details>
 
-Note: the `soraX` editor-engine submodule is bundled directly in this copy of the project (rather
-than linked as a live git submodule), since `:core:main` still compiles against it. If you turn
-this project into your own git repository, you may want to re-add it as a proper submodule instead.
-
 ---
 
 ## License

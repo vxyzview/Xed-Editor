@@ -271,14 +271,6 @@
 -keep class com.itsaky.androidide.treesitter.** { *; }
 -dontwarn com.itsaky.androidide.treesitter.**
 
-# Rosemoe Sora Editor
--keep class io.github.rosemoe.sora.** { *; }
--dontwarn io.github.rosemoe.sora.**
-
-# Oniguruma Native
--keep class io.github.rosemoe.oniguruma.** { *; }
--dontwarn io.github.rosemoe.oniguruma.**
-
 # UtilCode
 -keep class com.blankj.utilcode.** { *; }
 -dontwarn com.blankj.utilcode.**
