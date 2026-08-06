@@ -25,6 +25,7 @@ object MkSession {
         sessionClient: TerminalSessionClient,
         sessionId: String,
         isExtraction: Boolean = false,
+        cwd: String? = null,
     ): Pair<TerminalSession, SessionPwd> {
         val envVariables =
             mapOf(
@@ -40,7 +41,7 @@ object MkSession {
                 "PATH" to "${System.getenv("PATH")}:${localBinDir(context).absolutePath}",
             )
 
-        val workingDir = runBlocking { getPwd(context) }
+        val workingDir = runBlocking { cwd ?: getPwd(context) }
 
         val tmpDir = localDir().child("tmp").child(sessionId)
 

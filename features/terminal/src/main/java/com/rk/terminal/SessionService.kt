@@ -17,10 +17,12 @@ import com.rk.activities.terminal.Terminal
 import com.rk.resources.drawables
 import com.rk.resources.getString
 import com.rk.resources.strings
+import com.rk.settings.Preference
 import com.rk.settings.Settings
 import com.termux.terminal.TerminalSession
 import com.termux.terminal.TerminalSessionClient
 import kotlinx.coroutines.DelicateCoroutinesApi
+import org.json.JSONObject
 
 class SessionService : Service() {
     private val sessions = hashMapOf<SessionId, TerminalSession>()
@@ -34,18 +36,25 @@ class SessionService : Service() {
             return this@SessionService
         }
 
-        fun createSession(id: SessionId, client: TerminalSessionClient, activity: Terminal): SessionInfo {
+        fun createSession(
+            id: SessionId,
+            client: TerminalSessionClient,
+            activity: Terminal,
+            cwd: String? = null,
+        ): SessionInfo {
             return MkSession.createSession(
                     activity,
                     client,
                     id,
                     activity.installNextStage != null && activity.installNextStage == NEXT_STAGE.EXTRACTION,
+                    cwd,
                 )
                 .let {
                     val (session, pwd) = it
                     sessions[id] = session
                     sessionWorkDirs[id] = pwd
                     sessionList.add(id)
+                    saveSession(id, pwd)
                     updateNotification()
                     SessionInfo(id, pwd, session)
                 }
@@ -61,6 +70,19 @@ class SessionService : Service() {
                 ?.let { SessionInfo(it, sessionWorkDirs[it]!!, sessions[it]!!) }
         }
 
+        fun restoreSessions(activity: Terminal) {
+            if (sessions.isNotEmpty()) return
+            savedSessions().forEach { (id, pwd) ->
+                // Pass the saved cwd directly so the restored session starts as a plain
+                // interactive shell in pwd, without mutating the activity intent or
+                // touching pendingCommand (which changes the shell invocation shape).
+                runCatching { createSession(id, TerminalBackEnd(), activity, cwd = pwd) }
+            }
+            if (sessionList.isNotEmpty()) {
+                currentSession.value = sessionList.last()
+            }
+        }
+
         fun terminateSession(id: SessionId) {
             sessions[id]?.apply {
                 if (emulator != null) {
@@ -70,6 +92,7 @@ class SessionService : Service() {
             sessions.remove(id)
             sessionList.remove(id)
             sessionWorkDirs.remove(id)
+            removeSession(id)
 
             if (sessions.isEmpty()) {
                 stopSelf()
@@ -260,6 +283,32 @@ class SessionService : Service() {
                 ""
             }
         }"
+    }
+
+    private companion object {
+        const val SAVED_SESSIONS_KEY = "saved_sessions"
+    }
+
+    private fun saveSession(id: SessionId, pwd: SessionPwd) {
+        val existing =
+            runCatching { JSONObject(Preference.getString(SAVED_SESSIONS_KEY, "{}")) }.getOrElse { JSONObject() }
+        val map = JSONObject()
+        existing.keys().forEach { key -> map.put(key, existing.getString(key)) }
+        map.put(id, pwd)
+        Preference.setString(SAVED_SESSIONS_KEY, map.toString())
+    }
+
+    private fun removeSession(id: SessionId) {
+        val obj = runCatching { JSONObject(Preference.getString(SAVED_SESSIONS_KEY, "{}")) }.getOrElse { JSONObject() }
+        obj.remove(id)
+        Preference.setString(SAVED_SESSIONS_KEY, obj.toString())
+    }
+
+    private fun savedSessions(): Map<SessionId, SessionPwd> {
+        val obj = runCatching { JSONObject(Preference.getString(SAVED_SESSIONS_KEY, "{}")) }.getOrElse { JSONObject() }
+        return buildMap {
+            obj.keys().forEach { key -> put(key, obj.getString(key)) }
+        }
     }
 }
 
