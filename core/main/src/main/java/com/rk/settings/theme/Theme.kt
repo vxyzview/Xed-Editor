@@ -138,22 +138,6 @@ fun ThemeScreen(navController: NavController, modifier: Modifier = Modifier) {
                 )
             }
 
-            SettingsItem(
-                label = stringResource(strings.browse_themes),
-                description = null,
-                showSwitch = false,
-                default = false,
-                startWidget = {
-                    Icon(
-                        modifier = Modifier.padding(start = 16.dp),
-                        painter = painterResource(drawables.arrow_outward),
-                        contentDescription = null,
-                    )
-                },
-                sideEffect = {
-                    navController.navigate("${SettingsRoutes.Extensions.route}?category=themes")
-                },
-            )
         }
 
         PreferenceGroup(heading = stringResource(strings.icon_packs)) {
@@ -229,22 +213,6 @@ fun ThemeScreen(navController: NavController, modifier: Modifier = Modifier) {
                 )
             }
 
-            SettingsItem(
-                label = stringResource(strings.browse_icon_packs),
-                description = null,
-                showSwitch = false,
-                default = false,
-                startWidget = {
-                    Icon(
-                        modifier = Modifier.padding(start = 16.dp),
-                        painter = painterResource(drawables.arrow_outward),
-                        contentDescription = null,
-                    )
-                },
-                sideEffect = {
-                    navController.navigate("${SettingsRoutes.Extensions.route}?category=icon_packs")
-                },
-            )
         }
 
         if (showDayNightBottomSheet.value) {

@@ -747,8 +747,6 @@
     <string name="theme_migrated">Başarıyla %d tema geçişi yapıldı</string>
     <string name="theme_not_found_desc">Bu sayfa kullanılamıyor. Bunun nedeni, yerel bir temanın kaldırılmış olması veya bir mağaza temasının sahibi tarafından kayıt defterinden silinmiş olması olabilir.</string>
     <string name="icon_pack_not_found_desc">Bu sayfa kullanılamıyor. Bu durum, yerel bir ikon paketinin kaldırılması veya bir mağaza ikon paketinin sahibi tarafından kayıt defterinden silinmesi nedeniyle oluşabilir.</string>
-    <string name="browse_themes">Temalara göz at</string>
-    <string name="browse_icon_packs">İkon paketlerine göz at</string>
     <string name="theme_not_found">Tema bulunamadı</string>
     <string name="icon_pack_not_found">İkon paketi bulunamadı</string>
     <string name="uninstall_theme_dialog">Temayı kaldırmak istiyor musunuz?</string>

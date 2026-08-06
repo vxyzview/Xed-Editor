@@ -752,8 +752,6 @@
     <string name="compression_method">Compression method</string>
     <string name="crc_32" translatable="false">CRC-32</string>
     <string name="comment">Comment</string>
-    <string name="browse_themes">Browse themes</string>
-    <string name="browse_icon_packs">Browse icon packs</string>
     <string name="theme_not_found">Theme not found</string>
     <string name="icon_pack_not_found">Icon pack not found</string>
     <string name="uninstall_theme_dialog">Uninstall theme?</string>
