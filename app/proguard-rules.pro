@@ -16,13 +16,6 @@
 -dontwarn org.ietf.jgss.GSSName
 -dontwarn org.ietf.jgss.Oid
 
--keep class org.eclipse.jgit.** { *; }
--dontwarn org.eclipse.jgit.**
-
--keep class org.eclipse.jgit.util.SystemReader { *; }
--keep class org.eclipse.jgit.storage.file.FileBasedConfig { *; }
--dontwarn org.eclipse.jgit.**
--keep class org.eclipse.**
 -dontwarn java.awt.BorderLayout
 -dontwarn java.awt.Color
 -dontwarn java.awt.Component
@@ -107,9 +100,6 @@
 -dontwarn javax.swing.tree.TreeModel
 -dontwarn javax.swing.tree.TreeNode
 -dontwarn javax.swing.tree.TreePath
--dontwarn kotlin.Cloneable$DefaultImpls
--dontwarn org.ietf.jgss.MessageProp
--dontwarn sun.security.x509.X509Keyrohit
 # Preserve all fields for classes serialized/deserialized by Gson
 -keep class com.google.gson.** { *; }
 -keep class * extends com.google.gson.TypeAdapter { *; }
@@ -129,8 +119,6 @@
 -keep class * extends com.google.gson.reflect.TypeToken
 -keep class com.google.gson.** { *; }
 -dontwarn com.google.gson.**
--keep class org.joni.ast.QuantifierNode { *; }
--keep class com.rk.plugin.server.Manifest.** { *; }
 # For using GSON @Expose annotation
 -keepattributes *Annotation*
 # Gson specific classes
@@ -161,23 +149,9 @@
 -keepclassmembers,allowobfuscation class * {
   @com.google.gson.annotations.SerializedName <fields>;
 }
--keep class com.rk.plugin.server.Manifest { *; }
 # Retain generic signatures of TypeToken and its subclasses with R8 version 3.0 and higher.
 -keep,allowobfuscation,allowshrinking class com.google.gson.reflect.TypeToken
 -keep,allowobfuscation,allowshrinking class * extends com.google.gson.reflect.TypeToken
-# Keep the no-args constructor of the deserialized class
--keepclassmembers class com.rk.plugin.server.Manifest {
-  <init>();
-}
--keep,allowobfuscation,allowoptimization class com.rk.plugin.server.Manifest {
-  @com.google.gson.annotations.SerializedName <fields>;
-}
--keep class com.rk.plugin.server.Manifest {
-   <fields>;
-}
--keepclassmembers class com.rk.plugin.server.Manifest {
- !transient <fields>;
-}
 # Keep classes and members for all models used with Gson
 #-keep class com.rk.xededitor.** { *; }
 #-keep class com.rk.plugin.** { *; }
@@ -204,9 +178,6 @@
 -keep class * extends com.google.gson.TypeAdapter { *; }
 
 
--keep class com.rk.plugin.server.** { *; }
--dontwarn com.rk.plugin.server.**
-
 # Skip shrinking class if it contains the xed extension point or related to extension related code
 -keep @com.rk.extension.api.XedExtensionPoint class * { *; }
 -keepclassmembers class * {
@@ -220,18 +191,12 @@
 
 # Preserve well-known classes that plugins may try to access and keep their names
 -keep class com.rk.commands.** { *; }
--keep class com.rk.editor.** { *; }
 -keep class com.rk.file.** { *; }
--keep class com.rk.filetree.** { *; }
--keep class com.rk.lsp.** { *; }
--keep class com.rk.runner.** { *; }
--keep class com.rk.tabs.** { *; }
 -keep class com.rk.utils.** { *; }
--keep class com.rk.proot.** { *; }
 -keep class com.rk.components.** { *; }
+-keep class com.rk.extension.** { *; }
 -keep class com.rk.App { *; }
 -keep class com.rk.XedConstants { *; }
--keep class com.rk.extension.** { *; }
 -keep class java.io.** { *; }
 -keep class kotlin.** { *; }
 -keep class kotlinx.** { *; }
@@ -239,37 +204,9 @@
 
 # JVM Libraries Reflection & Compatibility Rules
 
-# LSP4J
--keep class org.eclipse.lsp4j.** { *; }
--dontwarn org.eclipse.lsp4j.**
-
-# JGit
--keep class org.eclipse.jgit.** { *; }
--dontwarn org.eclipse.jgit.**
-
-# Joni / Jcodings (Regex Library)
--keep class org.jruby.joni.** { *; }
--keep class org.jruby.jcodings.** { *; }
--dontwarn org.jruby.joni.**
--dontwarn org.jruby.jcodings.**
-
-# SnakeYAML
--keep class org.yaml.snakeyaml.** { *; }
--keep class org.snakeyaml.engine.** { *; }
--dontwarn org.yaml.snakeyaml.**
--dontwarn org.snakeyaml.engine.**
-
-# Moshi
--keep class com.squareup.moshi.** { *; }
--dontwarn com.squareup.moshi.**
-
 # Ec4j Core
 -keep class org.ec4j.core.** { *; }
 -dontwarn org.ec4j.core.**
-
-# Tree-sitter
--keep class com.itsaky.androidide.treesitter.** { *; }
--dontwarn com.itsaky.androidide.treesitter.**
 
 # UtilCode
 -keep class com.blankj.utilcode.** { *; }
