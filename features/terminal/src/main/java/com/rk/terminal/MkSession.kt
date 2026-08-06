@@ -42,7 +42,7 @@ object MkSession {
 
         val workingDir = runBlocking { getPwd(context) }
 
-        val tmpDir = File(getTempDir(), "terminal/$sessionId")
+        val tmpDir = localDir().child("tmp").child(sessionId)
 
         if (tmpDir.exists()) {
             tmpDir.deleteRecursively()
